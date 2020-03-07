@@ -15,4 +15,9 @@ public class TreeNode {
 		super();
 		this.data = data;
 	}
+
+	@Override
+	public String toString() {
+		return "TreeNode [data=" + data + "]";
+	}
 }

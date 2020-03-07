@@ -1,5 +1,11 @@
 package tree;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Stack;
+
 import array.ArrayHelper;
 
 public class TreeProblems {
@@ -90,4 +96,93 @@ public class TreeProblems {
 
 		return root;
 	}
+
+	public static void printBottomUpLevelOrderTraversal(TreeNode root) {
+
+		Queue<TreeNode> queue = new LinkedList<TreeNode>();
+
+		if (root == null) {
+			return;
+		}
+
+		queue.add(root);
+		queue.add(null);
+
+		Stack<List<TreeNode>> stack = new Stack<List<TreeNode>>();
+		List<TreeNode> list = new ArrayList<>();
+
+		while (true) {
+
+			TreeNode node = queue.poll();
+
+			if (node == null) {
+
+				stack.add(list);
+
+				if (queue.isEmpty())
+					break;
+
+				queue.add(null);
+
+				list = new ArrayList<TreeNode>();
+
+			} else {
+
+				list.add(node);
+
+				if (node.left != null) {
+					queue.add(node.left);
+				}
+
+				if (node.right != null) {
+					queue.add(node.right);
+				}
+			}
+
+		}
+
+		System.out.println("Printing node values : " + stack.size());
+		while (!stack.isEmpty()) {
+			list = stack.pop();
+
+			for (TreeNode node : list) {
+				System.out.print(node.data + " ");
+			}
+			System.out.println();
+		}
+	}
+
+	public static TreeNode convertSortedArrayToBST(int[] arr) {
+		return _convertSortedArrayToBST(arr, 0, arr.length - 1);
+	}
+
+	private static TreeNode _convertSortedArrayToBST(int[] arr, int left, int right) {
+
+		if (left > right) {
+			return null;
+		}
+
+		int mid = left + (right - left) / 2;
+
+		TreeNode node = new TreeNode();
+		node.data = arr[mid];
+		node.left = _convertSortedArrayToBST(arr, left, mid - 1);
+		node.right = _convertSortedArrayToBST(arr, mid + 1, right);
+
+		return node;
+	}
+
+	public static boolean isHeightBalanced(TreeNode root) {
+
+		if (root == null) {
+			return true;
+		}
+
+		int leftHeight = getMaxDepth(root.left);
+		int rightHeight = getMaxDepth(root.right);
+
+		return isHeightBalanced(root.left) && isHeightBalanced(root.right) && Math.abs(rightHeight - leftHeight) < 2;
+
+	}
+
 }
