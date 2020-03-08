@@ -80,5 +80,16 @@ public class TreeProblemTests {
 
 		assertEquals(true, isBalanced);
 	}
+	
+	@Test
+	public void checkRootToLeafSum() {
+		
+		TreeNode root = TreeCreator.createTreeForMaxDepth();
+		
+		boolean isRootToLeafSum = TreeProblems.checkRootToLeafSum(root, 10);
+		
+		System.out.println("Root to leaf sum : " + isRootToLeafSum);
+		
+	}
 
 }

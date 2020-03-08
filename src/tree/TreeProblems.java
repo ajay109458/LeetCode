@@ -184,5 +184,18 @@ public class TreeProblems {
 		return isHeightBalanced(root.left) && isHeightBalanced(root.right) && Math.abs(rightHeight - leftHeight) < 2;
 
 	}
+	
+	public static boolean checkRootToLeafSum(TreeNode root, int sum) {
+		
+		if (root == null) {
+			return sum == 0;
+		}
+		
+		int remainingSum = sum - root.data;
+		
+		return checkRootToLeafSum(root.left, remainingSum) || 
+				checkRootToLeafSum(root.right, remainingSum);
+		
+	}
 
 }
