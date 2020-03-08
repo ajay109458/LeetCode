@@ -197,5 +197,30 @@ public class TreeProblems {
 				checkRootToLeafSum(root.right, remainingSum);
 		
 	}
+	
+	public static void printAllRootToLeafPathWithGivenSum(TreeNode root, int sum) {
+		_populateRootToLeafPath(root, sum, new ArrayList<TreeNode>());
+	}
+	
+	public static void _populateRootToLeafPath(TreeNode root, int sum, List<TreeNode> list) {
+		
+		if (root == null) {
+			return;
+		}
+		
+		list.add(root);
+		sum -= root.data;
+		
+		if (root.left == null && root.right == null) {
+			if (sum == 0) {
+				System.out.println(list);
+			}
+		}
+		
+		_populateRootToLeafPath(root.left, sum, list);
+		_populateRootToLeafPath(root.right, sum, list);
+		
+		list.remove(root);
+	}
 
 }

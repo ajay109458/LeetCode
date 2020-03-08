@@ -91,5 +91,14 @@ public class TreeProblemTests {
 		System.out.println("Root to leaf sum : " + isRootToLeafSum);
 		
 	}
+	
+	@Test
+	public void printPathRootToLeafPathSum() {
+		
+		TreeNode root = TreeCreator.createTreeRootToLeafSum();
+		
+		TreeProblems.printAllRootToLeafPathWithGivenSum(root, 15);
+		
+	}
 
 }
