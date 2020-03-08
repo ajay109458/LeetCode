@@ -184,43 +184,60 @@ public class TreeProblems {
 		return isHeightBalanced(root.left) && isHeightBalanced(root.right) && Math.abs(rightHeight - leftHeight) < 2;
 
 	}
-	
+
 	public static boolean checkRootToLeafSum(TreeNode root, int sum) {
-		
+
 		if (root == null) {
 			return sum == 0;
 		}
-		
+
 		int remainingSum = sum - root.data;
-		
-		return checkRootToLeafSum(root.left, remainingSum) || 
-				checkRootToLeafSum(root.right, remainingSum);
-		
+
+		return checkRootToLeafSum(root.left, remainingSum) || checkRootToLeafSum(root.right, remainingSum);
+
 	}
-	
+
 	public static void printAllRootToLeafPathWithGivenSum(TreeNode root, int sum) {
 		_populateRootToLeafPath(root, sum, new ArrayList<TreeNode>());
 	}
-	
+
 	public static void _populateRootToLeafPath(TreeNode root, int sum, List<TreeNode> list) {
-		
+
 		if (root == null) {
 			return;
 		}
-		
+
 		list.add(root);
 		sum -= root.data;
-		
+
 		if (root.left == null && root.right == null) {
 			if (sum == 0) {
 				System.out.println(list);
 			}
 		}
-		
+
 		_populateRootToLeafPath(root.left, sum, list);
 		_populateRootToLeafPath(root.right, sum, list);
-		
+
 		list.remove(root);
+	}
+
+	public static List<TreeNode> convertTreeToFlattenList(TreeNode root) {
+		List<TreeNode> list = new LinkedList<TreeNode>();
+		_populateTreeToFlattenList(root, list);
+		return list;
+	}
+
+	private static void _populateTreeToFlattenList(TreeNode root, List<TreeNode> list) {
+
+		if (root == null) {
+			return;
+		}
+
+		list.add(root);
+
+		_populateTreeToFlattenList(root.left, list);
+		_populateTreeToFlattenList(root.right, list);
 	}
 
 }

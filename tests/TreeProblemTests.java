@@ -1,5 +1,7 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.util.List;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -98,6 +100,17 @@ public class TreeProblemTests {
 		TreeNode root = TreeCreator.createTreeRootToLeafSum();
 		
 		TreeProblems.printAllRootToLeafPathWithGivenSum(root, 15);
+		
+	}
+	
+	@Test
+	public void checkPopulateTreeToFlattenList() {
+		
+		TreeNode root = TreeCreator.createTreeForMaxDepth();
+		
+		List<TreeNode> list = TreeProblems.convertTreeToFlattenList(root);
+		
+		System.out.println(list);
 		
 	}
 
