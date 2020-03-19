@@ -18,4 +18,14 @@ public class StringTests {
 		
 	}
 	
+	@Test
+	public void validatePalindrome() {
+		
+		boolean isValidPalindrome = StringProblems.isValidPalindrome("A man, a plan, a canal: Panama");
+		
+		
+		assertEquals(true, isValidPalindrome);
+		
+	}
+	
 }

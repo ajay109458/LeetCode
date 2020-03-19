@@ -27,4 +27,41 @@ public class StringProblems {
 		return count;
 	}
 	
+	public static boolean isValidPalindrome(String input) {
+		
+		if(null == input || "".equals(input)) {
+			return true;
+		}
+		
+		int start = 0;
+		int end = input.length()-1;
+		
+		while(start <=  end) {
+			
+			char startCh = input.charAt(start);
+			char endCh = input.charAt(end);
+			
+			
+			if (Character.isAlphabetic(startCh) && Character.isAlphabetic(endCh)) {
+				if (Character.toLowerCase(startCh) != Character.toLowerCase(endCh))
+					return false;
+				
+				start++;
+				end--;
+				
+			} else if (!Character.isAlphabetic(startCh) && !Character.isAlphabetic(endCh)) {
+				start++;
+				end--;
+			} else if (!Character.isAlphabetic(startCh)) {
+				start++;
+			} else {
+				end--;
+			}
+			
+		}
+		
+		return true;
+		
+	}
+	
 }
