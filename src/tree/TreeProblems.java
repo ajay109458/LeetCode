@@ -239,5 +239,27 @@ public class TreeProblems {
 		_populateTreeToFlattenList(root.left, list);
 		_populateTreeToFlattenList(root.right, list);
 	}
+	
+	
+	public static int maxRootToLeafSum(TreeNode root) {
+		
+		if (root == null) {
+			return 0;
+		}
+		
+		return root.data + Math.max(maxRootToLeafSum(root.left), maxRootToLeafSum(root.right));
+		
+	}
+
+	public static int maxSumPath(TreeNode root) {
+
+		if (root == null)
+			return 0;
+
+		int currentSum =  root.data + maxRootToLeafSum(root.left) + maxRootToLeafSum(root.right);
+
+		return Math.max(currentSum, Math.max(maxSumPath(root.left), maxSumPath(root.right)));
+		
+	}
 
 }

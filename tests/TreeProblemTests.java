@@ -113,5 +113,17 @@ public class TreeProblemTests {
 		System.out.println(list);
 		
 	}
+	
+	
+	@Test
+	public void checkMaxSumPath() {
+		
+		TreeNode root = TreeCreator.createTreeForMaxDepth();
+		
+		int actualSum = TreeProblems.maxSumPath(root);
+
+		assertEquals(11, actualSum);
+		
+	}
 
 }
