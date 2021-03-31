@@ -120,10 +120,24 @@ public class TreeProblemTests {
 		
 		TreeNode root = TreeCreator.createTreeForMaxDepth();
 		
-		int actualSum = TreeProblems.maxSumPath(root);
+		long actualSum = TreeProblems.maxSumPath(root);
 
 		assertEquals(11, actualSum);
 		
+	}
+
+	@Test
+	public void checkInorder() {
+		TreeNode root = TreeProblems.constructTree(new char[]{'1', '2', '5', '3', '4', 'n', '6'});
+		TreeProblems.inOrder(root);
+	}
+
+	@Test
+	public void checkFlatten() {
+		TreeNode root = TreeProblems.constructTree(new char[]{'1', '2', '5', '3', '4', 'n', '6'});
+		TreeProblems.flatten(root);
+
+		System.out.print(root);
 	}
 
 }

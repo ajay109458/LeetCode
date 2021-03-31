@@ -2,9 +2,10 @@ package tree;
 
 public class TreeNode {
 
-	public int data;
+	public int val;
 	public TreeNode left;
 	public TreeNode right;
+	public TreeNode next;
 	
 	public TreeNode() {
 		super();
@@ -13,11 +14,11 @@ public class TreeNode {
 
 	public TreeNode(int data) {
 		super();
-		this.data = data;
+		this.val = data;
 	}
 
 	@Override
 	public String toString() {
-		return "TreeNode [data=" + data + "]";
+		return "TreeNode [data=" + val + "]";
 	}
 }
