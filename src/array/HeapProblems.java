@@ -43,4 +43,31 @@ public class HeapProblems {
         return (maxHeap.peek() + minHeap.peek())/2;
     }
 
+    public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
+        floodFill(image, sr, sc, image[sr][sc], newColor);
+        return image;
+    }
+
+    private int[][] directions = {
+            {0, 1},
+            {1, 0},
+            {0, -1},
+            {-1, 0}
+    };
+
+    private void floodFill(int[][] image, int sr, int sc, int prevColor, int newColor) {
+
+
+        image[sr][sc] = newColor;
+
+        for(int[] dir : directions) {
+            int x = sr + dir[0];
+            int y = sr + dir[1];
+
+            if (x >= 0 && x < image.length && y >= 0 && y < image[0].length && image[x][y] == prevColor) {
+                floodFill(image, x, y, prevColor, newColor);
+            }
+        }
+    }
+
 }

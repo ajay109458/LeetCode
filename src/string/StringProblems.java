@@ -1,4 +1,6 @@
 package string;
+import tree.TrieDataStructure;
+
 import java.util.*;
 
 
@@ -1688,6 +1690,59 @@ public class StringProblems {
 
 		return result;
 	}
+
+	TrieDataStructure trieDS = new TrieDataStructure();
+	public List<String> findWords(char[][] board, String[] words) {
+
+		Set<String> set = new HashSet<>();
+		for(String word:  words) {
+			set.add(word);
+
+		}
+
+		boolean[][] visited = new boolean[board.length][board[0].length];
+
+		List<String> result = new ArrayList<>();
+
+		for(int i = 0; i < board.length; i++) {
+			for (int j = 0; j < board[i].length; j++) {
+				dfsWords(board, i, j, set, visited, "", result);
+			}
+		}
+
+		return result;
+	}
+
+	int[][] directions = {
+			{0, 1},
+			{1, 0},
+			{0, -1},
+			{-1, 0}
+	};
+
+	private void dfsWords(char[][] board, int i, int j, Set<String> words, boolean[][] visited, String wsf, List<String> result) {
+
+		if (words.contains(wsf)) {
+			result.add(wsf);
+			return;
+		}
+
+		if (visited[i][j])
+			return;
+
+		visited[i][j] = false;
+
+		for(int[] dir : directions) {
+			int x = i + dir[0];
+			int y = j + dir[1];
+
+			if (x >= 0 && x < board.length && y >= 0 && y < board[0].length && !visited[x][y]) {
+				dfsWords(board, x, y, words, visited, wsf + board[i][j], result);
+			}
+		}
+	}
+
+
 }
 
 

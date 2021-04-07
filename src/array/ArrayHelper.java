@@ -3587,4 +3587,123 @@ public class ArrayHelper {
 		return result;
 	}
 
+	public int[] shortestToChar(String s, char c) {
+		int n = s.length();
+
+		int[] outputArr = new int[n];
+
+		int c_position = -n;
+
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) == c) {
+				c_position = i;
+			}
+
+			outputArr[i] = i - c_position;
+		}
+
+		for(int i = n - 1; i >=0 ; i--) {
+
+			if (s.charAt(i) == c) {
+				c_position = i;
+			}
+
+			outputArr[i] = Math.min(outputArr[i], c_position - i);
+		}
+
+		return outputArr;
+	}
+
+	public String pushDominoes(String dominoes) {
+		char[] charArray = dominoes.toCharArray();
+
+		int N = dominoes.length();
+		int[] forces = new int[N];
+
+		int force = 0;
+		for(int i = 0; i < N; i++) {
+			if (charArray[i] == 'R') {
+				force = N;
+			} else if (charArray[i] == 'L') {
+				force = 0;
+			} else {
+				force = Math.max(force - 1, 0);
+			}
+
+			forces[i] += force;
+		}
+
+		for(int i = N  -1 ; i >= 0; i--) {
+			if (charArray[i] == 'L') {
+				force = N;
+			} else if (charArray[i] == 'R') {
+				force = 0;
+			} else {
+				force = Math.max(force - 1, 0);
+			}
+
+			forces[i] -= force;
+		}
+
+		StringBuilder builder = new StringBuilder();
+
+		for(int i = 0 ; i < N; i++) {
+			if (forces[i] > 0) {
+				builder.append('R');
+			} else if (forces[i] == 0) {
+				builder.append('.');
+			} else {
+				builder.append('L');
+			}
+		}
+
+		return builder.toString();
+	}
+
+	public boolean lemonadeChange(int[] bills) {
+		int count5 = 0;
+		int count10 = 0;
+		int count20 = 0;
+
+		int lemonadeCharge = 10;
+
+		for (int i = 0; i < bills.length; i++) {
+
+			switch (bills[i]) {
+				case 20:
+					count20++;
+					break;
+				case 10:
+					count10++;
+					break;
+				case 5:
+					count5++;
+					break;
+			}
+
+			int remaining = bills[i] - lemonadeCharge;
+
+			while(remaining >= 20 && count20 > 0) {
+				remaining = remaining - 20;
+				count20--;
+			}
+
+			while(remaining >= 10 && count10 > 0) {
+				remaining = remaining - 10;
+				count10--;
+			}
+
+			while(remaining >= 5 && count5 > 0) {
+				remaining = remaining - 5;
+				count5--;
+			}
+
+			if (remaining > 0)
+				return false;
+
+		}
+
+		return true;
+	}
+
 }

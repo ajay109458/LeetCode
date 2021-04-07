@@ -34,6 +34,20 @@ public class TrieDataStructure {
         return p.isWord;
     }
 
+    public boolean checkPrefix(String str) {
+
+        TrieNode p = root;
+
+        for(char ch : str.toCharArray()) {
+            TrieNode child = p.map.get(ch);
+            if (child == null)
+                return false;
+            p = child;
+        }
+
+        return true;
+    }
+
     public static void main(String[] args) {
         TrieDataStructure s = new TrieDataStructure();
         s.insert("ajay");
