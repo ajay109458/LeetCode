@@ -609,4 +609,80 @@ public class DPProblems {
         return cache[i][j];
     }
 
+    /**
+     *  Think about the base case
+     *
+     *  Think about the data structure
+     *
+     *  Think about the algorithm
+     *
+     *  Think about the test cases
+     *      - Good cases
+     *      - Average cases
+     *      - Worst cases
+     *      - Base cases
+     */
+    public int minCost(int[][] costs) {
+
+        int n = costs.length;
+
+        int[][] dp = new int[n][3];
+
+        for(int i = 0; i < 3; i++) {
+            dp[0][i] = costs[0][i];
+        }
+
+        for(int i = 1; i < n; i++) {
+            for(int j = 0; j < 3; j++)  {
+                int minCost = Integer.MAX_VALUE;
+                for (int k = 0; k < 3; k++) {
+                    if (k != j) {
+                        minCost = Math.min(minCost, dp[i-1][k] + costs[i][j]);
+                    }
+                }
+
+                dp[i][j] = minCost;
+            }
+        }
+
+        int result = Integer.MAX_VALUE;
+        for(int i = 0; i < 3; i++) {
+            result = Math.min(result, dp[n-1][i]);
+        }
+
+        return result;
+
+    }
+
+    private static int cutRod(int[] prices, int n) {
+        if(n <= 0)
+            return 0;
+
+        int maxValue = Integer.MAX_VALUE;
+
+        for(int i = 0; i <n; i++) {
+            maxValue = Math.max(maxValue, prices[i] + cutRod(prices, n - i-1));
+        }
+
+        return maxValue;
+    }
+
+    public static int rodCutting(int[] prices, int n) {
+        int[] dp = new int[n+1];
+
+        dp[0] = prices[0];
+
+        for(int i = 1; i < prices.length; i++) {
+            dp[i] = prices[i];
+
+            for(int j = 1; j <=i; j++){
+                dp[i] = Math.max(dp[i], prices[j] + dp[i-j]);
+            }
+        }
+
+        return dp[n];
+    }
+
+
+
 }

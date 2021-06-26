@@ -1,0 +1,36 @@
+
+=
+java:S1128"'Remove this unused import 'utils.Pair'.(½èü¾
+k
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒýÿÿÿÿ
+k
+java:S1149+"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒýÿÿÿÿ
+k
+java:S1149E"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒýÿÿÿÿ
+k
+java:S1149^"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›þöýÿÿÿÿ
+k
+java:S1149q"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›þöýÿÿÿÿ
+l
+java:S1149„"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›þöýÿÿÿÿ
+l
+java:S1149˜"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›þöýÿÿÿÿ
+l
+java:S1149Â"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›þöýÿÿÿÿ
+l
+java:S1149ä"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›þöýÿÿÿÿ
+l
+java:S1149ÿ"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›þöýÿÿÿÿ
+l
+java:S1149¯"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(íÒèÃúÿÿÿÿ
+l
+java:S1149À"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒýÿÿÿÿ
+l
+java:S1149Û"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›þöýÿÿÿÿ
+P
+java:S1118
+":Add a private constructor to hide the implicit public one.(É¯ã˜
+h
+java:S3776D"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ü÷‹¨
+O	java:S106Œ"9Replace this use of System.out or System.err by a logger.(¡ËÊ˜
+[	java:S106ø"9Replace this use of System.out or System.err by a logger.(ö³Œ±üÿÿÿÿ8ÎüÒß£/

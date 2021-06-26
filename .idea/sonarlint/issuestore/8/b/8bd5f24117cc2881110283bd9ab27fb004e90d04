@@ -1,0 +1,19 @@
+
+R	java:S107Ô"<Method has 8 parameters, which is greater than 7 authorized.(¤¯Ü°
+t
+java:S1488 "]Immediately return this expression instead of assigning it to the temporary variable "board".(Ó¸Ë½
+\
+java:S1118":Add a private constructor to hide the implicit public one.(•òûÜúÿÿÿÿ8„·Îß/
+N	java:S106"9Replace this use of System.out or System.err by a logger.(†™ñ‹
+N	java:S106"9Replace this use of System.out or System.err by a logger.(†™ñ‹
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(†™ñ‹
+N	java:S106""9Replace this use of System.out or System.err by a logger.(†™ñ‹
+S	java:S106N"9Replace this use of System.out or System.err by a logger.(üË”øÿÿÿÿÿ
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(îÃ„ùÿÿÿÿ
+S	java:S106R"9Replace this use of System.out or System.err by a logger.(Ÿù×òùÿÿÿÿ
+N	java:S106["9Replace this use of System.out or System.err by a logger.(òø³—
+N	java:S106f"9Replace this use of System.out or System.err by a logger.(òø³—
+<
+java:S2116”"%Use "Arrays.toString(array)" instead.(‚“›È
+O	java:S106«"9Replace this use of System.out or System.err by a logger.(¸–Á
+T	java:S106­"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ

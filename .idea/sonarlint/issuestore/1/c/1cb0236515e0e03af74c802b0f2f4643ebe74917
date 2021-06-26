@@ -1,0 +1,20 @@
+
+F
+java:S1066ø"/Merge this if statement with the enclosing one.(¦©×½
+/
+java:S1700§"Rename field "node"(óÙğêıÿÿÿÿ
+l
+java:S3008„"URename this field "DIRECTIONS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á‡ĞÑ
+B
+java:S1125("'Remove the unnecessary boolean literal.(–Ï÷„ÿÿÿÿÿ
+N	java:S106F"9Replace this use of System.out or System.err by a logger.(–êÅú
+Q
+java:S1854Ù"5Remove this useless assignment to local variable "n".(û Ä¹ùÿÿÿÿ
+O	java:S106é"9Replace this use of System.out or System.err by a logger.(ŸÙÅô
+O	java:S106í"9Replace this use of System.out or System.err by a logger.(–êÅú
+O	java:S106‰"9Replace this use of System.out or System.err by a logger.(ÎÔ“
+O	java:S106­"9Replace this use of System.out or System.err by a logger.(øñ÷Á
+F
+java:S1172°"*Remove this unused method parameter "dst".(¢…¼ÿÿÿÿÿ
+B
+java:S1481Ù"&Remove this unused "n" local variable.(û Ä¹ùÿÿÿÿ

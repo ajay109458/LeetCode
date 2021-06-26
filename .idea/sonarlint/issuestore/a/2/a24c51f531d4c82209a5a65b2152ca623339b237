@@ -1,0 +1,36 @@
+
+v
+java:S4165‘"_Remove this useless assignment; "p" already holds the assigned value along all execution paths.(ÊÃŞº
+P
+java:S3516à"9Refactor this method to not always return the same value.(¦˜Ç‰
+Q
+java:S3518}";Make sure "len" can't be zero before doing this modulation.(¸˜‹Š
+s	java:S135="YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+^
+java:S2259‹"BA "NullPointerException" could be thrown; "prev" is nullable here.(è¯Êèúÿÿÿÿ
+[
+java:S2259ô"?A "NullPointerException" could be thrown; "p" is nullable here.(ÂİÅ¥üÿÿÿÿ
+V
+java:S2259—"?A "NullPointerException" could be thrown; "r" is nullable here.(±ª»
+^
+java:S2259 "BA "NullPointerException" could be thrown; "dupE" is nullable here.(‹üË¥üÿÿÿÿ
+V
+java:S2259›"?A "NullPointerException" could be thrown; "r" is nullable here.(›µ¤¥
+[
+java:S2259ı"?A "NullPointerException" could be thrown; "p" is nullable here.(ª¬ş£ùÿÿÿÿ
+Z
+java:S2583’"DChange this condition so that it does not always evaluate to "false"(–úùJ
+`
+java:S2583é"DChange this condition so that it does not always evaluate to "false"(÷¥Òµüÿÿÿÿ
+N
+java:S2589ó"7Remove this expression which always evaluates to "true"(€éø¡
+G
+java:S1128",Remove this unused import 'java.util.Stack'.(ŞÈ†üúÿÿÿÿ
+N	java:S106b"9Replace this use of System.out or System.err by a logger.(ÃªˆÖ
+S	java:S106f"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+n
+java:S3776Š"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(°¸¡üÿÿÿÿ
+2
+java:S3626Ó"Remove this redundant jump.(ûÁİ…
+i
+java:S3776Á"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(‘Û½Ë

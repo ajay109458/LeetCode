@@ -23,35 +23,165 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39b547ac-96fa-44e2-a644-59a82214f914" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Concurrency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day10Backtracking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day14.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day16.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day20.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day21.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day23.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day24.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day25.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day8Greedy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/Day9Recursion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sdesheet/DynamicProgramming.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/sdesheet/Day10BacktrackingTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/sdesheet/RecursionDay9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/02596095e4fbf54804cba6811a63261ad056a18d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/06c7ab3f8a2888bad852acb1899d2f24792c3564" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/07235a324bc03debde163e84fd1e53abd30e339b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/09f7ef0d2a61c97c45caed2647fcb4ba4972ee64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0c91812ee9fb232d3a9a7f6a95c791ddccef82c8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d2682ebf7a688833157bbcacbb7775ded7e3968" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/1274bb53fd3331ba63374596734dd96a290e1494" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/b/1b73811fb8ecda164e05a508632bf4d099129f70" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f329703dd75679aca7c22a9f1dfdfce16e2a50e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1fdb42da203db190b13e16f827a48376c94fad15" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/2167cc93050846638ebd62fa0ea76c4bc16f3e74" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29d9001b6f8242f47ce31703399b4c97591f132b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f024fcf8a90218d0ac3d65810b9bd6d96f15b3c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/3063aeabfdb4e34b10d614327f9061663fec1873" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d43423a35f22b25817424c1ba40d59a19a2cde0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d86961308b5174c798dfbe84d3c327225718460" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/40a2caa933ce20e551f94ee9400b86e951ddc190" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/47c31724617848b101975017372eec1121511e7b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/495fe33dc955d4811c0f796b77eeaf3ee355a5a5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/49e62c5b73f8970da2328295665141917ba21042" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/e/4e09809607ec18c9c4b6e05531b1ba1223f64b16" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58926bb0347c8c412186d2ac2818f9ca2a1f31b2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5aee8f1799c6e71f4ca060b61031f6c321d04b28" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d265b2f1a8880bebe6cfd00363c07d1a2658406" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/6590c0d1dd4514df3d79190280b8cd402666b9b0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/66e2b433d373e81c4215e03c1fc32cf62eead04f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69bd0a6f987241b2c3cfaf49c71d5be030ed3a91" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6bfbc15cb186eb3146c3e68b05370580599778f1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6c0d9aac5cb252e08d03df5b27a560b71f547d29" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6c5ac234644a7af8540489b633beeed91bb7a95e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/71eaed7d6cd0e4bad71a2ba7173efcfb7af50130" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89340ee50567b05b488a3ade7dc32fdb04d697f3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8bd5f24117cc2881110283bd9ab27fb004e90d04" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/92aac1d4c6ee23c4f52ccc52db4d2fa7025661db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/971f4fb53587ca76024ac4c9fbcc5d0d9a1c5ebc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/d/9daf77f379f318bb77cb6d6cb0061abf1d57944f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a24c51f531d4c82209a5a65b2152ca623339b237" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a35b95af910d85fca2775b66eeffd6f3027b6c89" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/b/ab21769914e166458a2f8cd0f4b110ad69c02001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/afba1bf93238aac7711cac673106c462d31f3e7b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/4/b4dd3b1e7b87ee4928c5ebe9d9eb53c00bc5131f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6a23109eb1885d4600da2ecc0ec32bbbb0680a8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bd610ab3b147f400145d6d1b6ce8c7d9ed555189" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/beae8aedbb40dcc066d6c9b88043d21f7ffa8a02" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/bee711cd1572d20da081438c874811e0f6cf3e0c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/f/bfde38faff8d65883061ba1f1fda36c3e8ecdcc0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c68c18e90bc67b20b40007ad043720b44d46a7ff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c81c3abd53d1b15b2ded8bdebce3676da78314f1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d751efbfc0b68204d168d4be31dfefae546191de" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da8ec579cc016ced84068352de47d8f699c9d62a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/dacb25bae05c3dcb546bac7a87f36f944683a8c6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df32dc541cf5b6cc6c00891d14036e6d9fe53729" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/ea7a5409fe113a7b14bec6575ad90a16016bd2cd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f5dc42ccb1afc312258adad17294ada1e193c76b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc71dc48fedf2469b184cac502fe7b5a3730ce78" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algoexpert/EasyProblems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/challenges/JSONChallenge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/challenges/JuneChallenge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/challenges/MayChallenge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/companies/DPProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/companies/Design.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/companies/GraphProblems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/companies/InterviewProblems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/companies/Recursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/companies/ThreadProblems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/companies/TreeProblems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grokking/BFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grokking/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grokking/BitwiseXor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grokking/DFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grokking/MergeKIntervals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grokking/SlidingWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grokking/SubsetProblems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grokking/TopKPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grokking/TopologicalSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grokking/TwoHeapPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/grokking/TwoPointer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interview/AmazonInterview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nickwhite/NickWhiteProblems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prepcoding/BSTProblems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prepcoding/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prepcoding/DynamicProgramming.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prepcoding/DynamicProgramming2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prepcoding/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prepcoding/GraphProblems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prepcoding/HashMapProblems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prepcoding/HeapProblems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prepcoding/Recursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prepcoding/Recursion2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prepcoding/RecursionBasics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prepcoding/RecursionBasics1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prepcoding/StackQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sdesheet/Parantheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solid/DependencyInjectionDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solid/InterfaceSegregationPrincipleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solid/LiskovSubstitutionPrinciple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solid/OpenClosedPrinciple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solid/SingleResponsibiltyDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solid/SolidPrinciples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/TreeNodeN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/companies/ArrayProblemTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/grokking/BinarySearchTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/grokking/BitwiseOperatorTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/grokking/SlidingWindowTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/grokking/SubsetTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/grokking/TopKTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/grokking/TopologicalSortTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/grokking/TwoPointerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/pepcoding/DymaicProgrammingTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/pepcoding/GraphTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/pepcoding/RecursionAndBacktrackingTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/pepcoding/RecursionBasicTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/pepcoding/StackAndQueueTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LeetCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/array/ArrayHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/ArrayHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/HeapProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/HeapProblems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/GraphProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/GraphProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/DPProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/DPProblems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hash/HashHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash/HashHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkedlist/LinkedListHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedlist/LinkedListHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sdesheet/Day1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sdesheet/Day1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sdesheet/Day11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sdesheet/Day11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sdesheet/Day14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sdesheet/Day14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sdesheet/Day2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sdesheet/Day2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sdesheet/Day21.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sdesheet/Day21.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sdesheet/Day25.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sdesheet/Day25.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sdesheet/DynamicProgramming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sdesheet/DynamicProgramming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stack/StackHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack/StackHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/string/StringProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/StringProblems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/TrieDataStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/TrieDataStructure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/graph/GraphProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/graph/GraphProblem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/TreeProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/TreeProblems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/array/ArrayHelper$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/array/ArrayHelper$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/array/ArrayHelper$MRUQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/array/ArrayHelper$MRUQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/array/ArrayHelper$MovePair.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/array/ArrayHelper$MovePair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/array/ArrayHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/array/ArrayHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/array/HeapProblems.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/array/HeapProblems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dp/DPProblems.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dp/DPProblems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hash/HashHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hash/HashHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/linkedlist/LinkedListHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/linkedlist/LinkedListHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sdesheet/Day1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sdesheet/Day1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sdesheet/Day10Backtracking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sdesheet/Day10Backtracking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sdesheet/Day2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sdesheet/Day2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sdesheet/Day8Greedy$Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sdesheet/Day8Greedy$Job.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sdesheet/Day8Greedy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sdesheet/Day8Greedy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stack/StackHelper$MyQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/StackHelper$MyQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stack/StackHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stack/StackHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/string/StringProblems.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/string/StringProblems.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tree/TrieDataStructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/TrieDataStructure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tree/TreeProblems.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tree/TreeProblems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/arraytests/ArrayTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/arraytests/ArrayTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/arraytests/ArrayTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/arraytests/ArrayTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +214,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -99,7 +230,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day10BacktrackingTests.wordBreak">
+  <component name="RunManager" selected="JUnit.ArrayTests.removeKDigits">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -111,80 +242,80 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day10BacktrackingTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayTests.removeKDigits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sdesheet.*" />
+          <option name="PATTERN" value="arraytests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sdesheet" />
-      <option name="MAIN_CLASS_NAME" value="sdesheet.Day10BacktrackingTests" />
+      <option name="PACKAGE_NAME" value="arraytests" />
+      <option name="MAIN_CLASS_NAME" value="arraytests.ArrayTests" />
+      <option name="METHOD_NAME" value="removeKDigits" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SubsetTests$GenerateAllSubsets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="grokking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="grokking" />
+      <option name="MAIN_CLASS_NAME" value="grokking.SubsetTests$GenerateAllSubsets" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day10BacktrackingTests.allPermutation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SubsetTests$GenerateAllSubsets.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sdesheet.*" />
+          <option name="PATTERN" value="grokking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sdesheet" />
-      <option name="MAIN_CLASS_NAME" value="sdesheet.Day10BacktrackingTests" />
-      <option name="METHOD_NAME" value="allPermutation" />
+      <option name="PACKAGE_NAME" value="grokking" />
+      <option name="MAIN_CLASS_NAME" value="grokking.SubsetTests$GenerateAllSubsets" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day10BacktrackingTests.nQueenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SubsetTests$GenerateAllSubsets.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sdesheet.*" />
+          <option name="PATTERN" value="grokking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sdesheet" />
-      <option name="MAIN_CLASS_NAME" value="sdesheet.Day10BacktrackingTests" />
-      <option name="METHOD_NAME" value="nQueenTest" />
+      <option name="PACKAGE_NAME" value="grokking" />
+      <option name="MAIN_CLASS_NAME" value="grokking.SubsetTests$GenerateAllSubsets" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day10BacktrackingTests.wordBreak" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SubsetTests$PrintSubsets.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sdesheet.*" />
+          <option name="PATTERN" value="grokking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sdesheet" />
-      <option name="MAIN_CLASS_NAME" value="sdesheet.Day10BacktrackingTests" />
-      <option name="METHOD_NAME" value="wordBreak" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecursionDay9.printAllSubSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sdesheet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sdesheet" />
-      <option name="MAIN_CLASS_NAME" value="sdesheet.RecursionDay9" />
-      <option name="METHOD_NAME" value="printAllSubSet" />
+      <option name="PACKAGE_NAME" value="grokking" />
+      <option name="MAIN_CLASS_NAME" value="grokking.SubsetTests$PrintSubsets" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -192,11 +323,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day10BacktrackingTests.wordBreak" />
-        <item itemvalue="JUnit.Day10BacktrackingTests.nQueenTest" />
-        <item itemvalue="JUnit.Day10BacktrackingTests.allPermutation" />
-        <item itemvalue="JUnit.Day10BacktrackingTests" />
-        <item itemvalue="JUnit.RecursionDay9.printAllSubSet" />
+        <item itemvalue="JUnit.ArrayTests.removeKDigits" />
+        <item itemvalue="JUnit.SubsetTests$GenerateAllSubsets" />
+        <item itemvalue="JUnit.SubsetTests$GenerateAllSubsets.test2" />
+        <item itemvalue="JUnit.SubsetTests$GenerateAllSubsets.test1" />
+        <item itemvalue="JUnit.SubsetTests$PrintSubsets.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -288,6 +419,55 @@
       <workItem from="1617099574766" duration="2797000" />
       <workItem from="1617183664056" duration="28094000" />
       <workItem from="1617439461081" duration="19740000" />
+      <workItem from="1618131223717" duration="3273000" />
+      <workItem from="1618323991133" duration="13579000" />
+      <workItem from="1618584901573" duration="3383000" />
+      <workItem from="1618652672311" duration="7228000" />
+      <workItem from="1618848106662" duration="4188000" />
+      <workItem from="1618929883671" duration="2114000" />
+      <workItem from="1619015121060" duration="7133000" />
+      <workItem from="1619105619632" duration="6745000" />
+      <workItem from="1619189976128" duration="7344000" />
+      <workItem from="1619198827519" duration="27388000" />
+      <workItem from="1619358042058" duration="2872000" />
+      <workItem from="1619442613923" duration="5048000" />
+      <workItem from="1619457648046" duration="800000" />
+      <workItem from="1619495823252" duration="573000" />
+      <workItem from="1619527190762" duration="4998000" />
+      <workItem from="1619600942921" duration="3674000" />
+      <workItem from="1619612740868" duration="18663000" />
+      <workItem from="1619684711951" duration="409000" />
+      <workItem from="1619706002089" duration="16675000" />
+      <workItem from="1620400143230" duration="1337000" />
+      <workItem from="1620443948890" duration="554000" />
+      <workItem from="1620534067612" duration="295000" />
+      <workItem from="1620742868432" duration="247000" />
+      <workItem from="1620878009122" duration="2203000" />
+      <workItem from="1620906959657" duration="22363000" />
+      <workItem from="1621337829644" duration="252000" />
+      <workItem from="1621752070417" duration="1630000" />
+      <workItem from="1621911806567" duration="3016000" />
+      <workItem from="1622000452545" duration="2977000" />
+      <workItem from="1622085660188" duration="5809000" />
+      <workItem from="1622341772037" duration="5597000" />
+      <workItem from="1622689872571" duration="3867000" />
+      <workItem from="1622706271472" duration="244000" />
+      <workItem from="1622774373622" duration="7672000" />
+      <workItem from="1622815588808" duration="24626000" />
+      <workItem from="1623485633986" duration="3743000" />
+      <workItem from="1623666119903" duration="228000" />
+      <workItem from="1623749841185" duration="11000" />
+      <workItem from="1623991641395" duration="857000" />
+      <workItem from="1624004385079" duration="246000" />
+      <workItem from="1624029278180" duration="42899000" />
+      <workItem from="1624261635447" duration="1748000" />
+      <workItem from="1624278955940" duration="6476000" />
+      <workItem from="1624329362943" duration="7262000" />
+      <workItem from="1624345058672" duration="17027000" />
+      <workItem from="1624444970743" duration="9196000" />
+      <workItem from="1624518308557" duration="7140000" />
+      <workItem from="1624533018513" duration="2195000" />
+      <workItem from="1624587476816" duration="2738000" />
     </task>
     <servers />
   </component>
@@ -307,179 +487,215 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2454" y="264" key="#com.intellij.ide.util.MemberChooser" timestamp="1617610794332">
+    <state x="2416" y="25" key="#Auto_Import" timestamp="1618413266164">
       <screen x="1680" y="25" width="1920" height="1055" />
     </state>
-    <state x="2454" y="264" key="#com.intellij.ide.util.MemberChooser/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1617610794332" />
-    <state x="2321" y="481" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1615032391458">
-      <screen x="1680" y="25" width="1920" height="1055" />
+    <state x="2416" y="25" key="#Auto_Import/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1618413266164" />
+    <state x="1382" y="125" width="1400" height="632" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1623042070828">
+      <screen x="1280" y="25" width="1600" height="875" />
     </state>
-    <state x="2321" y="481" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/1680.25.1920.1055/0.25.1680.976@1680.25.1920.1055" timestamp="1615032391458" />
-    <state x="2225" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617442211975">
-      <screen x="1680" y="25" width="1920" height="1055" />
+    <state x="1380" y="120" width="1400" height="601" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1280.25.1600.832/0.25.1280.775@1280.25.1600.832" timestamp="1622975424459" />
+    <state x="1382" y="125" width="1400" height="632" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1280.25.1600.875/0.25.1280.732@1280.25.1600.875" timestamp="1623042070828" />
+    <state x="1380" y="125" width="1400" height="632" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1280.25.1600.875/0.25.1280.775@1280.25.1600.875" timestamp="1622779753885" />
+    <state x="1925" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1624164527615">
+      <screen x="1280" y="25" width="1600" height="875" />
     </state>
+    <state x="1925" y="223" key="#com.intellij.ide.util.MemberChooser/1280.25.1600.875/0.25.1280.726@1280.25.1600.875" timestamp="1620401430152" />
+    <state x="1925" y="223" key="#com.intellij.ide.util.MemberChooser/1280.25.1600.875/0.25.1280.731@1280.25.1600.875" timestamp="1624164527615" />
+    <state x="1925" y="223" key="#com.intellij.ide.util.MemberChooser/1280.25.1600.875/0.25.1280.734@1280.25.1600.875" timestamp="1622001088559" />
+    <state x="1925" y="223" key="#com.intellij.ide.util.MemberChooser/1280.25.1600.875/0.25.1280.736@1280.25.1600.875" timestamp="1621769280122" />
+    <state x="2454" y="264" key="#com.intellij.ide.util.MemberChooser/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1618415327368" />
+    <state x="1734" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619706047440">
+      <screen x="1280" y="25" width="1600" height="875" />
+    </state>
+    <state x="1734" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1280.25.1600.875/0.25.1280.731@1280.25.1600.875" timestamp="1619706047440" />
+    <state x="409" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1440.25.1600.875/0.25.1440.830@0.25.1440.830" timestamp="1619196843261" />
     <state x="2225" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1617442211975" />
-    <state width="525" height="468" key="DebuggerActiveHint" timestamp="1615178037274">
-      <screen x="1680" y="25" width="1920" height="1055" />
+    <state width="444" height="466" key="DebuggerActiveHint" timestamp="1624166880894">
+      <screen x="1280" y="25" width="1600" height="829" />
     </state>
-    <state width="524" height="467" key="DebuggerActiveHint/1680.25.1920.1055/0.25.1680.964@1680.25.1920.1055" timestamp="1609643057084" />
-    <state width="525" height="468" key="DebuggerActiveHint/1680.25.1920.1055/0.25.1680.966@1680.25.1920.1055" timestamp="1612189635408" />
-    <state width="459" height="431" key="DebuggerActiveHint/1680.25.1920.1055/0.25.1680.973@0.25.1680.973" timestamp="1611844606308" />
-    <state width="525" height="468" key="DebuggerActiveHint/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1615178037274" />
-    <state width="525" height="468" key="DebuggerActiveHint/1680.25.1920.1055/0.25.1680.976@1680.25.1920.1055" timestamp="1614481852653" />
-    <state width="939" height="334" key="GridCell.Tab.0.bottom" timestamp="1617438685083">
-      <screen x="1680" y="25" width="1920" height="1055" />
+    <state width="444" height="466" key="DebuggerActiveHint/1280.25.1600.829/0.25.1280.775@1280.25.1600.829" timestamp="1624166880894" />
+    <state width="1558" height="255" key="GridCell.Tab.0.bottom" timestamp="1624431437783">
+      <screen x="1280" y="25" width="1600" height="875" />
     </state>
+    <state width="1238" height="271" key="GridCell.Tab.0.bottom/0.25.1280.732@0.25.1280.732" timestamp="1623490812848" />
+    <state width="779" height="168" key="GridCell.Tab.0.bottom/1280.25.1600.827/0.25.1280.775@1280.25.1600.827" timestamp="1619336472650" />
+    <state width="1558" height="273" key="GridCell.Tab.0.bottom/1280.25.1600.829/0.25.1280.775@1280.25.1600.829" timestamp="1624339342744" />
+    <state width="1558" height="319" key="GridCell.Tab.0.bottom/1280.25.1600.832/0.25.1280.775@1280.25.1600.832" timestamp="1623041656925" />
+    <state width="1558" height="255" key="GridCell.Tab.0.bottom/1280.25.1600.875/0.25.1280.729@1280.25.1600.875" timestamp="1624431437783" />
+    <state width="1558" height="258" key="GridCell.Tab.0.bottom/1280.25.1600.875/0.25.1280.730@1280.25.1600.875" timestamp="1624101847396" />
+    <state width="1558" height="257" key="GridCell.Tab.0.bottom/1280.25.1600.875/0.25.1280.731@1280.25.1600.875" timestamp="1624190849767" />
+    <state width="1558" height="262" key="GridCell.Tab.0.bottom/1280.25.1600.875/0.25.1280.732@1280.25.1600.875" timestamp="1624252997042" />
+    <state width="1558" height="280" key="GridCell.Tab.0.bottom/1280.25.1600.875/0.25.1280.733@1280.25.1600.875" timestamp="1624261760458" />
+    <state width="619" height="157" key="GridCell.Tab.0.bottom/1280.25.1600.875/0.25.1280.734@0.25.1280.734" timestamp="1618586946984" />
+    <state width="1558" height="168" key="GridCell.Tab.0.bottom/1280.25.1600.875/0.25.1280.775@1280.25.1600.875" timestamp="1622781809636" />
+    <state width="619" height="157" key="GridCell.Tab.0.bottom/1280.25.1920.1055/0.25.1280.734@0.25.1280.734" timestamp="1618586510389" />
+    <state width="779" height="157" key="GridCell.Tab.0.bottom/1440.25.1600.826/0.25.1440.875@1440.25.1600.826" timestamp="1619109439311" />
+    <state width="779" height="157" key="GridCell.Tab.0.bottom/1440.25.1600.827/0.25.1440.875@1440.25.1600.827" timestamp="1619155231309" />
+    <state width="779" height="168" key="GridCell.Tab.0.bottom/1440.25.1600.875/0.25.1440.829@1440.25.1600.875" timestamp="1619357870447" />
+    <state width="699" height="168" key="GridCell.Tab.0.bottom/1440.25.1600.875/0.25.1440.830@0.25.1440.830" timestamp="1619275598840" />
     <state width="939" height="254" key="GridCell.Tab.0.bottom/1680.25.1920.1005/0.25.1680.1025@1680.25.1920.1005" timestamp="1616756593383" />
-    <state width="1878" height="327" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.25.1680.960@1680.25.1920.1055" timestamp="1609650796633" />
-    <state width="1878" height="326" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.25.1680.962@1680.25.1920.1055" timestamp="1610518891350" />
-    <state width="1878" height="303" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.25.1680.964@1680.25.1920.1055" timestamp="1610276882510" />
-    <state width="1878" height="216" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.25.1680.966@1680.25.1920.1055" timestamp="1612241736709" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.25.1680.967@1680.25.1920.1055" timestamp="1614001503442" />
-    <state width="1878" height="287" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.25.1680.968@1680.25.1920.1055" timestamp="1614066996395" />
-    <state width="1878" height="303" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.25.1680.971@1680.25.1920.1055" timestamp="1612067233450" />
-    <state width="1638" height="210" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.25.1680.973@0.25.1680.973" timestamp="1611847176083" />
-    <state width="939" height="334" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1617438685083" />
-    <state width="1878" height="354" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.25.1680.976@1680.25.1920.1055" timestamp="1615098067121" />
-    <state width="1878" height="270" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.25.1680.977@1680.25.1920.1055" timestamp="1615005467264" />
-    <state width="1638" height="407" key="GridCell.Tab.0.bottom/1680.25.1920.994/0.25.1680.1025@0.25.1680.1025" timestamp="1613282913911" />
-    <state width="1638" height="407" key="GridCell.Tab.0.bottom/1680.25.1920.995/0.25.1680.1025@0.25.1680.1025" timestamp="1613213882212" />
-    <state width="939" height="334" key="GridCell.Tab.0.center" timestamp="1617438685082">
-      <screen x="1680" y="25" width="1920" height="1055" />
+    <state width="939" height="253" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1618466032845" />
+    <state width="1558" height="255" key="GridCell.Tab.0.center" timestamp="1624431437782">
+      <screen x="1280" y="25" width="1600" height="875" />
     </state>
+    <state width="1238" height="271" key="GridCell.Tab.0.center/0.25.1280.732@0.25.1280.732" timestamp="1623490812847" />
+    <state width="779" height="168" key="GridCell.Tab.0.center/1280.25.1600.827/0.25.1280.775@1280.25.1600.827" timestamp="1619336472648" />
+    <state width="1558" height="273" key="GridCell.Tab.0.center/1280.25.1600.829/0.25.1280.775@1280.25.1600.829" timestamp="1624339342744" />
+    <state width="1558" height="319" key="GridCell.Tab.0.center/1280.25.1600.832/0.25.1280.775@1280.25.1600.832" timestamp="1623041656924" />
+    <state width="1558" height="255" key="GridCell.Tab.0.center/1280.25.1600.875/0.25.1280.729@1280.25.1600.875" timestamp="1624431437782" />
+    <state width="1558" height="258" key="GridCell.Tab.0.center/1280.25.1600.875/0.25.1280.730@1280.25.1600.875" timestamp="1624101847395" />
+    <state width="1558" height="257" key="GridCell.Tab.0.center/1280.25.1600.875/0.25.1280.731@1280.25.1600.875" timestamp="1624190849766" />
+    <state width="1558" height="262" key="GridCell.Tab.0.center/1280.25.1600.875/0.25.1280.732@1280.25.1600.875" timestamp="1624252997041" />
+    <state width="1558" height="280" key="GridCell.Tab.0.center/1280.25.1600.875/0.25.1280.733@1280.25.1600.875" timestamp="1624261760457" />
+    <state width="619" height="157" key="GridCell.Tab.0.center/1280.25.1600.875/0.25.1280.734@0.25.1280.734" timestamp="1618586946983" />
+    <state width="1558" height="168" key="GridCell.Tab.0.center/1280.25.1600.875/0.25.1280.775@1280.25.1600.875" timestamp="1622781809635" />
+    <state width="619" height="157" key="GridCell.Tab.0.center/1280.25.1920.1055/0.25.1280.734@0.25.1280.734" timestamp="1618586510388" />
+    <state width="779" height="157" key="GridCell.Tab.0.center/1440.25.1600.826/0.25.1440.875@1440.25.1600.826" timestamp="1619109439309" />
+    <state width="779" height="157" key="GridCell.Tab.0.center/1440.25.1600.827/0.25.1440.875@1440.25.1600.827" timestamp="1619155231308" />
+    <state width="779" height="168" key="GridCell.Tab.0.center/1440.25.1600.875/0.25.1440.829@1440.25.1600.875" timestamp="1619357870446" />
+    <state width="699" height="168" key="GridCell.Tab.0.center/1440.25.1600.875/0.25.1440.830@0.25.1440.830" timestamp="1619275598839" />
     <state width="939" height="254" key="GridCell.Tab.0.center/1680.25.1920.1005/0.25.1680.1025@1680.25.1920.1005" timestamp="1616756593382" />
-    <state width="1878" height="327" key="GridCell.Tab.0.center/1680.25.1920.1055/0.25.1680.960@1680.25.1920.1055" timestamp="1609650796632" />
-    <state width="1878" height="326" key="GridCell.Tab.0.center/1680.25.1920.1055/0.25.1680.962@1680.25.1920.1055" timestamp="1610518891350" />
-    <state width="1878" height="303" key="GridCell.Tab.0.center/1680.25.1920.1055/0.25.1680.964@1680.25.1920.1055" timestamp="1610276882510" />
-    <state width="1878" height="216" key="GridCell.Tab.0.center/1680.25.1920.1055/0.25.1680.966@1680.25.1920.1055" timestamp="1612241736708" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center/1680.25.1920.1055/0.25.1680.967@1680.25.1920.1055" timestamp="1614001503441" />
-    <state width="1878" height="287" key="GridCell.Tab.0.center/1680.25.1920.1055/0.25.1680.968@1680.25.1920.1055" timestamp="1614066996394" />
-    <state width="1878" height="303" key="GridCell.Tab.0.center/1680.25.1920.1055/0.25.1680.971@1680.25.1920.1055" timestamp="1612067233450" />
-    <state width="1638" height="210" key="GridCell.Tab.0.center/1680.25.1920.1055/0.25.1680.973@0.25.1680.973" timestamp="1611847176082" />
-    <state width="939" height="334" key="GridCell.Tab.0.center/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1617438685082" />
-    <state width="1878" height="354" key="GridCell.Tab.0.center/1680.25.1920.1055/0.25.1680.976@1680.25.1920.1055" timestamp="1615098067120" />
-    <state width="1878" height="270" key="GridCell.Tab.0.center/1680.25.1920.1055/0.25.1680.977@1680.25.1920.1055" timestamp="1615005467263" />
-    <state width="1638" height="407" key="GridCell.Tab.0.center/1680.25.1920.994/0.25.1680.1025@0.25.1680.1025" timestamp="1613282913911" />
-    <state width="1638" height="407" key="GridCell.Tab.0.center/1680.25.1920.995/0.25.1680.1025@0.25.1680.1025" timestamp="1613213882211" />
-    <state width="939" height="334" key="GridCell.Tab.0.left" timestamp="1617438685082">
-      <screen x="1680" y="25" width="1920" height="1055" />
+    <state width="939" height="253" key="GridCell.Tab.0.center/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1618466032843" />
+    <state width="1558" height="255" key="GridCell.Tab.0.left" timestamp="1624431437782">
+      <screen x="1280" y="25" width="1600" height="875" />
     </state>
+    <state width="1238" height="271" key="GridCell.Tab.0.left/0.25.1280.732@0.25.1280.732" timestamp="1623490812846" />
+    <state width="779" height="168" key="GridCell.Tab.0.left/1280.25.1600.827/0.25.1280.775@1280.25.1600.827" timestamp="1619336472648" />
+    <state width="1558" height="273" key="GridCell.Tab.0.left/1280.25.1600.829/0.25.1280.775@1280.25.1600.829" timestamp="1624339342744" />
+    <state width="1558" height="319" key="GridCell.Tab.0.left/1280.25.1600.832/0.25.1280.775@1280.25.1600.832" timestamp="1623041656923" />
+    <state width="1558" height="255" key="GridCell.Tab.0.left/1280.25.1600.875/0.25.1280.729@1280.25.1600.875" timestamp="1624431437782" />
+    <state width="1558" height="258" key="GridCell.Tab.0.left/1280.25.1600.875/0.25.1280.730@1280.25.1600.875" timestamp="1624101847395" />
+    <state width="1558" height="257" key="GridCell.Tab.0.left/1280.25.1600.875/0.25.1280.731@1280.25.1600.875" timestamp="1624190849765" />
+    <state width="1558" height="262" key="GridCell.Tab.0.left/1280.25.1600.875/0.25.1280.732@1280.25.1600.875" timestamp="1624252997041" />
+    <state width="1558" height="280" key="GridCell.Tab.0.left/1280.25.1600.875/0.25.1280.733@1280.25.1600.875" timestamp="1624261760457" />
+    <state width="619" height="157" key="GridCell.Tab.0.left/1280.25.1600.875/0.25.1280.734@0.25.1280.734" timestamp="1618586946983" />
+    <state width="1558" height="168" key="GridCell.Tab.0.left/1280.25.1600.875/0.25.1280.775@1280.25.1600.875" timestamp="1622781809635" />
+    <state width="619" height="157" key="GridCell.Tab.0.left/1280.25.1920.1055/0.25.1280.734@0.25.1280.734" timestamp="1618586510387" />
+    <state width="779" height="157" key="GridCell.Tab.0.left/1440.25.1600.826/0.25.1440.875@1440.25.1600.826" timestamp="1619109439309" />
+    <state width="779" height="157" key="GridCell.Tab.0.left/1440.25.1600.827/0.25.1440.875@1440.25.1600.827" timestamp="1619155231308" />
+    <state width="779" height="168" key="GridCell.Tab.0.left/1440.25.1600.875/0.25.1440.829@1440.25.1600.875" timestamp="1619357870445" />
+    <state width="699" height="168" key="GridCell.Tab.0.left/1440.25.1600.875/0.25.1440.830@0.25.1440.830" timestamp="1619275598839" />
     <state width="939" height="254" key="GridCell.Tab.0.left/1680.25.1920.1005/0.25.1680.1025@1680.25.1920.1005" timestamp="1616756593381" />
-    <state width="1878" height="327" key="GridCell.Tab.0.left/1680.25.1920.1055/0.25.1680.960@1680.25.1920.1055" timestamp="1609650796632" />
-    <state width="1878" height="326" key="GridCell.Tab.0.left/1680.25.1920.1055/0.25.1680.962@1680.25.1920.1055" timestamp="1610518891350" />
-    <state width="1878" height="303" key="GridCell.Tab.0.left/1680.25.1920.1055/0.25.1680.964@1680.25.1920.1055" timestamp="1610276882509" />
-    <state width="1878" height="216" key="GridCell.Tab.0.left/1680.25.1920.1055/0.25.1680.966@1680.25.1920.1055" timestamp="1612241736708" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left/1680.25.1920.1055/0.25.1680.967@1680.25.1920.1055" timestamp="1614001503440" />
-    <state width="1878" height="287" key="GridCell.Tab.0.left/1680.25.1920.1055/0.25.1680.968@1680.25.1920.1055" timestamp="1614066996394" />
-    <state width="1878" height="303" key="GridCell.Tab.0.left/1680.25.1920.1055/0.25.1680.971@1680.25.1920.1055" timestamp="1612067233449" />
-    <state width="1638" height="210" key="GridCell.Tab.0.left/1680.25.1920.1055/0.25.1680.973@0.25.1680.973" timestamp="1611847176082" />
-    <state width="939" height="334" key="GridCell.Tab.0.left/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1617438685082" />
-    <state width="1878" height="354" key="GridCell.Tab.0.left/1680.25.1920.1055/0.25.1680.976@1680.25.1920.1055" timestamp="1615098067119" />
-    <state width="1878" height="270" key="GridCell.Tab.0.left/1680.25.1920.1055/0.25.1680.977@1680.25.1920.1055" timestamp="1615005467262" />
-    <state width="1638" height="407" key="GridCell.Tab.0.left/1680.25.1920.994/0.25.1680.1025@0.25.1680.1025" timestamp="1613282913911" />
-    <state width="1638" height="407" key="GridCell.Tab.0.left/1680.25.1920.995/0.25.1680.1025@0.25.1680.1025" timestamp="1613213882210" />
-    <state width="939" height="334" key="GridCell.Tab.0.right" timestamp="1617438685083">
-      <screen x="1680" y="25" width="1920" height="1055" />
+    <state width="939" height="253" key="GridCell.Tab.0.left/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1618466032841" />
+    <state width="1558" height="255" key="GridCell.Tab.0.right" timestamp="1624431437782">
+      <screen x="1280" y="25" width="1600" height="875" />
     </state>
+    <state width="1238" height="271" key="GridCell.Tab.0.right/0.25.1280.732@0.25.1280.732" timestamp="1623490812848" />
+    <state width="779" height="168" key="GridCell.Tab.0.right/1280.25.1600.827/0.25.1280.775@1280.25.1600.827" timestamp="1619336472649" />
+    <state width="1558" height="273" key="GridCell.Tab.0.right/1280.25.1600.829/0.25.1280.775@1280.25.1600.829" timestamp="1624339342744" />
+    <state width="1558" height="319" key="GridCell.Tab.0.right/1280.25.1600.832/0.25.1280.775@1280.25.1600.832" timestamp="1623041656924" />
+    <state width="1558" height="255" key="GridCell.Tab.0.right/1280.25.1600.875/0.25.1280.729@1280.25.1600.875" timestamp="1624431437782" />
+    <state width="1558" height="258" key="GridCell.Tab.0.right/1280.25.1600.875/0.25.1280.730@1280.25.1600.875" timestamp="1624101847396" />
+    <state width="1558" height="257" key="GridCell.Tab.0.right/1280.25.1600.875/0.25.1280.731@1280.25.1600.875" timestamp="1624190849767" />
+    <state width="1558" height="262" key="GridCell.Tab.0.right/1280.25.1600.875/0.25.1280.732@1280.25.1600.875" timestamp="1624252997042" />
+    <state width="1558" height="280" key="GridCell.Tab.0.right/1280.25.1600.875/0.25.1280.733@1280.25.1600.875" timestamp="1624261760458" />
+    <state width="619" height="157" key="GridCell.Tab.0.right/1280.25.1600.875/0.25.1280.734@0.25.1280.734" timestamp="1618586946984" />
+    <state width="1558" height="168" key="GridCell.Tab.0.right/1280.25.1600.875/0.25.1280.775@1280.25.1600.875" timestamp="1622781809636" />
+    <state width="619" height="157" key="GridCell.Tab.0.right/1280.25.1920.1055/0.25.1280.734@0.25.1280.734" timestamp="1618586510388" />
+    <state width="779" height="157" key="GridCell.Tab.0.right/1440.25.1600.826/0.25.1440.875@1440.25.1600.826" timestamp="1619109439310" />
+    <state width="779" height="157" key="GridCell.Tab.0.right/1440.25.1600.827/0.25.1440.875@1440.25.1600.827" timestamp="1619155231308" />
+    <state width="779" height="168" key="GridCell.Tab.0.right/1440.25.1600.875/0.25.1440.829@1440.25.1600.875" timestamp="1619357870446" />
+    <state width="699" height="168" key="GridCell.Tab.0.right/1440.25.1600.875/0.25.1440.830@0.25.1440.830" timestamp="1619275598840" />
     <state width="939" height="254" key="GridCell.Tab.0.right/1680.25.1920.1005/0.25.1680.1025@1680.25.1920.1005" timestamp="1616756593382" />
-    <state width="1878" height="327" key="GridCell.Tab.0.right/1680.25.1920.1055/0.25.1680.960@1680.25.1920.1055" timestamp="1609650796632" />
-    <state width="1878" height="326" key="GridCell.Tab.0.right/1680.25.1920.1055/0.25.1680.962@1680.25.1920.1055" timestamp="1610518891350" />
-    <state width="1878" height="303" key="GridCell.Tab.0.right/1680.25.1920.1055/0.25.1680.964@1680.25.1920.1055" timestamp="1610276882510" />
-    <state width="1878" height="216" key="GridCell.Tab.0.right/1680.25.1920.1055/0.25.1680.966@1680.25.1920.1055" timestamp="1612241736709" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right/1680.25.1920.1055/0.25.1680.967@1680.25.1920.1055" timestamp="1614001503442" />
-    <state width="1878" height="287" key="GridCell.Tab.0.right/1680.25.1920.1055/0.25.1680.968@1680.25.1920.1055" timestamp="1614066996395" />
-    <state width="1878" height="303" key="GridCell.Tab.0.right/1680.25.1920.1055/0.25.1680.971@1680.25.1920.1055" timestamp="1612067233450" />
-    <state width="1638" height="210" key="GridCell.Tab.0.right/1680.25.1920.1055/0.25.1680.973@0.25.1680.973" timestamp="1611847176083" />
-    <state width="939" height="334" key="GridCell.Tab.0.right/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1617438685083" />
-    <state width="1878" height="354" key="GridCell.Tab.0.right/1680.25.1920.1055/0.25.1680.976@1680.25.1920.1055" timestamp="1615098067120" />
-    <state width="1878" height="270" key="GridCell.Tab.0.right/1680.25.1920.1055/0.25.1680.977@1680.25.1920.1055" timestamp="1615005467263" />
-    <state width="1638" height="407" key="GridCell.Tab.0.right/1680.25.1920.994/0.25.1680.1025@0.25.1680.1025" timestamp="1613282913911" />
-    <state width="1638" height="407" key="GridCell.Tab.0.right/1680.25.1920.995/0.25.1680.1025@0.25.1680.1025" timestamp="1613213882211" />
-    <state width="939" height="334" key="GridCell.Tab.1.bottom" timestamp="1617438685084">
-      <screen x="1680" y="25" width="1920" height="1055" />
+    <state width="939" height="253" key="GridCell.Tab.0.right/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1618466032844" />
+    <state width="1558" height="261" key="GridCell.Tab.1.bottom" timestamp="1624294118469">
+      <screen x="1280" y="25" width="1600" height="829" />
     </state>
+    <state width="1558" height="261" key="GridCell.Tab.1.bottom/1280.25.1600.829/0.25.1280.775@1280.25.1600.829" timestamp="1624294118469" />
+    <state width="1558" height="264" key="GridCell.Tab.1.bottom/1280.25.1600.832/0.25.1280.775@1280.25.1600.832" timestamp="1622820078695" />
+    <state width="1558" height="262" key="GridCell.Tab.1.bottom/1280.25.1600.875/0.25.1280.731@1280.25.1600.875" timestamp="1624173893796" />
+    <state width="1558" height="262" key="GridCell.Tab.1.bottom/1280.25.1600.875/0.25.1280.732@1280.25.1600.875" timestamp="1624252997044" />
+    <state width="1558" height="280" key="GridCell.Tab.1.bottom/1280.25.1600.875/0.25.1280.733@1280.25.1600.875" timestamp="1624261760461" />
+    <state width="699" height="262" key="GridCell.Tab.1.bottom/1440.25.1600.875/0.25.1440.830@0.25.1440.830" timestamp="1618591719476" />
     <state width="1878" height="334" key="GridCell.Tab.1.bottom/1680.25.1920.1005/0.25.1680.1025@1680.25.1920.1005" timestamp="1616237169270" />
-    <state width="1878" height="327" key="GridCell.Tab.1.bottom/1680.25.1920.1055/0.25.1680.960@1680.25.1920.1055" timestamp="1609650796633" />
-    <state width="1878" height="326" key="GridCell.Tab.1.bottom/1680.25.1920.1055/0.25.1680.962@1680.25.1920.1055" timestamp="1610518891351" />
-    <state width="1878" height="303" key="GridCell.Tab.1.bottom/1680.25.1920.1055/0.25.1680.964@1680.25.1920.1055" timestamp="1610276882511" />
-    <state width="1878" height="186" key="GridCell.Tab.1.bottom/1680.25.1920.1055/0.25.1680.966@1680.25.1920.1055" timestamp="1612241736698" />
-    <state width="1878" height="186" key="GridCell.Tab.1.bottom/1680.25.1920.1055/0.25.1680.967@1680.25.1920.1055" timestamp="1612264533683" />
-    <state width="1878" height="303" key="GridCell.Tab.1.bottom/1680.25.1920.1055/0.25.1680.971@1680.25.1920.1055" timestamp="1612067233451" />
-    <state width="1638" height="295" key="GridCell.Tab.1.bottom/1680.25.1920.1055/0.25.1680.973@0.25.1680.973" timestamp="1611844937634" />
     <state width="939" height="334" key="GridCell.Tab.1.bottom/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1617438685084" />
-    <state width="1878" height="354" key="GridCell.Tab.1.bottom/1680.25.1920.1055/0.25.1680.976@1680.25.1920.1055" timestamp="1615098067594" />
-    <state width="939" height="334" key="GridCell.Tab.1.center" timestamp="1617438685084">
-      <screen x="1680" y="25" width="1920" height="1055" />
+    <state width="1558" height="261" key="GridCell.Tab.1.center" timestamp="1624294118469">
+      <screen x="1280" y="25" width="1600" height="829" />
     </state>
+    <state width="1558" height="261" key="GridCell.Tab.1.center/1280.25.1600.829/0.25.1280.775@1280.25.1600.829" timestamp="1624294118469" />
+    <state width="1558" height="264" key="GridCell.Tab.1.center/1280.25.1600.832/0.25.1280.775@1280.25.1600.832" timestamp="1622820078694" />
+    <state width="1558" height="262" key="GridCell.Tab.1.center/1280.25.1600.875/0.25.1280.731@1280.25.1600.875" timestamp="1624173893795" />
+    <state width="1558" height="262" key="GridCell.Tab.1.center/1280.25.1600.875/0.25.1280.732@1280.25.1600.875" timestamp="1624252997043" />
+    <state width="1558" height="280" key="GridCell.Tab.1.center/1280.25.1600.875/0.25.1280.733@1280.25.1600.875" timestamp="1624261760459" />
+    <state width="699" height="262" key="GridCell.Tab.1.center/1440.25.1600.875/0.25.1440.830@0.25.1440.830" timestamp="1618591719476" />
     <state width="1878" height="334" key="GridCell.Tab.1.center/1680.25.1920.1005/0.25.1680.1025@1680.25.1920.1005" timestamp="1616237169270" />
-    <state width="1878" height="327" key="GridCell.Tab.1.center/1680.25.1920.1055/0.25.1680.960@1680.25.1920.1055" timestamp="1609650796633" />
-    <state width="1878" height="326" key="GridCell.Tab.1.center/1680.25.1920.1055/0.25.1680.962@1680.25.1920.1055" timestamp="1610518891351" />
-    <state width="1878" height="303" key="GridCell.Tab.1.center/1680.25.1920.1055/0.25.1680.964@1680.25.1920.1055" timestamp="1610276882510" />
-    <state width="1878" height="186" key="GridCell.Tab.1.center/1680.25.1920.1055/0.25.1680.966@1680.25.1920.1055" timestamp="1612241736697" />
-    <state width="1878" height="186" key="GridCell.Tab.1.center/1680.25.1920.1055/0.25.1680.967@1680.25.1920.1055" timestamp="1612264533683" />
-    <state width="1878" height="303" key="GridCell.Tab.1.center/1680.25.1920.1055/0.25.1680.971@1680.25.1920.1055" timestamp="1612067233451" />
-    <state width="1638" height="295" key="GridCell.Tab.1.center/1680.25.1920.1055/0.25.1680.973@0.25.1680.973" timestamp="1611844937633" />
     <state width="939" height="334" key="GridCell.Tab.1.center/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1617438685084" />
-    <state width="1878" height="354" key="GridCell.Tab.1.center/1680.25.1920.1055/0.25.1680.976@1680.25.1920.1055" timestamp="1615098067593" />
-    <state width="939" height="334" key="GridCell.Tab.1.left" timestamp="1617438685084">
-      <screen x="1680" y="25" width="1920" height="1055" />
+    <state width="1558" height="261" key="GridCell.Tab.1.left" timestamp="1624294118468">
+      <screen x="1280" y="25" width="1600" height="829" />
     </state>
+    <state width="1558" height="261" key="GridCell.Tab.1.left/1280.25.1600.829/0.25.1280.775@1280.25.1600.829" timestamp="1624294118468" />
+    <state width="1558" height="264" key="GridCell.Tab.1.left/1280.25.1600.832/0.25.1280.775@1280.25.1600.832" timestamp="1622820078693" />
+    <state width="1558" height="262" key="GridCell.Tab.1.left/1280.25.1600.875/0.25.1280.731@1280.25.1600.875" timestamp="1624173893794" />
+    <state width="1558" height="262" key="GridCell.Tab.1.left/1280.25.1600.875/0.25.1280.732@1280.25.1600.875" timestamp="1624252997043" />
+    <state width="1558" height="280" key="GridCell.Tab.1.left/1280.25.1600.875/0.25.1280.733@1280.25.1600.875" timestamp="1624261760459" />
+    <state width="699" height="262" key="GridCell.Tab.1.left/1440.25.1600.875/0.25.1440.830@0.25.1440.830" timestamp="1618591719476" />
     <state width="1878" height="334" key="GridCell.Tab.1.left/1680.25.1920.1005/0.25.1680.1025@1680.25.1920.1005" timestamp="1616237169269" />
-    <state width="1878" height="327" key="GridCell.Tab.1.left/1680.25.1920.1055/0.25.1680.960@1680.25.1920.1055" timestamp="1609650796633" />
-    <state width="1878" height="326" key="GridCell.Tab.1.left/1680.25.1920.1055/0.25.1680.962@1680.25.1920.1055" timestamp="1610518891351" />
-    <state width="1878" height="303" key="GridCell.Tab.1.left/1680.25.1920.1055/0.25.1680.964@1680.25.1920.1055" timestamp="1610276882510" />
-    <state width="1878" height="186" key="GridCell.Tab.1.left/1680.25.1920.1055/0.25.1680.966@1680.25.1920.1055" timestamp="1612241736697" />
-    <state width="1878" height="186" key="GridCell.Tab.1.left/1680.25.1920.1055/0.25.1680.967@1680.25.1920.1055" timestamp="1612264533683" />
-    <state width="1878" height="303" key="GridCell.Tab.1.left/1680.25.1920.1055/0.25.1680.971@1680.25.1920.1055" timestamp="1612067233450" />
-    <state width="1638" height="295" key="GridCell.Tab.1.left/1680.25.1920.1055/0.25.1680.973@0.25.1680.973" timestamp="1611844937633" />
     <state width="939" height="334" key="GridCell.Tab.1.left/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1617438685084" />
-    <state width="1878" height="354" key="GridCell.Tab.1.left/1680.25.1920.1055/0.25.1680.976@1680.25.1920.1055" timestamp="1615098067592" />
-    <state width="939" height="334" key="GridCell.Tab.1.right" timestamp="1617438685084">
-      <screen x="1680" y="25" width="1920" height="1055" />
+    <state width="1558" height="261" key="GridCell.Tab.1.right" timestamp="1624294118469">
+      <screen x="1280" y="25" width="1600" height="829" />
     </state>
+    <state width="1558" height="261" key="GridCell.Tab.1.right/1280.25.1600.829/0.25.1280.775@1280.25.1600.829" timestamp="1624294118469" />
+    <state width="1558" height="264" key="GridCell.Tab.1.right/1280.25.1600.832/0.25.1280.775@1280.25.1600.832" timestamp="1622820078694" />
+    <state width="1558" height="262" key="GridCell.Tab.1.right/1280.25.1600.875/0.25.1280.731@1280.25.1600.875" timestamp="1624173893795" />
+    <state width="1558" height="262" key="GridCell.Tab.1.right/1280.25.1600.875/0.25.1280.732@1280.25.1600.875" timestamp="1624252997043" />
+    <state width="1558" height="280" key="GridCell.Tab.1.right/1280.25.1600.875/0.25.1280.733@1280.25.1600.875" timestamp="1624261760460" />
+    <state width="699" height="262" key="GridCell.Tab.1.right/1440.25.1600.875/0.25.1440.830@0.25.1440.830" timestamp="1618591719476" />
     <state width="1878" height="334" key="GridCell.Tab.1.right/1680.25.1920.1005/0.25.1680.1025@1680.25.1920.1005" timestamp="1616237169270" />
-    <state width="1878" height="327" key="GridCell.Tab.1.right/1680.25.1920.1055/0.25.1680.960@1680.25.1920.1055" timestamp="1609650796633" />
-    <state width="1878" height="326" key="GridCell.Tab.1.right/1680.25.1920.1055/0.25.1680.962@1680.25.1920.1055" timestamp="1610518891351" />
-    <state width="1878" height="303" key="GridCell.Tab.1.right/1680.25.1920.1055/0.25.1680.964@1680.25.1920.1055" timestamp="1610276882511" />
-    <state width="1878" height="186" key="GridCell.Tab.1.right/1680.25.1920.1055/0.25.1680.966@1680.25.1920.1055" timestamp="1612241736698" />
-    <state width="1878" height="186" key="GridCell.Tab.1.right/1680.25.1920.1055/0.25.1680.967@1680.25.1920.1055" timestamp="1612264533683" />
-    <state width="1878" height="303" key="GridCell.Tab.1.right/1680.25.1920.1055/0.25.1680.971@1680.25.1920.1055" timestamp="1612067233451" />
-    <state width="1638" height="295" key="GridCell.Tab.1.right/1680.25.1920.1055/0.25.1680.973@0.25.1680.973" timestamp="1611844937634" />
     <state width="939" height="334" key="GridCell.Tab.1.right/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1617438685084" />
-    <state width="1878" height="354" key="GridCell.Tab.1.right/1680.25.1920.1055/0.25.1680.976@1680.25.1920.1055" timestamp="1615098067593" />
-    <state x="2128" y="101" key="SettingsEditor" timestamp="1612001552798">
-      <screen x="1680" y="25" width="1920" height="1055" />
+    <state x="1855" y="243" width="525" height="437" key="StructurePopup" timestamp="1624507361877">
+      <screen x="1280" y="25" width="1600" height="875" />
     </state>
-    <state x="2128" y="101" key="SettingsEditor/1680.25.1920.1055/0.25.1680.971@1680.25.1920.1055" timestamp="1612001552798" />
-    <state x="2370" y="288" width="600" height="525" key="StructurePopup" timestamp="1617183681895">
-      <screen x="1680" y="25" width="1920" height="1055" />
-    </state>
+    <state x="1855" y="231" width="525" height="412" key="StructurePopup/1280.25.1600.825/0.25.1280.775@1280.25.1600.825" timestamp="1621080474138" />
+    <state x="1855" y="232" width="525" height="414" key="StructurePopup/1280.25.1600.829/0.25.1280.775@1280.25.1600.829" timestamp="1624417498491" />
+    <state x="1855" y="243" width="525" height="436" key="StructurePopup/1280.25.1600.875/0.25.1280.725@1280.25.1600.875" timestamp="1620997935561" />
+    <state x="1855" y="243" width="525" height="436" key="StructurePopup/1280.25.1600.875/0.25.1280.729@1280.25.1600.875" timestamp="1624445276300" />
+    <state x="1855" y="243" width="525" height="437" key="StructurePopup/1280.25.1600.875/0.25.1280.730@1280.25.1600.875" timestamp="1624507361877" />
+    <state x="1855" y="243" width="525" height="437" key="StructurePopup/1280.25.1600.875/0.25.1280.732@1280.25.1600.875" timestamp="1624249487476" />
+    <state x="1855" y="243" width="525" height="437" key="StructurePopup/1280.25.1600.875/0.25.1280.735@1280.25.1600.875" timestamp="1622693804680" />
+    <state x="1855" y="243" width="525" height="437" key="StructurePopup/1280.25.1600.875/0.25.1280.775@1280.25.1600.875" timestamp="1622775721155" />
     <state x="2370" y="276" width="600" height="501" key="StructurePopup/1680.25.1920.1005/0.25.1680.1025@1680.25.1920.1005" timestamp="1616749348791" />
-    <state x="2370" y="288" width="540" height="524" key="StructurePopup/1680.25.1920.1055/0.25.1680.964@1680.25.1920.1055" timestamp="1609642285878" />
-    <state x="604" y="268" width="525" height="484" key="StructurePopup/1680.25.1920.1055/0.25.1680.973@0.25.1680.973" timestamp="1611839677622" />
-    <state x="2370" y="288" width="600" height="525" key="StructurePopup/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1617183681895" />
-    <state x="2370" y="288" width="600" height="525" key="StructurePopup/1680.25.1920.1055/0.25.1680.976@1680.25.1920.1055" timestamp="1614417930616" />
+    <state x="2370" y="288" width="600" height="525" key="StructurePopup/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1618404185717" />
+    <state x="578" y="284" key="extract.method.dialog" timestamp="1618329069440">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="578" y="284" key="extract.method.dialog/1680.25.1920.1005/0.25.1680.1025@0.25.1680.1025" timestamp="1618329069440" />
     <state x="2024" y="212" key="new project wizard" timestamp="1616915048327">
       <screen x="1680" y="25" width="1920" height="1055" />
     </state>
     <state x="2024" y="212" key="new project wizard/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1616915048327" />
-    <state x="2257" y="246" width="768" height="698" key="search.everywhere.popup" timestamp="1617436670645">
-      <screen x="1680" y="25" width="1920" height="1055" />
+    <state x="1781" y="220" key="refactoring.ChangeSignatureDialog" timestamp="1624078260028">
+      <screen x="1280" y="25" width="1600" height="875" />
     </state>
-    <state x="2257" y="236" width="768" height="665" key="search.everywhere.popup/1680.25.1920.1005/0.25.1680.1025@1680.25.1920.1005" timestamp="1617014296674" />
-    <state x="505" y="240" width="672" height="680" key="search.everywhere.popup/1680.25.1920.1055/0.25.1680.1025@0.25.1680.1025" timestamp="1613968480665" />
-    <state x="2257" y="246" width="767" height="697" key="search.everywhere.popup/1680.25.1920.1055/0.25.1680.964@1680.25.1920.1055" timestamp="1609642280071" />
-    <state x="2257" y="246" width="768" height="698" key="search.everywhere.popup/1680.25.1920.1055/0.25.1680.967@1680.25.1920.1055" timestamp="1614000857497" />
-    <state x="2257" y="246" width="768" height="698" key="search.everywhere.popup/1680.25.1920.1055/0.25.1680.971@1680.25.1920.1055" timestamp="1612002519135" />
-    <state x="505" y="229" width="672" height="644" key="search.everywhere.popup/1680.25.1920.1055/0.25.1680.972@0.25.1680.972" timestamp="1613795648239" />
-    <state x="2257" y="246" width="768" height="699" key="search.everywhere.popup/1680.25.1920.1055/0.25.1680.972@1680.25.1920.1055" timestamp="1613567394977" />
-    <state x="505" y="229" width="672" height="643" key="search.everywhere.popup/1680.25.1920.1055/0.25.1680.973@0.25.1680.973" timestamp="1613624327413" />
-    <state x="2257" y="246" width="768" height="698" key="search.everywhere.popup/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1617436670645" />
-    <state x="2257" y="246" width="768" height="698" key="search.everywhere.popup/1680.25.1920.1055/0.25.1680.976@1680.25.1920.1055" timestamp="1615097788059" />
-    <state x="2257" y="246" width="768" height="698" key="search.everywhere.popup/1680.25.1920.1055/0.25.1680.977@1680.25.1920.1055" timestamp="1615003383484" />
-    <state x="505" y="240" width="672" height="679" key="search.everywhere.popup/1680.25.1920.995/0.25.1680.1025@0.25.1680.1025" timestamp="1613269994812" />
-    <state x="505" y="240" width="672" height="680" key="search.everywhere.popup/1680.25.1920.996/0.25.1680.1025@0.25.1680.1025" timestamp="1613812294575" />
-    <state x="505" y="240" width="672" height="680" key="search.everywhere.popup/1680.25.1920.997/0.25.1680.1025@0.25.1680.1025" timestamp="1613815310180" />
+    <state x="1781" y="220" key="refactoring.ChangeSignatureDialog/1280.25.1600.875/0.25.1280.730@1280.25.1600.875" timestamp="1624078260028" />
+    <state x="1745" y="210" key="run.anything.popup" timestamp="1620975277300">
+      <screen x="1280" y="25" width="1600" height="875" />
+    </state>
+    <state x="1745" y="210" key="run.anything.popup/1280.25.1600.875/0.25.1280.725@1280.25.1600.875" timestamp="1620975277300" />
+    <state x="1761" y="208" width="745" height="580" key="search.everywhere.popup" timestamp="1624533259912">
+      <screen x="1280" y="25" width="1600" height="875" />
+    </state>
+    <state x="1761" y="198" width="745" height="547" key="search.everywhere.popup/1280.25.1600.825/0.25.1280.775@1280.25.1600.825" timestamp="1621080647258" />
+    <state x="1761" y="198" width="838" height="551" key="search.everywhere.popup/1280.25.1600.827/0.25.1280.775@1280.25.1600.827" timestamp="1622429536342" />
+    <state x="1761" y="198" width="838" height="551" key="search.everywhere.popup/1280.25.1600.829/0.25.1280.775@1280.25.1600.829" timestamp="1624417492530" />
+    <state x="1761" y="199" width="838" height="554" key="search.everywhere.popup/1280.25.1600.832/0.25.1280.775@1280.25.1600.832" timestamp="1623040585131" />
+    <state x="385" y="177" width="670" height="481" key="search.everywhere.popup/1280.25.1600.875/0.25.1280.725@0.25.1280.725" timestamp="1621081231669" />
+    <state x="1761" y="208" width="745" height="580" key="search.everywhere.popup/1280.25.1600.875/0.25.1280.725@1280.25.1600.875" timestamp="1620997929624" />
+    <state x="1761" y="208" width="745" height="580" key="search.everywhere.popup/1280.25.1600.875/0.25.1280.729@1280.25.1600.875" timestamp="1624533259912" />
+    <state x="1761" y="208" width="745" height="581" key="search.everywhere.popup/1280.25.1600.875/0.25.1280.730@1280.25.1600.875" timestamp="1624507482084" />
+    <state x="1761" y="208" width="745" height="580" key="search.everywhere.popup/1280.25.1600.875/0.25.1280.731@1280.25.1600.875" timestamp="1624189917040" />
+    <state x="1761" y="208" width="838" height="582" key="search.everywhere.popup/1280.25.1600.875/0.25.1280.732@1280.25.1600.875" timestamp="1624251066100" />
+    <state x="1761" y="208" width="838" height="582" key="search.everywhere.popup/1280.25.1600.875/0.25.1280.733@1280.25.1600.875" timestamp="1624261675585" />
+    <state x="1761" y="208" width="838" height="581" key="search.everywhere.popup/1280.25.1600.875/0.25.1280.734@1280.25.1600.875" timestamp="1622002224603" />
+    <state x="1761" y="208" width="838" height="582" key="search.everywhere.popup/1280.25.1600.875/0.25.1280.735@1280.25.1600.875" timestamp="1622693797996" />
+    <state x="1761" y="208" width="838" height="581" key="search.everywhere.popup/1280.25.1600.875/0.25.1280.736@1280.25.1600.875" timestamp="1621923397035" />
+    <state x="1921" y="198" width="745" height="547" key="search.everywhere.popup/1440.25.1600.825/0.25.1440.875@1440.25.1600.825" timestamp="1618929892133" />
+    <state x="1921" y="198" width="745" height="548" key="search.everywhere.popup/1440.25.1600.826/0.25.1440.875@1440.25.1600.826" timestamp="1619109425132" />
+    <state x="1921" y="208" width="745" height="580" key="search.everywhere.popup/1440.25.1600.875/0.25.1440.829@1440.25.1600.875" timestamp="1619582944698" />
+    <state x="433" y="199" width="670" height="550" key="search.everywhere.popup/1440.25.1600.875/0.25.1440.830@0.25.1440.830" timestamp="1619195233928" />
+    <state x="1921" y="208" width="745" height="580" key="search.everywhere.popup/1440.25.1600.875/0.25.1440.830@1440.25.1600.875" timestamp="1618659882755" />
+    <state x="2257" y="236" width="768" height="665" key="search.everywhere.popup/1680.25.1920.1005/0.25.1680.1025@1680.25.1920.1005" timestamp="1618324762869" />
+    <state x="2257" y="246" width="768" height="698" key="search.everywhere.popup/1680.25.1920.1055/0.25.1680.975@1680.25.1920.1055" timestamp="1618416906889" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -501,7 +717,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/ArrayHelper.java</url>
-          <line>126</line>
+          <line>122</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -511,12 +727,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/ArrayHelper.java</url>
-          <line>184</line>
+          <line>180</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/ArrayHelper.java</url>
-          <line>298</line>
+          <line>294</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -541,22 +757,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/tests/arraytests/ArrayTests.java</url>
-          <line>62</line>
+          <line>63</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/ArrayHelper.java</url>
-          <line>1683</line>
+          <line>1716</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/ArrayHelper.java</url>
-          <line>1677</line>
+          <line>1710</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/tests/arraytests/ArrayTests.java</url>
-          <line>76</line>
+          <line>77</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -571,47 +787,47 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/ArrayHelper.java</url>
-          <line>1718</line>
+          <line>1751</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/tests/arraytests/ArrayTests.java</url>
-          <line>96</line>
+          <line>97</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/tests/arraytests/ArrayTests.java</url>
-          <line>102</line>
+          <line>103</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/ArrayHelper.java</url>
-          <line>1902</line>
+          <line>1935</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/tests/arraytests/ArrayTests.java</url>
-          <line>146</line>
+          <line>147</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/ArrayHelper.java</url>
-          <line>1946</line>
+          <line>1979</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/ArrayHelper.java</url>
-          <line>2055</line>
+          <line>2088</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/ArrayHelper.java</url>
-          <line>2235</line>
+          <line>2268</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/ArrayHelper.java</url>
-          <line>2238</line>
+          <line>2271</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -626,7 +842,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/ArrayHelper.java</url>
-          <line>3152</line>
+          <line>3216</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -684,6 +900,71 @@
           <line>16</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tests/pepcoding/DymaicProgrammingTests.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/prepcoding/Graph.java</url>
+          <line>418</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/companies/Recursion.java</url>
+          <line>215</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/prepcoding/RecursionBasics1.java</url>
+          <line>197</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/prepcoding/RecursionBasics1.java</url>
+          <line>204</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/prepcoding/RecursionBasics1.java</url>
+          <line>196</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/grokking/TopKPattern.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/grokking/TopKPattern.java</url>
+          <line>220</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/grokking/TopKPattern.java</url>
+          <line>377</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tests/pepcoding/GraphTests.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/prepcoding/GraphProblems.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/prepcoding/GraphProblems.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/prepcoding/GraphProblems.java</url>
+          <line>226</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -691,5 +972,10 @@
         <watch expression="nums[i]" language="JAVA" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LeetCode$RecursionBasicTests_testAllWords.ic" NAME="RecursionBasicTests.testAllWords Coverage Results" MODIFIED="1619254225165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pepcoding.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -1,0 +1,16 @@
+
+Y
+java:S2259è"BA "NullPointerException" could be thrown; "root" is nullable here.(‡ëù®
+S	java:S106C"9Replace this use of System.out or System.err by a logger.(Èğ¨ëıÿÿÿÿ
+S	java:S106L"9Replace this use of System.out or System.err by a logger.(Èğ¨ëıÿÿÿÿ
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(Èğ¨ëıÿÿÿÿ
+S	java:S106o"9Replace this use of System.out or System.err by a logger.(¤¥ûùÿÿÿÿ
+T	java:S106¤"9Replace this use of System.out or System.err by a logger.(Èğ¨ëıÿÿÿÿ
+T	java:S106²"9Replace this use of System.out or System.err by a logger.(Èğ¨ëıÿÿÿÿ
+M
+java:S1994Ã"6Move the update of "l" into this loop's update clause.(ˆ¢Ïä
+O	java:S106Ö"9Replace this use of System.out or System.err by a logger.(ÍÎÉ 
+i
+java:S1871€"MThis branch's code block is the same as the block for the branch on line 254.(Ç¤“•øÿÿÿÿ
+T	java:S106ÿ"9Replace this use of System.out or System.err by a logger.(Èğ¨ëıÿÿÿÿ
+[	java:S106"9Replace this use of System.out or System.err by a logger.(Èğ¨ëıÿÿÿÿ8ÏÉä ¢/

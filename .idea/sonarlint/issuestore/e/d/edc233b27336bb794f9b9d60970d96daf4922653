@@ -1,0 +1,14 @@
+
+_
+java:S2583"DChange this condition so that it does not always evaluate to "false"(Ö‘ì…þÿÿÿÿ
+J
+java:S1128"4Remove this unused import 'java.lang.reflect.Array'.(‡¡É˜
+f
+java:S1149;"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ŠÈÝà
+f
+java:S1149<"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(Œ¢³µ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(šÉÕó
+h
+java:S37767"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ÚÎÍ÷
+S	java:S106C"9Replace this use of System.out or System.err by a logger.(¤¥ûùÿÿÿÿ

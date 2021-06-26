@@ -1,6 +1,7 @@
 package arraytests;
 
 import array.ArrayHelper;
+import companies.ArrayProblems;
 import hash.HashHelper;
 import linkedlist.LinkedListHelper;
 import linkedlist.ListNode;
@@ -202,5 +203,12 @@ public class ArrayTests {
 		ArrayHelper.selectionSort(arr);
 
 		System.out.println(Arrays.toString(arr));
+	}
+
+	@Test
+	public void removeKDigits() {
+		String number = "14301620";
+		String result = ArrayProblems.removeKDigits(number, 4);
+		System.out.println(result);
 	}
 }

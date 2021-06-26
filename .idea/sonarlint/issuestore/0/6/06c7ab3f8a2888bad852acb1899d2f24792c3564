@@ -1,0 +1,16 @@
+
+g
+java:S1104j"QMake isBST a static final constant or non-public and provide accessors if needed.(‰ßŠÿ
+e
+java:S1104k"OMake max a static final constant or non-public and provide accessors if needed.(¢€ê×
+j
+java:S1104l"OMake min a static final constant or non-public and provide accessors if needed.(Ü—ùßÿÿÿÿÿ
+j
+java:S1104m"OMake ans a static final constant or non-public and provide accessors if needed.(Îµ œÿÿÿÿÿ
+=
+java:S1128"'Remove this unused import 'graph.Node'.(ñ¨«‚
+P
+java:S1118
+":Add a private constructor to hide the implicit public one.(ÆµŠ
+U
+java:S1118y":Add a private constructor to hide the implicit public one.(š§ƒ¼øÿÿÿÿ

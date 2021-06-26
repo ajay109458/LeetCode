@@ -1,0 +1,188 @@
+
+‚
+java:S1319¼"kThe type of the "set" object should be an interface such as "Set" rather than the implementation "HashSet".(£ù©Â
+L
+java:S1444š!"0Make this "public static DIRECTIONS" field final(èœî«üÿÿÿÿ
+F
+java:S3740œ"/Provide the parametrized type for this generic.(“ğÃù
+K
+java:S3740Ö"/Provide the parametrized type for this generic.(¡ˆÿÉûÿÿÿÿ
+F
+java:S3740Ú"/Provide the parametrized type for this generic.(„œ¸…
+K
+java:S3740æ"/Provide the parametrized type for this generic.(ş³°Ûùÿÿÿÿ
+K
+java:S3740ô"/Provide the parametrized type for this generic.(ääº¨şÿÿÿÿ
+K
+java:S3740³"/Provide the parametrized type for this generic.(£§¸øøÿÿÿÿ
+E
+java:S1066ç"/Merge this if statement with the enclosing one.(„’”P
+F
+java:S1066½"/Merge this if statement with the enclosing one.(–¿—™
+K
+java:S1066å "/Merge this if statement with the enclosing one.(Ššõ’ıÿÿÿÿ
+K
+java:S1066ë "/Merge this if statement with the enclosing one.(Ÿ´ª¦ûÿÿÿÿ
+Y
+java:S2184Ó"BCast one of the operands of this division operation to a "double".(÷æîí
+^
+java:S2184æ"BCast one of the operands of this addition operation to a "double".(›¬ğ‡ûÿÿÿÿ
+^
+java:S2184"BCast one of the operands of this division operation to a "double".(«©ÖÌúÿÿÿÿ
+9
+java:S2189å""Correct this loop's end condition.(”ÇÓÍ
+8
+java:S1643ü"Use a StringBuilder instead.(ÛÜëùÿÿÿÿ
+s	java:S127â"XRefactor the code in order to not assign to this loop counter from within the loop body.(à²úØÿÿÿÿÿ
+n	java:S127å"XRefactor the code in order to not assign to this loop counter from within the loop body.(”ÇÓÍ
+o	java:S135¦"YReduce the total number of break and continue statements in this loop to use at most one.(÷éç’
+t	java:S135 "YReduce the total number of break and continue statements in this loop to use at most one.(‰àÀÿÿÿÿÿÿ
+g	java:S117à"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©äãå
+g	java:S117Ä"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËŸÌ
+g	java:S117ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¹·‘
+g	java:S117ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¹·‘
+g	java:S117¾"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ßÃ‘
+g	java:S117¾"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ßÃ‘
+g	java:S117û	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯‰ÿò
+l	java:S117È"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šèçıÿÿÿÿ
+l	java:S117Ş"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ĞÈÿÿÿÿÿ
+g	java:S117ã"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–€Øü
+g	java:S117ã"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–€Øü
+f	java:S117”"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùãær
+f	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì£É4
+g	java:S117ä"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ë¦€
+l	java:S117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üÌ‘²úÿÿÿÿ
+l	java:S117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Œ÷úÿÿÿÿ
+F
+java:S5411Ú "*Use the primitive boolean expression here.(¹ßÅÆûÿÿÿÿ
+A
+java:S5411ä "*Use the primitive boolean expression here.(ŞÕ´ƒ
+A
+java:S5411ê "*Use the primitive boolean expression here.(– Ëı
+D
+java:S1604ë"(Make this anonymous inner class a lambda(¨Æ®Ûøÿÿÿÿ
+i
+java:S1104Ì"MMake x a static final constant or non-public and provide accessors if needed.(±Šõ¶ûÿÿÿÿ
+i
+java:S1104Í"MMake y a static final constant or non-public and provide accessors if needed.(ÔçÛşÿÿÿÿ
+r
+java:S1104š!"VMake DIRECTIONS a static final constant or non-public and provide accessors if needed.(èœî«üÿÿÿÿ
+P
+java:S4973Ë"9Use the "equals" method if value comparison was intended.(ÊÒŒ
+U
+java:S4973” "9Use the "equals" method if value comparison was intended.(£˜ùÿÿÿÿ
+Z
+java:S2583"CChange this condition so that it does not always evaluate to "true"(¹ª´ê
+Z
+java:S2583Ô"DChange this condition so that it does not always evaluate to "false"(¤Úœ
+S
+java:S2589‚"7Remove this expression which always evaluates to "true"(òêˆÙşÿÿÿÿ
+N
+java:S2589½"7Remove this expression which always evaluates to "true"(Â¦›Ö
+N
+java:S2589¸"7Remove this expression which always evaluates to "true"(…å¼‡
+N
+java:S2589Ô"7Remove this expression which always evaluates to "true"(ı¿Ê´
+–
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(³ì¦v
+q
+java:S3008š!"URename this field "DIRECTIONS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èœî«üÿÿÿÿ
+f
+java:S1149l"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(Ó°ß•
+l
+java:S1149ª"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ
+g
+java:S1149•"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(Ó°ß•
+l
+java:S1149æ"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ
+9
+java:S2386š!"Make this member "protected".(èœî«üÿÿÿÿ
+m
+java:S37765"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(“ˆ¥›üÿÿÿÿ
+i
+java:S3776š"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(÷¸¶
+u
+java:S2293¼"YReplace the type specification in this constructor call with the diamond operator ("<>").(½áØÔùÿÿÿÿ
+n
+java:S3776Ù"RRefactor this method to reduce its Cognitive Complexity from 52 to the 15 allowed.(Ç½Ã¢ıÿÿÿÿ
+T	java:S106Œ"9Replace this use of System.out or System.err by a logger.(î¿ƒøÿÿÿÿ
+i
+java:S3776™"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ıŠ¬ß
+X
+java:S1126ï"AReplace this if-then-else statement by a single return statement.(°Øª¥
+N
+java:S1854Î	"7Remove this useless assignment to local variable "max".(²¹âİ
+>
+java:S1125ó	"'Remove the unnecessary boolean literal.(¶´±æ
+X
+java:S1126
+"AReplace this if-then-else statement by a single return statement.(¯İáË
+2
+java:S3626î"Remove this redundant jump.(ûÁİ…
+n
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(èùÕüÿÿÿÿ
+d
+java:S5361Ù"HReplace this call to "replaceAll()" by a call to the "replace()" method.(—ÅÃ±øÿÿÿÿ
+Y
+java:S1612—"=Replace this lambda with method reference 'char.class::cast'.(¿İşğüÿÿÿÿ
+z
+java:S2234è"^Parameters to tripletCheck have the same names but not the same order as the method arguments.(ı¾ùÿÿÿÿ
+T	java:S106Ú"9Replace this use of System.out or System.err by a logger.(¢ó°”úÿÿÿÿ
+i
+java:S3776„"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Ø×¾â
+n
+java:S3776Ñ"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(°„êûÿÿÿÿ
+i
+java:S3776œ"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ÄÃ°”
+S
+java:S3972’"7Move this "if" to a new line or add the missing "else".(ĞÑ†™üÿÿÿÿ
+n
+java:S3776ô"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ô´ ¶üÿÿÿÿ
+n
+java:S3776Š"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(’„ÿÿÿÿÿ
+T	java:S106ñ"9Replace this use of System.out or System.err by a logger.(“Ûñ‰ùÿÿÿÿ
+6
+java:S1659¼"Declare "e" on a separate line.(ı‰ÓÛ
+;
+java:S1659Ó"Declare "j" on a separate line.(¼…´Ÿúÿÿÿÿ
+;
+java:S1659Ó"Declare "k" on a separate line.(¼…´Ÿúÿÿÿÿ
+n
+java:S3776­"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Œ‚®öùÿÿÿÿ
+?	java:S108Ø")Either remove or fill this block of code.(Üî€¹
+P
+java:S2251å"9"i" is incremented and will never reach "stop condition".(”ÇÓÍ
+]
+java:S1126î"AReplace this if-then-else statement by a single return statement.(û®±¡şÿÿÿÿ
+=	java:S131ø""Add a default case to this switch.(ğ˜Î˜şÿÿÿÿ
+8
+java:S1116¬"Remove this empty statement.(ôŸìúÿÿÿÿ
+n
+java:S3776†"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ÿ‹Ûøÿÿÿÿ
+i
+java:S3776µ"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Íæ‘ª
+8
+java:S1116É"Remove this empty statement.(¯¨ùşÿÿÿÿ
+D
+java:S1172²"(Remove this unused method parameter "m".(û–Š•øÿÿÿÿ
+8	java:S131˜""Add a default case to this switch.(Ÿ¦›ø
+T	java:S106İ"9Replace this use of System.out or System.err by a logger.(“óòåşÿÿÿÿ
+T	java:S106ä"9Replace this use of System.out or System.err by a logger.(¬áå¶ıÿÿÿÿ
+=
+java:S2129ƒ"!Remove this "Integer" constructor(«¼İ«şÿÿÿÿ
+2
+java:S3626™"Remove this redundant jump.(ÉŠ©ƒ
+n
+java:S3776‰"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(üÌ‘²úÿÿÿÿ
+8	java:S131ñ""Add a default case to this switch.(å’ÎÑ
+n
+java:S3776Ô "RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ú¿…Üüÿÿÿÿ
+>
+java:S1125!"'Remove the unnecessary boolean literal.(¤¼°
+?
+java:S1481Î	"(Remove this unused "max" local variable.(²¹âİ
+J
+java:S1481Ü
+".Remove this unused "isPresent" local variable.(º¶Ğøÿÿÿÿ
+=
+java:S1481¶"&Remove this unused "k" local variable.(¢³¯¯

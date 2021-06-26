@@ -1,0 +1,15 @@
+
+l	java:S117Ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¸ãùÿÿÿÿÿ
+g	java:S117ä"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¬²¸
+l	java:S117å"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êâ’ôùÿÿÿÿ
+l	java:S117ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ‡°ıÿÿÿÿ
+k	java:S116Æ"URename this field "DIRECTIONS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï¢¼ğ
+k
+java:S1149x"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ
+n
+java:S3776ˆ"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(×Ñ‚¡ıÿÿÿÿ
+n
+java:S3776’"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(öÅÇ¦üÿÿÿÿ
+d	java:S100ˆ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú·ÒÛ
+p
+java:S3012ø"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(¼À÷á

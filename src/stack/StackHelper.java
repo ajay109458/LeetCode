@@ -1,5 +1,7 @@
 package stack;
 
+import utils.Pair;
+
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -659,6 +661,28 @@ public class StackHelper {
         }
 
         return result.reverse().toString();
+    }
+
+    public static List<Pair> mergeKIntervals(List<Pair> intervals) {
+        List<Pair> result = new ArrayList<>();
+
+        Collections.sort(intervals, (a, b) -> Integer.compare(a.x, b.x));
+
+        Stack<Pair> stack = new Stack<>();
+
+        for(Pair interval : intervals) {
+            if (!stack.isEmpty() && stack.peek().y > interval.x) {
+                stack.peek().y = Math.max(stack.peek().y, interval.y);
+            } else {
+                stack.push(interval);
+            }
+        }
+
+        while(!stack.isEmpty()) {
+            result.add(stack.pop());
+        }
+
+        return result;
     }
 
 }

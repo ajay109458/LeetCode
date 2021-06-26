@@ -1,0 +1,8 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ý°Šþÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ú¸ƒøÿÿÿÿ
+k	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Üù¦·ùÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óá¦¯
+N	java:S106"9Replace this use of System.out or System.err by a logger.(òŠúâ
+O
+java:S1144""4Remove this unused private "computeLPSArray" method.(Üù¦·ùÿÿÿÿ

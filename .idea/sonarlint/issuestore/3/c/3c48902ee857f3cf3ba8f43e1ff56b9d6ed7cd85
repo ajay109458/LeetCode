@@ -1,0 +1,77 @@
+
+F
+java:S1066‡"/Merge this if statement with the enclosing one.(—÷İú
+8
+java:S1643À"Use a StringBuilder instead.(ÿÒ¯ìüÿÿÿÿ
+8
+java:S1643Õ"Use a StringBuilder instead.(ùÓÙùşÿÿÿÿ
+8
+java:S1643ã"Use a StringBuilder instead.(­÷ÅÔıÿÿÿÿ
+2
+java:S1643ş"Use a StringBuilder instead.(—’*
+2
+java:S1643…"Use a StringBuilder instead.(ºİ
+3
+java:S1643›"Use a StringBuilder instead.(˜úÏ³
+3
+java:S1643µ"Use a StringBuilder instead.(Ô£´Î
+n	java:S127Á"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ
+m	java:S127Å"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
+k	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰»Å‹ıÿÿÿÿ
+k	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰»Å‹ıÿÿÿÿ
+k
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ƒÿƒ—ùÿÿÿÿ
+k
+java:S1149+"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒıÿÿÿÿ
+k
+java:S1149Q"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒıÿÿÿÿ
+l
+java:S1149“"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ
+l
+java:S1149¶"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ
+l
+java:S1149Ú"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(–‹¬¦şÿÿÿÿ
+g
+java:S1149ã"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÜßÏĞ
+l
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ƒÿƒ—ùÿÿÿÿ
+l
+java:S1149œ"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ü¼İÿÿÿÿÿ
+g
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(šñ›ç
+l
+java:S1149Ë"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ƒÿƒ—ùÿÿÿÿ
+l
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ
+l
+java:S1149 "PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ
+l
+java:S1149°"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ
+l
+java:S1149Ô"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ƒÿƒ—ùÿÿÿÿ
+l
+java:S1149¢"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒıÿÿÿÿ
+l
+java:S1149Í"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒıÿÿÿÿ
+g
+java:S1149Ÿ"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(Ó°ß•
+1
+java:S3626"Remove this redundant jump.(ÉŠ©ƒ
+S
+java:S1612q"=Replace this lambda with method reference 'char.class::cast'.(¨ßÛ·
+[
+java:S1612"@Replace this lambda with method reference 'Integer.class::cast'.(òöÈûÿÿÿÿ
+H
+java:S1612…",Replace this lambda with a method reference.(¡—ÉÇÿÿÿÿÿ
+=	java:S131›""Add a default case to this switch.(×â¬ÿÿÿÿÿ
+l
+java:S1149Ú"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(–‹¬¦şÿÿÿÿ
+g
+java:S1149ã"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÜßÏĞ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(‰É†şÿÿÿÿ
+i
+java:S3776¯"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(‰ÚÏ×
+i
+java:S3776Ó"RRefactor this method to reduce its Cognitive Complexity from 46 to the 15 allowed.(ìŸ“
+D	java:S108Â")Either remove or fill this block of code.(î¸¼êúÿÿÿÿ
+=	java:S131Ğ""Add a default case to this switch.(Œ¹ÿÿÿÿÿ

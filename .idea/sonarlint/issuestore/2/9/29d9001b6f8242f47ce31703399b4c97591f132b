@@ -1,0 +1,33 @@
+
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á»ò
+l	java:S117¥"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖŒÃ™ıÿÿÿÿ
+l	java:S117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é´µøıÿÿÿÿ
+Z
+java:S2583Ø"CChange this condition so that it does not always evaluate to "true"(¾Ôß
+S
+java:S2589Œ"7Remove this expression which always evaluates to "true"(ü›İÕùÿÿÿÿ
+S
+java:S2589"7Remove this expression which always evaluates to "true"(ŒèÒûÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(ÔÉñõ
+n
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(É“êÒıÿÿÿÿ
+K
+java:S1854¦"5Remove this useless assignment to local variable "n".(Û…ô,
+i
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ŸÙÁ°
+n
+java:S3776Ç"RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.(æËÃ‘şÿÿÿÿ
+L
+java:S1751…"6Remove this "return" statement or make it conditional.(¯£Ü;
+i
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(Î®³Ê
+D	java:S108")Either remove or fill this block of code.(·Š•ğüÿÿÿÿ
+h
+java:S3776¦"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(£ÍL
+M
+java:S1854Ì"6Remove this useless assignment to local variable "dp".(†šùÑ
+<
+java:S1481¦"&Remove this unused "n" local variable.(Û…ô,
+>
+java:S1481Ì"'Remove this unused "dp" local variable.(†šùÑ

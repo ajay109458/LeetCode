@@ -1,0 +1,23 @@
+
+„
+java:S1319("oThe type of the "visited" object should be an interface such as "Set" rather than the implementation "HashSet".(—åˆ\
+Š
+java:S1319^"oThe type of the "visited" object should be an interface such as "Set" rather than the implementation "HashSet".(ä’¥şÿÿÿÿ
+‹
+java:S1319·"oThe type of the "visited" object should be an interface such as "Set" rather than the implementation "HashSet".(—©”ûÿÿÿÿ
+‹
+java:S1319ƒ"oThe type of the "visited" object should be an interface such as "Set" rather than the implementation "HashSet".(ÕœËüÿÿÿÿ
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô›Ö#
+e	java:S117O"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô›Ö#
+U
+java:S1118":Add a private constructor to hide the implicit public one.(¼ÃüÑüÿÿÿÿ
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(Ì§Í
+N	java:S106<"9Replace this use of System.out or System.err by a logger.(–êÅú
+O	java:S106Ó"9Replace this use of System.out or System.err by a logger.(ûâ¼‹
+O	java:S106î"9Replace this use of System.out or System.err by a logger.(öŠˆ‹
+O	java:S106Œ"9Replace this use of System.out or System.err by a logger.(µ“Ë—
+D	java:S108²")Either remove or fill this block of code.(—Ë”Ñúÿÿÿÿ
+A
+java:S1481Ø"*Remove this unused "neigh" local variable.(¿¹Å
+F
+java:S1481Ã"*Remove this unused "neigh" local variable.(•ºùÿşÿÿÿÿ

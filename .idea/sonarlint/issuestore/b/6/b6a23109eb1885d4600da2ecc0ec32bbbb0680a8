@@ -1,0 +1,9 @@
+
+X
+java:S2184v"BCast one of the operands of this division operation to a "double".(œÜĞ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÕÚ‰ÿÿÿÿÿ
+`
+java:S2583ÿ"DChange this condition so that it does not always evaluate to "false"(™€­…øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Åñşµùÿÿÿÿ
+G
+java:S1172ì"+Remove this unused method parameter "list".(Ÿ®¡æøÿÿÿÿ

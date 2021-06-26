@@ -1,5 +1,9 @@
 package sdesheet;
 
+import array.ArrayHelper;
+
+import java.util.Arrays;
+
 public class Day11 {
 
     public static double squareRoot(int n) {
@@ -24,6 +28,60 @@ public class Day11 {
         }
 
         return answer;
+    }
+
+    /**
+     * Matrix height and width are of odd length
+     *
+     * Median at index = (1 + r*c) / 2
+     *
+     * @param matrix
+     * @return
+     */
+    public static int getMatrixMedian(int[][] matrix) {
+        // Find the min element in first column
+        // Find the max element in the last column
+
+        int m = matrix.length;
+        int n = matrix[0].length;
+
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+
+        for(int i = 0; i < matrix.length; i++) {
+            max = Math.max(max, matrix[i][n-1]);
+            min = Math.min(min, matrix[i][0]);
+        }
+
+        int totalCount = 0;
+        int median = (1 + matrix.length * matrix[0].length)/2;
+
+        while(min < max) {
+            int mid = (min + max) / 2;
+
+            for(int i = 0; i < matrix.length; i++) {
+                int index = Arrays.binarySearch(matrix[i], mid);
+
+                if (index < 0) {
+                    index = Math.abs(index) - 1;
+                } else {
+                    while(index < matrix[i].length && matrix[i][index] == mid) {
+                        index++;
+                    }
+                }
+
+                totalCount += index;
+            }
+
+            if (totalCount < median) {
+                min = mid + 1;
+            } else {
+                max = mid;
+            }
+
+        }
+
+        return min;
     }
 
     public static double getMedianSortedArray(int[] input1, int[] input2) {

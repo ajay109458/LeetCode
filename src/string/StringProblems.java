@@ -910,6 +910,8 @@ public class StringProblems {
 	    if (s3.length() != (s1.length() + s2.length()))
 	        return false;
 
+	    StringBuilder result = new StringBuilder();
+
 	    return isInterleaveUtils(s1, s2, s3, 0, 0, 0, "");
     }
 
@@ -1740,6 +1742,169 @@ public class StringProblems {
 				dfsWords(board, x, y, words, visited, wsf + board[i][j], result);
 			}
 		}
+	}
+
+	public String addBinary(String a, String b) {
+		if (a == null || "".equals(a)) {
+			return b;
+		}
+
+		if (b == null || "".equals(b)) {
+			return a;
+		}
+
+		int sum = 0;
+
+		int i = a.length() - 1;
+		int j = b.length() - 1;
+		StringBuilder builder = new StringBuilder();
+
+		while(i >= 0 || j >= 0 || sum != 0) {
+			sum += (i >= 0) ? (a.charAt(i) - '0'): 0;
+			sum += (j >= 0) ? (b.charAt(j) - '0'): 0;
+
+			builder.insert(0, (char)(sum % 2 + '0'));
+
+			sum /= 2;
+			i--;
+			j--;
+		}
+
+		return builder.toString();
+	}
+
+	public int lengthOfLongestSubstringKDistinct(String s, int k) {
+		if (s == null || "".equals(s) || k == 0) {
+			return 0;
+		}
+
+		Map<Character, Integer> countByCharMap = new HashMap<>();
+
+		int start = 0;
+		int end = 0;
+
+		int maxLen = 0;
+
+		while(end < s.length()) {
+
+			while(end < s.length() && countByCharMap.size() <= k) {
+				maxLen = Math.max(maxLen, end - start);
+				char ch = s.charAt(end);
+				countByCharMap.put(ch, countByCharMap.getOrDefault(ch, 0) + 1);
+			}
+
+			while(countByCharMap.size() > k && start < s.length()) {
+				char ch = s.charAt(start);
+				countByCharMap.put(ch, countByCharMap.get(ch));
+				if (countByCharMap.get(ch) == 0) {
+					countByCharMap.remove(ch);
+				}
+			}
+		}
+
+		return maxLen;
+	}
+
+	private enum IPValidationResult {
+		IPv4("IPv4"),
+		IPv6("IPv6"),
+		Neither("Neither");
+
+		String name;
+
+		IPValidationResult(String name) {
+			this.name = name;
+		}
+	}
+
+	public String validIPAddress(String IP) {
+
+		if (IP == null || "".equals(IP)) {
+			return IPValidationResult.Neither.name;
+		}
+
+		if (isIPv4(IP)) {
+			return IPValidationResult.IPv4.name;
+		}
+
+		if (isIPv6(IP)) {
+			return IPValidationResult.IPv6.name;
+		}
+
+		return IPValidationResult.Neither.name;
+	}
+
+	public static boolean isIPv6(String ip) {
+		String[] subs = ip.split(":");
+
+		if (subs.length != 8) {
+			return false;
+		}
+
+		if (subs.length == 8 && (ip.startsWith(":") || ip.endsWith(":"))) {
+			return false;
+		}
+
+		for(String sub : subs) {
+			if (sub.length() < 1 && sub.length() > 4) {
+				return false;
+			}
+
+			for(char ch : sub.toCharArray()) {
+				if (!((ch >= '0' && ch <= '9') || (ch >= 'A' && ch <= 'F') || (ch >= 'a' && ch <= 'f'))) {
+					return false;
+				}
+			}
+		}
+
+		return true;
+	}
+
+	private static boolean isIPv4(String ip) {
+		String[] subs = ip.split("\\.");
+
+		if (subs.length != 4) {
+			return false;
+		}
+
+		for(String sub : subs) {
+			try {
+				int number = Integer.parseInt(sub);
+
+				if (number < 0 && number >= 256) {
+					return false;
+				}
+
+			} catch (Exception ex) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	public int subarraySum(int[] nums, int k) {
+
+		if (nums.length == 0) {
+			return 0;
+		}
+
+		int sum = 0;
+		int count = 0;
+
+		Map<Integer, Integer> countOfSumMap  = new HashMap<>();
+
+		for(int num : nums) {
+			sum += num;
+
+			if (countOfSumMap.containsKey(sum)) {
+				count += countOfSumMap.get(sum);
+			}
+
+			countOfSumMap.put(sum, countOfSumMap.getOrDefault(sum, 0) + 1);
+		}
+
+		return  count;
 	}
 
 

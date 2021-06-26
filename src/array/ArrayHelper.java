@@ -1,8 +1,6 @@
 package array;
 
 import linkedlist.ListNode;
-import org.junit.platform.commons.logging.Logger;
-import org.junit.platform.commons.logging.LoggerFactory;
 import utils.Pair;
 import utils.UtilFunctions;
 
@@ -13,8 +11,6 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class ArrayHelper {
-
-	public Logger loggger = LoggerFactory.getLogger(ArrayHelper.class);
 
 	public ArrayHelper() {
 
@@ -1427,6 +1423,12 @@ public class ArrayHelper {
 		arr[j] = temp;
 	}
 
+	public static void swap(char[] arr, int i, int j) {
+		char temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+	}
+
 	public void sortColors(int[] nums) {
 		int i = -1;
 		int k = nums.length;
@@ -1443,6 +1445,37 @@ public class ArrayHelper {
 			}
 		}
 	}
+
+	public String removeKdigits(String num, int k) {
+		Stack<Integer> stack = new Stack<>();
+
+		for(char ch : num.toCharArray()) {
+			int digit = ch - '0';
+
+			while (!stack.isEmpty() && stack.peek() > digit && k > 0) {
+				stack.pop();
+				k--;
+			}
+
+			if(!stack.isEmpty() || digit !=0 )
+				stack.push(digit);
+		}
+
+		while(k-- > 0 && !stack.isEmpty()) {
+			stack.pop();
+		}
+
+		if (stack.isEmpty())
+			return "0";
+
+		StringBuilder result = new StringBuilder();
+
+		while(!stack.isEmpty()) {
+			result.insert(0, stack.pop());
+		}
+
+		return result.toString();
+ 	}
 
 	public int findCircleNum(int[][] M) {
 		int rows = M.length;
@@ -2836,6 +2869,37 @@ public class ArrayHelper {
 		return maxCount;
 	}
 
+	public int findMaxConsecutiveOnes1(int[] nums) {
+		int count = 0;
+		int maxCount = 0;
+
+		int s = 0; int e = 0;
+
+		int zeroCounts = 0;
+
+		while(e < nums.length) {
+			while(e < nums.length && zeroCounts <= 1) {
+				maxCount = Math.max(maxCount, count);
+
+				if (nums[e] == 0) {
+					zeroCounts++;
+				}
+
+				e++;
+				count++;
+			}
+
+			while(s < nums.length && zeroCounts > 1) {
+				if (nums[e] == 0) {
+					zeroCounts--;
+				}
+				s--;
+			}
+		}
+
+		return maxCount;
+	}
+
 	public void merge(int[] nums1, int m, int[] nums2, int n) {
 		int i = m - 1;
 		int j = n -1;
@@ -3704,6 +3768,550 @@ public class ArrayHelper {
 		}
 
 		return true;
+	}
+
+	public void moveZeroes(int[] nums) {
+
+		// Represents the non-zero numbers in the system
+		int i = -1;
+		// current index
+		int j = 0;
+
+		while(j < nums.length) {
+			if (nums[j] != 0) {
+				swap(nums, ++i, j);
+			}
+			j++;
+		}
+
+	}
+
+	public int[] productExceptSelf(int[] nums) {
+
+		if (nums.length == 0) {
+			return new int[0];
+		}
+
+		int n = nums.length;
+
+		int[] leftProduct = new int[n];
+		int[] rightProduct = new int[n];
+
+		leftProduct[0] = 1;
+		for(int i= 1; i < n; i++) {
+			leftProduct[i] = nums[i-1] * leftProduct[i-1];
+		}
+
+		System.out.println(Arrays.toString(leftProduct));
+
+		rightProduct[n-1] = 1;
+		for(int i = n - 2; i >= 0; i--) {
+			rightProduct[i] = rightProduct[i+1] * nums[i+1];
+		}
+
+		System.out.println(Arrays.toString(rightProduct));
+
+		int[] result = new int[n];
+
+		for(int i = 0; i < n; i++) {
+			result[i] = leftProduct[i] * rightProduct[i];
+		}
+
+		return result;
+	}
+	public List<List<Integer>> permute(int[] nums) {
+		List<List<Integer>> result = new ArrayList<>();
+		populatePermutation(nums, 0, result, new ArrayList<>());
+		return result;
+	}
+
+	private void populatePermutation(int[] num, int index, List<List<Integer>> result, List<Integer> curr) {
+
+		if (index == num.length) {
+			List<Integer> clone = new ArrayList<>();
+			for(int val : curr) {
+				clone.add(val);
+			}
+			result.add(clone);
+			return;
+		}
+
+		for(int j = index; j < num.length; j++) {
+			swap(num, index, j);
+			curr.add(num[index]);
+			populatePermutation(num, index + 1, result, curr);
+			curr.remove(new Integer(num[index]));
+			swap(num, index, j);
+		}
+
+	}
+
+	public double mincostToHireWorkers(int[] quality, int[] wage, int K) {
+		int n = wage.length;
+
+		double minCost = Double.MAX_VALUE;
+
+		for(int captain = 0; captain < n; captain++) {
+			double captainRatio = wage[captain]/quality[captain];
+
+			List<Double> acceptedOffers = new ArrayList<>();
+			for(int worker = 0; worker < n; worker++) {
+				double offer = quality[worker] * captainRatio;
+				if (offer >= wage[worker]) {
+					acceptedOffers.add(offer);
+				}
+
+				if (acceptedOffers.size() < K) {
+					continue;
+				}
+			}
+
+			// find sum of k smallest elements in accepted offers
+			PriorityQueue<Double> pq = new PriorityQueue<>((a, b) -> Double.compare(b, a));
+
+			double heapSum = 0;
+			for(int i = 0; i < K; i++) {
+				pq.add(acceptedOffers.get(i));
+				heapSum += acceptedOffers.get(i);
+			}
+
+			for(int i = K; i < acceptedOffers.size(); i++) {
+				if (acceptedOffers.get(i) < pq.peek()) {
+					heapSum += (acceptedOffers.get(i) - pq.peek());
+					pq.remove();
+					pq.add(acceptedOffers.get(i));
+				}
+			}
+
+			minCost = Math.min(minCost, heapSum);
+		}
+
+		return minCost;
+	}
+
+	public static void reverse(int[] arr) {
+		int left = 0;
+		int right = arr.length -1;
+		reverse(arr, left, right);
+	}
+
+	public static void reverse(int[] arr, int left, int right) {
+		while(left <= right) {
+			swap(arr, left, right);
+			left++;
+			right--;
+		}
+	}
+
+	public static void reverse(char[] arr, int left, int right) {
+		while(left <= right) {
+			swap(arr, left, right);
+			left++;
+			right--;
+		}
+	}
+
+	public int maximalSquare(char[][] matrix) {
+
+		int n = matrix.length;
+
+		int[][] sol = new int[n][n];
+
+		int maxSize = 0;
+
+		for(int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if (i == 0 || j == 0) {
+					sol[i][j] = matrix[i][j] - '0';
+				} else {
+					if (matrix[i][j] == '1') {
+						sol[i][j] = Math.min(sol[i-1][j-1], Math.min(sol[i][j-1], sol[i-1][j])) + 1;
+					}
+				}
+
+				maxSize = Math.max(maxSize, sol[i][j]);
+			}
+
+
+		}
+
+		return maxSize * maxSize;
+	}
+
+	public int evalRPN(String[] tokens) {
+		Stack<Integer> stack = new Stack<>();
+
+		HashSet<String> operators = new HashSet<>(Arrays.asList("+", "-", "/", "*"));
+
+		for(String str : tokens) {
+			if (operators.contains(str)) {
+
+				Integer val1 = stack.pop();
+				Integer val2 = stack.pop();
+
+				Integer result = null;
+				switch (str) {
+					case "+":
+						result = val1 + val2;
+						break;
+					case "-":
+						result = val2 - val1;
+						break;
+					case "/":
+						result = val2 / val1;
+						break;
+					case "*":
+						result = val2 * val1;
+						break;
+				}
+
+				stack.push(result);
+			} else {
+				stack.push(Integer.parseInt(str));
+			}
+		}
+
+		return stack.peek();
+	}
+
+	public int[] sortArrayByParity(int[] A) {
+		int i = -1;
+		int j = 0;
+
+		while (j < A.length) {
+			if (A[j] % 2 == 0) {
+				swap(A, ++i, j);
+			}
+			j++;
+		}
+
+		return A;
+	}
+
+	public int minPartitions(String n) {
+		int max = 0;
+
+		for(char ch : n.toCharArray()) {
+			max = Math.max(max, ch - '0');
+		}
+
+		return max;
+	}
+
+	public int maxProduct(String[] words) {
+		if (words == null || words.length == 0)
+			return 0;
+
+		int max = 0;
+
+		for(int i = 0; i < words.length; i++) {
+			HashSet<Character> set = getSet(words[i]);
+			for(int j = i + 1; j < words.length; j++) {
+				if (!isSetContainsAnyChar(set, words[j])) {
+					max = Math.max(words[i].length(), words[j].length());
+				}
+			}
+		}
+
+		return max;
+	}
+
+	private HashSet getSet(String word) {
+		HashSet<Character> set = new HashSet<>();
+		for(char ch : word.toCharArray()) {
+			set.add(ch);
+		}
+
+		return set;
+	}
+
+	public boolean isSetContainsAnyChar(HashSet<Character> set, String word) {
+		for(char ch : word.toCharArray()) {
+			if (set.contains(ch)) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	public int[] sortArray(int[] nums) {
+		mergeSort(nums, 0, nums.length - 1);
+		return nums;
+	}
+
+	public void mergeSort(int[] nums, int left, int right) {
+		if (left >= right) {
+			return;
+		}
+
+		int mid = (left + right) / 2;
+
+		mergeSort(nums, left, mid);
+		mergeSort(nums, mid+1, right);
+		merge(nums, left, mid, right);
+
+	}
+
+	public void merge(int[] nums, int left, int mid, int right) {
+		int size = right - left + 1;
+		int[] temp = new int[size];
+
+		int k = 0;
+
+		int i = left;
+		int j = mid + 1;
+
+		while(i <= mid && j <= right) {
+			if (nums[i] <= nums[j]) {
+				temp[k++] = nums[i++];
+			} else {
+				temp[k++] = nums[j++];
+			}
+		}
+
+		while(i <= mid) {
+			temp[k++] = nums[i++];
+		}
+
+		while(j <= mid) {
+			temp[k++] = nums[j++];
+		}
+
+		for ( k = 0; k < size; k++) {
+			nums[left + k] = temp[k];
+		}
+	}
+
+	public boolean searchMatrix1(int[][] matrix, int target) {
+		int rows = matrix.length;
+		int cols = matrix[0].length;
+
+		int i = 0;
+		int j = cols - 1;
+
+		while (i < rows && j >= 0) {
+			int val = matrix[i][j];
+			if (target == val) {
+				return true;
+			} else if (target < val) {
+				j--;
+			} else {
+				i++;
+			}
+		}
+
+		return false;
+	}
+
+	public int[] frequencySort(int[] nums) {
+		Map<Integer, Long> freqMap =  Arrays.stream(nums)
+				.boxed()
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+		List<Map.Entry<Integer, Long>> entryList = new ArrayList<>(freqMap.entrySet());
+
+		Collections.sort(entryList, (a, b) -> {
+
+			if (a.getValue() == b.getValue()) {
+				return a.getValue().compareTo(b.getValue());
+			}
+
+			return b.getKey().compareTo(a.getKey());
+		});
+
+		int[] result = new int[nums.length];
+
+		int index = 0;
+
+		for (int i = 0;  i < entryList.size(); i++) {
+			long k = entryList.get(i).getValue();
+
+			while(k-- != 0) {
+				result[index++] = entryList.get(i).getKey();
+			}
+
+		}
+
+		return result;
+	}
+
+	public String reverseVowels(String s) {
+		StringBuilder builder = new StringBuilder();
+		HashSet<Character> vowels = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'));
+		for(char ch : s.toCharArray())  {
+			if (vowels.contains(ch)){
+				builder.append(ch);
+			}
+		}
+
+		String vowelString = builder.reverse().toString();
+
+		int vowelIndex = 0;
+		StringBuilder result = new StringBuilder();
+
+		for(int i = 0; i < s.length(); i++) {
+			char ch = s.charAt(i);
+			if (vowels.contains(ch)) {
+				char vowelCh = vowelString.charAt(vowelIndex++);
+				result.append(vowelCh);
+			} else {
+				result.append(ch);
+			}
+		}
+
+		return result.toString();
+	}
+
+	public int arraySign(int[] nums) {
+		int negativeCount = 0;
+
+		for(int num : nums) {
+			if (num == 0) {
+				return 0;
+			} else if (num < 0) {
+				negativeCount++;
+			}
+		}
+
+		return (negativeCount % 2 == 0) ? 1 : -1;
+	}
+
+	public boolean isMonotonic(int[] nums) {
+
+		Boolean isIncreasing = false;
+		Boolean isDecreasing = false;
+
+		for (int i = 1; i < nums.length-1; i++) {
+			if (!isIncreasing && !isDecreasing) {
+				if (nums[i] > nums[i-1]) {
+					isIncreasing = true;
+				}
+
+				if (nums[i] < nums[i-1]) {
+					isDecreasing = true;
+				}
+			}
+
+			if (isIncreasing) {
+				if (nums[i] - nums[i-1] < 0) {
+					return false;
+				}
+			}
+
+			if (isDecreasing) {
+				if (nums[i] - nums[i-1] > 0) {
+					return false;
+				}
+			}
+		}
+
+		return true;
+
+	}
+
+	public int maximumGap(int[] nums) {
+		if (nums.length < 2) {
+			return 0;
+		}
+
+		Arrays.sort(nums);
+
+		int result = 0;
+
+		for(int i = 1; i < nums.length; i++) {
+			result = Math.max(result, nums[i] - nums[i-1]);
+		}
+
+		return result;
+	}
+
+	public int maxAreaOfIsland1(int[][] grid) {
+
+		int rows = grid.length;
+		int cols = grid[0].length;
+
+		boolean[][] visited = new boolean[rows][cols];
+
+		int maxArea = 0;
+
+		for (int i = 0; i < rows; i++) {
+			for(int j = 0; j < cols; j++) {
+				if (visited[i][j] != true) {
+					maxArea = Math.max( maxArea, computeAreaOfLand(grid, i, j, visited));
+				}
+			}
+		}
+
+		return maxArea;
+
+	}
+
+	public static int[][] DIRECTIONS = {
+			{0, 1},
+			{1, 0},
+			{-1, 0},
+			{0, -1}
+	};
+
+	public int computeAreaOfLand(int[][] grid, int i, int j, boolean[][] visited) {
+
+		if (i < 0 || i >= grid.length)
+			return 0;
+
+		if (j < 0 || j >= grid[0].length)
+			return 0;
+
+
+		if (visited[i][j]) {
+			return 0;
+		}
+
+		visited[i][j] = true;
+
+		return 1
+				+ computeAreaOfLand(grid, i + 1, j, visited)
+				+ computeAreaOfLand(grid, i -1 , j, visited)
+				+ computeAreaOfLand(grid, i , j + 1, visited)
+				+ computeAreaOfLand(grid, i  , j - 1, visited);
+
+	}
+
+	public int maxNumberOfApples(int[] arr) {
+		Arrays.sort(arr);
+
+		int sum = 0;
+		int count = 0;
+
+		for(int num : arr) {
+			if (sum + num <= 5000) {
+				count++;
+				sum += num;
+			} else {
+				break;
+			}
+		}
+
+		return count;
+	}
+
+	public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+		int[] result = new int[nums1.length];
+
+		for(int i = 0; i < nums1.length; i++) {
+
+			int val = Integer.MAX_VALUE;
+
+			for(int j = i+1; j < nums2.length; j++) {
+				if (nums2[j] < val && nums2[j] > nums1[i]) {
+					val = nums2[j];
+				}
+			}
+
+			result[i] = (val == Integer.MAX_VALUE) ? -1 : val;
+		}
+
+		return result;
 	}
 
 }

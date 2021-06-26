@@ -1,0 +1,14 @@
+
+y
+java:S1488~"^Immediately return this expression instead of assigning it to the temporary variable "result".(»Ğõ¨ùÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(ùÙ¢Ä
+S	java:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ
+O
+java:S2864-"4Iterate over the "entrySet" instead of the "keySet".(òÒôÜùÿÿÿÿ
+<
+java:S1172}"&Remove these unused method parameters.(Î°Â±
+2
+java:S3626"Remove this redundant jump.(ûÁİ…
+P
+java:S1144…"9Remove this unused private "populateWordKLengthK" method.(ûò¥”

@@ -78,12 +78,12 @@ public class Day25 {
             np[i+1] = prices[i];
         }
 
-        int[] dp = new int[np.length];
+        int[] dp = new int[np.length+1];
 
         dp[0] = 0;
         dp[1] = np[1];
 
-        for(int i = 2; i < dp.length; i++) {
+        for(int i = 2; i <= dp.length; i++) {
             dp[i] = np[i];
 
            for(int j = 1; j <= i; j++) {

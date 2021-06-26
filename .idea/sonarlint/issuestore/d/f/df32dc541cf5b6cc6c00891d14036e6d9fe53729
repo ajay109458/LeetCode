@@ -1,0 +1,26 @@
+
+K
+java:S1066¨"/Merge this if statement with the enclosing one.(¥–ì‘øÿÿÿÿ
+Y
+java:S11554">Use isEmpty() to check whether the collection is empty or not.(‡ãÈûøÿÿÿÿ
+l
+java:S1149ø"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ
+g
+java:S1149†"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¢ªçÓ
+l
+java:S1149‹"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ
+U
+java:S1117~":Rename "visited" which hides the field declared at line 7.(İ¹Æúÿÿÿÿ
+V
+java:S1117§":Rename "visited" which hides the field declared at line 7.(‰şç÷úÿÿÿÿ
+A
+java:S1172à"*Remove this unused method parameter "num".(×ÖíÖ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(²È™ûùÿÿÿÿ
+T	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+c	java:S100—"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò†Õr
+h
+java:S3776—"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(Ò†Õr
+n
+java:S3776¿"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(‡öóûÿÿÿÿ
+R
+java:S1117‘"6Rename "f" which hides the field declared at line 368.(ÅıµŞÿÿÿÿÿ

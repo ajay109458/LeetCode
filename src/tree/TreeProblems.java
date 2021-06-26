@@ -2280,5 +2280,130 @@ public class TreeProblems {
 		return (flipEquiv(root1.left, root2.left) && flipEquiv(root1.right, root2.right)) || (flipEquiv(root1.right, root2.left) && flipEquiv(root1.left, root2.right));
 	}
 
+	public List<String> binaryTreePaths(TreeNode root) {
+		if (root == null) {
+			return new ArrayList<>();
+		}
 
+		List<String> result = new ArrayList<>();
+
+		populateBinaryTree(root, result, "");
+
+		return result;
+	}
+
+	private void populateBinaryTree(TreeNode root, List<String> result, String path) {
+
+		if (root == null) {
+			result.add(path.toString());
+		}
+
+		populateBinaryTree(root.left, result, ("".equals(path)?"":"->") + root.val);
+		populateBinaryTree(root.right, result, ("".equals(path)?"":"->") + root.val);
+	}
+
+	public List<List<Integer>> verticalOrder(TreeNode root) {
+		Map<Integer, Map<Integer, Integer>> map = new TreeMap<>();
+		populateTreeMap(root, map, 0,0);
+
+		List<List<Integer>> result = new ArrayList<>();
+
+		for(Map<Integer, Integer> map1 : map.values()) {
+			result.add(new ArrayList<>(map1.values()));
+		}
+
+		return result;
+	}
+
+	private void populateTreeMap(TreeNode root, Map<Integer, Map<Integer, Integer>> map, int xAxisVal, int level) {
+
+		if (root == null)
+			return;
+
+		Map<Integer, Integer> list = map.get(xAxisVal);
+		if (list == null) {
+			list = new HashMap<>();
+			map.put(xAxisVal, list);
+		}
+
+		list.put(level, root.val);
+
+		populateTreeMap(root.left, map, xAxisVal-1, level + 1);
+		populateTreeMap(root.right, map, xAxisVal+1, level + 1);
+	}
+
+	public boolean isSymmetric(TreeNode root) {
+		if (root == null) {
+			return true;
+		}
+
+		return areEqual(root.left, root.right);
+	}
+
+	public static boolean areEqual(TreeNode root1, TreeNode root2) {
+		if (root1 == null && root2 == null) {
+			return true;
+		}
+
+		if (root1 == null || root2 == null) {
+			return false;
+		}
+
+		return root1.val == root2.val && areEqual(root1.left, root2.left) && areEqual(root1.right, root2.right);
+	}
+
+	public boolean hasPathSum(TreeNode root, int targetSum) {
+		if (root == null) {
+			return false;
+		}
+
+		if (root.left == null && root.right == null) {
+			return targetSum == root.val;
+		}
+
+		return hasPathSum(root.left, targetSum - root.val) || hasPathSum(root.right, targetSum - root.val);
+	}
+
+	public List<List<Integer>> levelOrder(TreeNodeN root) {
+		Queue<TreeNodeN> queue = new LinkedList<>();
+
+		List<List<Integer>> result = new ArrayList<>();
+		List<Integer> levelNodes = new ArrayList<>();
+
+		if (root == null) {
+			return result;
+		}
+
+		queue.add(root);
+		queue.add(null);
+
+		while(!queue.isEmpty()) {
+
+			TreeNodeN node = queue.poll();
+
+			if (node == null) {
+
+				result.add(levelNodes);
+				levelNodes = new ArrayList<>();
+
+				if (queue.isEmpty()) {
+					break;
+				}
+
+				queue.add(null);
+			} else {
+				levelNodes.add(node.val);
+
+				for(TreeNodeN child : node.children) {
+					if (child != null) {
+						queue.add(child);
+					}
+				}
+			}
+
+		}
+
+		return result;
+
+	}
 }

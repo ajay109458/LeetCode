@@ -1,0 +1,25 @@
+
+b
+java:S1871'"LThis branch's code block is the same as the block for the branch on line 36.(Á¼Š
+g
+java:S1871*"LThis branch's code block is the same as the block for the branch on line 36.(ßÍÃ ıÿÿÿÿ
+h
+java:S3776G"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(úò†
+D
+java:S1172"(Remove this unused method parameter "k".(‰ê­³şÿÿÿÿ
+D	java:S108¢")Either remove or fill this block of code.(–õ£ùıÿÿÿÿ
+d
+java:S1871Ü"MThis branch's code block is the same as the block for the branch on line 218.(Öº¸á
+i
+java:S1871Ş"MThis branch's code block is the same as the block for the branch on line 218.(ßÍÃ ıÿÿÿÿ
+T	java:S106â"9Replace this use of System.out or System.err by a logger.(Ã”…ªûÿÿÿÿ
+C
+java:S1125ä"'Remove the unnecessary boolean literal.(³†§ºıÿÿÿÿ
+P
+java:S2130ú"9Use "Integer.parseInt" for this string-to-int conversion.(›êÀÙ
+P
+java:S2130û"9Use "Integer.parseInt" for this string-to-int conversion.(ó¿Êô
+n
+java:S3776‰"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(åÍëĞøÿÿÿÿ
+F
+java:S1481Ÿ"*Remove this unused "start" local variable.(¡Ò¾üÿÿÿÿ

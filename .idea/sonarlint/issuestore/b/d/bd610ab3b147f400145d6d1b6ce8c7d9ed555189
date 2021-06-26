@@ -1,0 +1,18 @@
+
+K
+java:S1066ç"/Merge this if statement with the enclosing one.(äİˆùÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(ØùèÚ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(†™ñ‹
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ö¸çêúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(†™ñ‹
+N	java:S106<"9Replace this use of System.out or System.err by a logger.(Ùôµ
+N	java:S106F"9Replace this use of System.out or System.err by a logger.(Ùôµ
+G
+java:S1172´"+Remove this unused method parameter "maze".(‰¯âšÿÿÿÿÿ
+X
+java:S1854µ"<Remove this useless assignment to local variable "allPaths".(¿îÇşüÿÿÿÿ
+T	java:S106Õ"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ
+T	java:S106è"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ
+I
+java:S1481µ"-Remove this unused "allPaths" local variable.(¿îÇşüÿÿÿÿ

@@ -997,4 +997,66 @@ public class HashHelper {
 
         return new ArrayList<>(result);
     }
+
+    class RandomizedSet {
+
+        HashSet<Integer> set;
+
+        /** Initialize your data structure here. */
+        public RandomizedSet() {
+            set = new HashSet<>();
+        }
+
+        /** Inserts a value to the set. Returns true if the set did not already contain the specified element. */
+        public boolean insert(int val) {
+            return set.add(val);
+        }
+
+        /** Removes a value from the set. Returns true if the set contained the specified element. */
+        public boolean remove(int val) {
+            return set.remove(val);
+        }
+
+        /** Get a random element from the set. */
+        public int getRandom() {
+            int size = set.size();
+
+            int index = (int) (Math.random() * size);
+
+            List<Integer> list = new ArrayList<>(set);
+            return list.get(index);
+        }
+    }
+
+    class Twitter {
+
+        private Map<Integer, List<Integer>> followersByUserIdMap;
+        private Map<Integer, List<Integer>> postsByUserIdMap;
+        private Map<Integer, List<Integer>> homeTimelineMap;
+
+        /** Initialize your data structure here. */
+        public Twitter() {
+
+        }
+
+        /** Compose a new tweet. */
+        public void postTweet(int userId, int tweetId) {
+
+        }
+
+        /** Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent. */
+        public List<Integer> getNewsFeed(int userId) {
+            return new ArrayList<>();
+        }
+
+        /** Follower follows a followee. If the operation is invalid, it should be a no-op. */
+        public void follow(int followerId, int followeeId) {
+
+        }
+
+        /** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
+        public void unfollow(int followerId, int followeeId) {
+
+        }
+    }
 }

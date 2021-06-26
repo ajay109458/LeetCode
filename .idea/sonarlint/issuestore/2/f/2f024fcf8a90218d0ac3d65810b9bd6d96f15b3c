@@ -1,0 +1,12 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ýªñÓ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¼…µ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¼…µ
+N
+java:S1128"8Remove this unused import 'java.util.function.Function'.(»³Íž
+S
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ
+C
+java:S1659"-Declare "min_ending_here" on a separate line.(Ã¼…µ
+h
+java:S37764"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ç‘çÔ

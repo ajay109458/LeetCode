@@ -671,5 +671,151 @@ public class LinkedListHelper {
         return result;
     }
 
+    class MyLinkedList {
+
+        ListNode head;
+        ListNode tail;
+        int size;
+
+        /** Initialize your data structure here. */
+        public MyLinkedList() {
+            head = new ListNode();
+            tail = new ListNode();
+
+            size = 0;
+
+            head.next = tail;
+            tail.prev = head;
+        }
+
+        /** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
+        public int get(int index) {
+
+            if (index >= size) {
+                return  -1;
+            }
+
+            ListNode p = head.next;
+
+            int i = 0;
+            while(p != tail && i < index) {
+                p = p.next;
+            }
+
+            return p.val;
+        }
+
+        /** Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. */
+        public void addAtHead(int val) {
+            ListNode node = new ListNode(val);
+
+            ListNode nextNode = head.next;
+
+            node.next = nextNode;
+            nextNode.prev = node;
+
+            size++;
+
+            node.prev = head;
+            head.next = node;
+        }
+
+        /** Append a node of value val to the last element of the linked list. */
+        public void addAtTail(int val) {
+
+            ListNode node = new ListNode(val);
+
+            ListNode prev = tail.prev;
+
+            node.prev = prev;
+            prev.next = node;
+
+            tail.prev = node;
+            node.next = tail;
+
+            size++;
+        }
+
+        /** Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted. */
+        public void addAtIndex(int index, int val) {
+            if (index >= size) {
+                return;
+            }
+
+            ListNode p = head.next;
+
+            int i = 0;
+            while(p != tail && i < index) {
+                p = p.next;
+            }
+
+            ListNode node = new ListNode(val);
+
+            ListNode prev = p.prev;
+
+            node.prev = prev;
+            prev.next = node;
+
+            node.next = p;
+            p.prev = node;
+
+            size++;
+        }
+
+        /** Delete the index-th node in the linked list, if the index is valid. */
+        public void deleteAtIndex(int index) {
+            if (index >= size) {
+                return;
+            }
+
+            ListNode p = head.next;
+
+            int i = 0;
+            while(p != tail && i < index) {
+                p = p.next;
+            }
+
+            ListNode prev = p.prev;
+            ListNode next = p.next;
+
+            p.prev = null;
+            p.next = null;
+
+            prev.next = next;
+            next.prev = prev;
+
+            size--;
+        }
+    }
+
+
+    public ListNode removeElements(ListNode head, int val) {
+        ListNode prev = null;
+
+        ListNode p = head;
+
+        while(p != null) {
+
+            if (p.val == val) {
+
+                ListNode temp = p;
+                p = p.next;
+                temp.next = null;
+
+                if (prev != null) {
+                    prev.next = p;
+                } else {
+                    head = p;
+                }
+
+            } else {
+                prev = p;
+                p = p.next;
+            }
+        }
+
+        return head;
+    }
+
 }
 

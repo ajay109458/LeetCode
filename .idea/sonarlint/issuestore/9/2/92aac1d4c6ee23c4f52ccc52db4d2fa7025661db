@@ -1,0 +1,12 @@
+
+f	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ó†Õ
+E
+java:S5411P"*Use the primitive boolean expression here.(ÂüÀ«üÿÿÿÿ
+Q
+java:S1854
+";Remove this useless assignment to local variable "builder".(Š÷©‚
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(úòž†
+B
+java:S1481
+",Remove this unused "builder" local variable.(Š÷©‚

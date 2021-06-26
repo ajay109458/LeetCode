@@ -1,0 +1,14 @@
+
+M
+java:S1128"7Remove this unused import 'com.google.gson.JsonObject'.(µÊ´½
+N
+java:S1128"8Remove this unused import 'com.google.gson.JsonElement'.(ğ†˜³
+R
+java:S1128"7Remove this unused import 'java.net.ProtocolException'.(é­Èğûÿÿÿÿ
+o
+java:S3008D"TRename this field "USERS_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä¿×Óúÿÿÿÿ
+z
+java:S1149P"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¨âàøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ
+f
+java:S1130F"KRemove the redundant 'java.io.IOException' thrown exception declaration(s).(½Ü­øÿÿÿÿ
