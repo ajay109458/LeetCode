@@ -1,5 +1,6 @@
 package Grind75;
 
+import linkedlist.ListNode;
 import java.util.Stack;
 
 public class Week1 {
@@ -74,5 +75,75 @@ public class Week1 {
 
     private static boolean isOpenBraces(char ch) {
         return ch == '(' || ch == '{' || ch == '[';
+    }
+
+
+    private static class ListNodeWrapper {
+        public ListNode head;
+        public ListNode current;
+
+        public ListNodeWrapper(ListNode root, ListNode current) {
+            this.head = root;
+            this.current = current;
+        }
+    }
+
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+
+        if (list1 == null)
+            return list2;
+
+        if (list2 == null) {
+            return list1;
+        }
+
+        ListNode p = list1;
+        ListNode q = list2;
+
+        ListNode rHead = null;
+        ListNode r = null;
+
+        ListNode nodeToInsert;
+        ListNodeWrapper wrapper;
+
+        while(p != null && q != null) {
+            if (p.val <= q.val) {
+                nodeToInsert = p;
+                p = p.next;
+                nodeToInsert.next = null;
+            } else {
+                nodeToInsert = q;
+                q = q.next;
+                nodeToInsert.next = null;
+            }
+
+            wrapper = insertNodeToList(rHead, r, nodeToInsert);
+            r = wrapper.current;
+            rHead = wrapper.head;
+        }
+
+        if (p != null) {
+            wrapper = insertNodeToList(rHead, r, p);
+            rHead = wrapper.head;
+        }
+
+        if (q != null) {
+            wrapper = insertNodeToList(rHead, r, q);
+            rHead = wrapper.head;
+        }
+
+        return rHead;
+    }
+
+    private ListNodeWrapper insertNodeToList(ListNode head, ListNode current, ListNode nodePointer) {
+        if (head == null) {
+            head = nodePointer;
+            current = head;
+        } else {
+            current.next = nodePointer;
+            current = current.next;
+        }
+
+        return new ListNodeWrapper(head, current);
     }
 }
