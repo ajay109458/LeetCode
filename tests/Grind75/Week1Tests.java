@@ -36,4 +36,32 @@ public class Week1Tests {
 		Assertions.assertArrayEquals(expected2, result2, "Test2 failed");
 		Assertions.assertArrayEquals(expected3, result3, "Test3 failed");
 	}
+
+	@Test
+	public void IsValidTest() {
+		// Arrange
+		String s1 = "()";
+		boolean expected1 = true;
+
+		String s2 = "()[]{}";
+		boolean expected2 = true;
+
+		String s3 = "(]";
+		boolean expected3 = false;
+
+		String s4 = "([])";
+		boolean expected4 = true;
+
+		// Act
+		boolean result1 = Week1.isValid(s1);
+		boolean result2 = Week1.isValid(s2);
+		boolean result3 = Week1.isValid(s3);
+		boolean result4 = Week1.isValid(s4);
+
+		// Assert
+		Assertions.assertEquals(expected1, result1);
+		Assertions.assertEquals(expected2, result2);
+		Assertions.assertEquals(expected3, result3);
+		Assertions.assertEquals(expected4, result4);
+	}
 }

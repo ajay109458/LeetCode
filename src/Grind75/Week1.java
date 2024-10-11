@@ -1,5 +1,7 @@
 package Grind75;
 
+import java.util.Stack;
+
 public class Week1 {
 
     /**
@@ -39,4 +41,38 @@ public class Week1 {
 
         return -1;
    }
+
+    /**
+     * Leetcode 20 - Valid parentheses
+     * @param s - Input string
+     * @return - true or false based on the string is valid or not.
+     */
+    public static boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+
+        for(char ch : s.toCharArray()) {
+            if (isOpenBraces(ch)) {
+                stack.push(ch);
+            } else {
+                if (stack.isEmpty()) {
+                    return false;
+                }
+
+                char popedCh = stack.pop();
+                if (!isMatchingEndBraces(ch, popedCh)) {
+                    return false;
+                }
+            }
+        }
+
+        return stack.isEmpty();
+    }
+
+    private static boolean isMatchingEndBraces(char ch, char popedCh) {
+        return (ch == '}' && popedCh == '{') || (ch == ')' && popedCh == '(') || (ch == ']' && popedCh == '[');
+    }
+
+    private static boolean isOpenBraces(char ch) {
+        return ch == '(' || ch == '{' || ch == '[';
+    }
 }
