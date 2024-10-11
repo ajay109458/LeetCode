@@ -64,4 +64,20 @@ public class Week1Tests {
 		Assertions.assertEquals(expected3, result3);
 		Assertions.assertEquals(expected4, result4);
 	}
+
+	public void maxProfitTest() {
+		// Arrange
+		int[] prices1 = {7,1,5,3,6,4};
+		int expected1 = 5;
+
+		int[] prices2 = {7,6,4,3,1};
+		int expected2 = 0;
+
+		// Act
+		int actual1 = Week1.maxProfit(prices1);
+		int actual2 = Week1.maxProfit(prices2);
+
+		Assertions.assertEquals(expected1, actual1);
+		Assertions.assertEquals(expected2, actual2);
+	}
 }
