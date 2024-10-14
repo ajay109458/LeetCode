@@ -1,6 +1,8 @@
 package Grind75;
 
 import linkedlist.ListNode;
+import tree.TreeNode;
+
 import java.util.Stack;
 
 public class Week1 {
@@ -185,5 +187,17 @@ public class Week1 {
         }
 
         return true;
+    }
+
+    public TreeNode invertTree(TreeNode root) {
+        if (root == null) {
+            return root;
+        }
+
+        TreeNode temp = invertTree(root.left);
+        root.left = invertTree(root.right);
+        root.right = temp;
+
+        return root;
     }
 }
