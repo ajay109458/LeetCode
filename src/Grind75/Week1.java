@@ -3,6 +3,7 @@ package Grind75;
 import linkedlist.ListNode;
 import tree.TreeNode;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 public class Week1 {
@@ -199,5 +200,19 @@ public class Week1 {
         root.right = temp;
 
         return root;
+    }
+
+    public boolean isAnagram(String s, String t) {
+        int[] store = new int[26];
+
+        for (char ch : s.toCharArray()) {
+            store[ch - 'a']++;
+        }
+
+        for (char ch : t.toCharArray()) {
+            store[ch - 'a']--;
+        }
+
+        return Arrays.stream(store).allMatch(value -> value == 0);
     }
 }
