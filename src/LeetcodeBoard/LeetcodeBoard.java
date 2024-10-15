@@ -120,7 +120,7 @@ public class LeetcodeBoard {
 
         while(curr < s.length()) {
 
-            while (curr < s.length() && set.contains(s.charAt(curr))) {
+            while (set.contains(s.charAt(curr))) {
                 set.remove(s.charAt(start++));
             }
 
