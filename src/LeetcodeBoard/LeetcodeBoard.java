@@ -215,5 +215,62 @@ public class LeetcodeBoard {
         return isNegative ? -1 * rev : rev;
     }
 
+    public int search(int[] nums, int target) {
+        int pivotIndex = findPivot(nums);
+
+        if (pivotIndex != -1) {
+            int index =  binarySearch(nums, 0, pivotIndex-1, target);
+            if (index != -1) {
+                return index;
+            }
+
+            return binarySearch(nums, pivotIndex, nums.length-1, target);
+        }
+
+        return -1;
+    }
+
+    private int binarySearch(int[] nums, int left, int right, int target) {
+        if (right > left) {
+            return -1;
+        }
+
+        int mid = (left + right) / 2;
+
+        if (nums[mid] == target) {
+            return mid;
+        }
+
+        int index = binarySearch(nums, left, mid -1, target);
+        if (index != -1) {
+            return index;
+        }
+
+        return binarySearch(nums, mid + 1, right, target);
+    }
+
+    private int findPivot(int[] num) {
+        int left = 0;
+        int right = num.length - 1;
+
+        if (num[left] <= num[right]) {
+            return left;
+        }
+
+        while (left < right) {
+            int mid = (left + right) / 2;
+
+            if (mid == 0 || num[mid-1] > num[mid]) {
+                return mid;
+            } else if (num[0] > num[mid]) {
+                right--;
+            } else {
+                left++;
+            }
+        }
+
+        return -1;
+    }
+
 
 }
