@@ -4,7 +4,9 @@ import utils.ListNode;
 
 import java.io.CharArrayReader;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class LeetcodeBoard {
 
@@ -107,6 +109,27 @@ public class LeetcodeBoard {
         }
 
         return maxSumSoFar;
+    }
+
+    public int lengthOfLongestSubstring(String s) {
+        int start = 0;
+        int curr = 0;
+
+        Set<Character> set = new HashSet<>();
+        int maxLen = 0;
+
+        while(curr < s.length()) {
+
+            while (curr < s.length() && set.contains(s.charAt(curr))) {
+                set.remove(s.charAt(start++));
+            }
+
+            set.add(s.charAt(curr++));
+
+            maxLen = Math.max(maxLen, set.size());
+        }
+
+        return maxLen;
     }
 
 
