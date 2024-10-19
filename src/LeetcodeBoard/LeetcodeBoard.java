@@ -548,4 +548,59 @@ public class LeetcodeBoard {
         return true;
     }
 
+    public int largestRectangleArea(int[] heights) {
+        int n = heights.length;
+
+        // store the index of next smallest element on the left
+        int[] lb = new int[n];
+        Stack<Integer> stack = new Stack<>();
+        stack.push(0);
+        lb[0] = -1;
+
+        for(int i = 1; i < n; i++) {
+            while(!stack.isEmpty() && heights[i] < heights[stack.peek()]) {
+                stack.pop();
+            }
+
+            if (stack.isEmpty()) {
+                lb[i] = -1;
+            } else {
+                lb[i] = stack.peek();
+            }
+
+            stack.push(i);
+        }
+
+
+        // store the index of next smallest element on the right
+        int[] rb = new int[n];
+        stack = new Stack<>();
+        stack.push(n-1);
+        rb[n-1] = n;
+
+        for(int i = n-2; i >= 0; i--) {
+            while(!stack.isEmpty() && heights[i] < heights[stack.peek()]) {
+                stack.pop();
+            }
+
+            if (stack.isEmpty()) {
+                rb[i] = heights.length;
+            } else {
+                rb[i] = stack.peek();
+            }
+
+            stack.push(i);
+        }
+
+        int maxArea = 0;
+
+        for(int i = 0; i < n; i++) {
+            int width = rb[i] - lb[i] - 1;
+            int area = heights[i] * width;
+            maxArea = Math.max(area, maxArea);
+        }
+
+        return maxArea;
+    }
+
 }
