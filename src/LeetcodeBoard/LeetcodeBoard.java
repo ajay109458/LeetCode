@@ -1,8 +1,7 @@
 package LeetcodeBoard;
 
-import com.sun.xml.internal.ws.api.server.SDDocument;
+import tree.TreeNode;
 import utils.ListNode;
-import utils.Pair;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -467,6 +466,86 @@ public class LeetcodeBoard {
             left++;
             right--;
         }
+    }
+
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null) {
+            return null;
+        }
+
+        if (root.val > p.val && root.val > q.val) {
+            return lowestCommonAncestor(root.left, p, q);
+
+        }
+
+        if (root.val < p.val && root.val < q.val) {
+            return lowestCommonAncestor(root.right, p, q);
+        }
+
+        return root;
+    }
+
+    public String longestPalindrome(String s) {
+        int n = s.length();
+
+        boolean[][] dp = new boolean[n][n];
+        int len = 0;
+        String result = "";
+
+        for(int gap = 0; gap < n; gap++) {
+            for(int i = 0, j = gap; j < n; i++, j++) {
+                if( gap == 0) {
+                    dp[i][j] = true;
+                } else if (gap == 1){
+                    if (s.charAt(i) == s.charAt(j)) {
+                        dp[i][j] = true;
+                    } else {
+                        dp[i][j] = false;
+                    }
+                } else {
+                    if (s.charAt(i) == s.charAt(j) && dp[i][j]) {
+                        dp[i][j] = true;
+                    } else {
+                        dp[i][j] = false;
+                    }
+                }
+
+                if (dp[i][j]) {
+                    len = gap + 1;
+                    result = s.substring(i, j);
+                }
+            }
+        }
+
+        return result;
+    }
+
+    public String longestPalindrome1(String s) {
+        int n = s.length();
+        int maxLength = 0;
+        int start = -1;
+        for(int i = 0; i < n; i++) {
+            for (int j = i; j < n; j++) {
+                if (isPalindrome1(s, i, j)) {
+                    if(j-i+1 > maxLength) {
+                        maxLength = j - i + 1;
+                        start = i;
+                    }
+                }
+            }
+        }
+
+        return s.substring(start, start + maxLength);
+    }
+
+    private boolean isPalindrome1(String s, int start, int end) {
+        while(start < end) {
+            if (s.charAt(start++) != s.charAt(end--)) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
 }
