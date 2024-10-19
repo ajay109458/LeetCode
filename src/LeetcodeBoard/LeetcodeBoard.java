@@ -1,6 +1,9 @@
 package LeetcodeBoard;
 
+import com.sun.xml.internal.ws.api.server.SDDocument;
 import utils.ListNode;
+import utils.Pair;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -333,5 +336,137 @@ public class LeetcodeBoard {
         return true;
     }
 
+
+    public int rob(int[] nums) {
+        int incl = 0;
+        int excl = 0;
+
+        for(int i = 0; i < nums.length; i++) {
+            int prev_incl = incl;
+            int prev_excl = excl;
+
+            excl = Math.max(prev_incl, prev_excl);
+            incl = Math.max(prev_excl + nums[i], prev_incl);
+        }
+
+        return Math.max(incl, excl);
+    }
+
+    public int numIslands(char[][] grid) {
+        int m = grid.length;
+
+        if (m == 0)
+            return 0;
+
+        int n = grid[0].length;
+
+        boolean[][] visited = new boolean[m][n];
+
+        int count = 0;
+
+        for(int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (!visited[i][j] && grid[i][j] == '1') {
+                    dfs(grid, visited, i, j);
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
+
+    private void dfs(char[][] grid, boolean[][] visited, int x, int y) {
+        if (x < 0 || x >= grid.length) {
+            return;
+        }
+
+        if (y < 0 || y >= grid[0].length) {
+            return;
+        }
+
+        if (grid[x][y] == '0') {
+            return;
+        }
+
+        if (visited[x][y]) {
+            return;
+        }
+
+        visited[x][y] = true;
+
+        dfs(grid, visited, x + 1, y);
+        dfs(grid, visited, x - 1, y);
+        dfs(grid, visited, x, y + 1);
+        dfs(grid, visited, x, y - 1);
+    }
+
+    public static String decodeString(String s) {
+        Stack<Integer> stackNum = new Stack<>();
+        Stack<String>  stackStr = new Stack<>();
+
+        int num = 0;
+        StringBuilder curr = new StringBuilder();
+
+        for(char ch :  s.toCharArray()) {
+            if(Character.isDigit(ch)) {
+                // case when digit came after the letter
+                if (curr.length() != 0) {
+                    stackStr.push(curr.toString());
+                    curr = new StringBuilder();
+                }
+
+                num = num * 10 + (ch - '0');
+
+
+            } else if (Character.isAlphabetic(ch)) {
+                curr.append(ch);
+            } else if (ch == '[') {
+                stackNum.push(num);
+                num = 0;
+            } else if (ch == ']') {
+                int n = stackNum.pop();
+                StringBuilder b = new StringBuilder();
+
+                while (n-- > 0) {
+                    b.append(curr.toString());
+                }
+
+                if (!stackStr.isEmpty()) {
+                    b.insert(0, stackStr.pop());
+                }
+
+                curr = b;
+            }
+        }
+
+        return curr.toString();
+    }
+
+
+
+    public ListNode mergeKLists(ListNode[] lists) {
+        return new ListNode();
+    }
+
+    public void rotate(int[] nums, int k) {
+        int n = nums.length;
+        k = k % n;
+
+        reverseArray(nums, 0, n-k-1);
+        reverseArray(nums, n-k, n-1);
+        reverseArray(nums, 0, n-1);
+    }
+
+    private void reverseArray(int[] nums, int left, int right) {
+        while(left < right) {
+            int temp = nums[left];
+            nums[left] = nums[right];
+            nums[right] = temp;
+
+            left++;
+            right--;
+        }
+    }
 
 }
