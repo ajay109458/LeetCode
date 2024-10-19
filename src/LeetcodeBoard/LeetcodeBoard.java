@@ -1,5 +1,6 @@
 package LeetcodeBoard;
 
+import array.ArrayHelper;
 import tree.TreeNode;
 import utils.ListNode;
 
@@ -601,6 +602,83 @@ public class LeetcodeBoard {
         }
 
         return maxArea;
+    }
+
+    public List<Integer> spiralOrder(int[][] matrix) {
+        int left = 0;
+        int up = 0;
+
+        int right = matrix[0].length - 1;
+        int down = matrix.length - 1;
+
+        List<Integer> result = new ArrayList<>();
+
+        while(up <= down && left <= right) {
+
+            // Top row
+            for(int j = left; j <= right; j++) {
+                result.add(matrix[up][j]);
+            }
+            up++;
+
+            // Last Column
+            for(int i = up; i <= down; i++) {
+                result.add(matrix[i][right]);
+            }
+            right--;
+
+            if (up <= right) {
+                // Bottom row
+                for(int j = right; j >= left; j--) {
+                    result.add(matrix[down][j]);
+                }
+                down--;
+            }
+
+            if (left <= right) {
+                // first column
+                for(int i = down; i >= up; i--) {
+                    result.add(matrix[i][left]);
+                }
+                left++;
+            }
+        }
+
+        return result;
+    }
+
+    public void nextPermutation(int[] nums) {
+        int n = nums.length;
+        int right = n-1;
+
+        int currIndex = -1;
+        for(int i = n-1; i > 0; i--) {
+            if (nums[i] > nums[i-1]) {
+                currIndex = i-1;
+                break;
+            }
+        }
+
+        if (currIndex != -1) {
+            int minIndex = currIndex + 1;
+
+            for(int i = currIndex; i < n; i++) {
+                if (nums[i] < nums[minIndex] && nums[i] > nums[currIndex]) {
+                    minIndex = i;
+                }
+            }
+            swap(nums, currIndex, minIndex);
+        }
+
+        // Only reverse will also work. But it was waiting for some test case.
+        Arrays.sort(nums, currIndex+1, n);
+
+    }
+
+    public static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 
 }
