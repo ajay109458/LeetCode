@@ -749,7 +749,14 @@ public class LeetcodeBoard {
         return -1;
     }
 
+
     public double myPow(double x, int n) {
+        Map<Integer, Double> map = new HashMap<>();
+
+        return myPowInternal(x, n, map);
+    }
+
+    public double myPowInternal(double x, int n, Map<Integer, Double> map) {
         if (n == 0) {
             return 1;
         }
@@ -758,11 +765,18 @@ public class LeetcodeBoard {
             return x;
         }
 
+        if (map.containsKey(n)) {
+            return map.get(n);
+        }
+
         if (n < 0) {
             return myPow(1/x, -n);
         }
 
-        return myPow(x, n / 2) * myPow(x, n / 2) * ( (n %2 == 0) ? 1 : x);
+        double val =  myPowInternal(x, n / 2, map) * myPowInternal(x, n / 2, map) * ( (n %2 == 0) ? 1 : x);
+        map.put(n, val);
+
+        return val;
     }
 
 }
