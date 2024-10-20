@@ -779,4 +779,176 @@ public class LeetcodeBoard {
         return val;
     }
 
+    public int totalFruit(int[] fruits) {
+        int i = 0;
+        int j = 0;
+
+        Map<Integer, List<Integer>> map = new HashMap<>();
+
+        int len = 0;
+
+        while(j < fruits.length) {
+            map.putIfAbsent(fruits[i], new ArrayList<>());
+            map.get(fruits[i]).add(j);
+
+            while(map.size() > 2) {
+                if (map.get(fruits[i]) != null) {
+                    if (!map.get(fruits[i]).isEmpty()) {
+                        map.get(fruits[i]).remove(new Integer(i));
+
+                        if (map.get(fruits[i]).isEmpty()) {
+                            map.remove(fruits[i]);
+                        }
+                    }
+                }
+
+                i++;
+            }
+
+            len = Math.max(len, j - i+1);
+
+            j++;
+        }
+
+        return len;
+    }
+
+    private class Point {
+        int x;
+        int y;
+
+        public Point(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+    }
+
+    public int orangesRotting(int[][] grid) {
+        Queue<Point> queue = new LinkedList<>();
+
+
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 2) {
+                    queue.add(new Point(i, j));
+                }
+            }
+        }
+
+        queue.add(null);
+
+        int count = 0;
+        while(!queue.isEmpty()) {
+            Point point = queue.poll();
+
+            if (point == null) {
+
+
+                if (queue.isEmpty()) {
+                    break;
+                }
+
+                count++;
+
+                queue.add(null);
+            } else {
+                if (isValidNeighbour(grid, point.x-1, point.y)) {
+                    grid[point.x-1][point.y] = 2;
+                    queue.add(new Point(point.x-1, point.y));
+                }
+
+                if (isValidNeighbour(grid, point.x+1, point.y)) {
+                    grid[point.x+1][point.y] = 2;
+                    queue.add(new Point(point.x+1, point.y));
+                }
+
+                if (isValidNeighbour(grid, point.x, point.y-1)) {
+                    grid[point.x][point.y-1] = 2;
+                    queue.add(new Point(point.x, point.y-1));
+                }
+
+                if (isValidNeighbour(grid, point.x, point.y+1)) {
+                    grid[point.x][point.y+1] = 2;
+                    queue.add(new Point(point.x, point.y+1));
+                }
+            }
+        }
+
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 1) {
+                    return -1;
+                }
+            }
+        }
+
+        return count;
+    }
+
+    private boolean isValidNeighbour(int[][] grid, int x, int y) {
+        if (x < 0 || x >= grid.length || y < 0 || y >= grid[0].length) {
+            return false;
+        }
+
+        return grid[x][y] == 1;
+    }
+
+    public ListNode swapPairs(ListNode head) {
+        if (head == null) {
+            return null;
+        }
+
+        ListNode nextNode  = head.next;
+
+        if (nextNode == null) {
+           return head;
+        }
+
+        head.next = swapPairs(nextNode.next);
+        nextNode.next = head;
+
+        return nextNode;
+    }
+
+    public ListNode reverseKGroup(ListNode head, int k) {
+        if (head == null) {
+            return null;
+        }
+
+        // Check if size of node equal to K
+        if (isLengthLessThanK(head, k)) {
+            return head;
+        }
+
+        ListNode prev = null;
+        ListNode curr = head;
+
+        int i = 0;
+        while(curr != null && i++ < k) {
+            ListNode next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        head.next = reverseKGroup(curr, k);
+        return prev;
+    }
+
+    private boolean isLengthLessThanK(ListNode head, int k) {
+        ListNode p = head;
+        int length = 0;
+
+        while(p != null) {
+            length++;
+            p = p.next;
+
+            if (length >= k) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
 }
