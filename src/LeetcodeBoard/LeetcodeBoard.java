@@ -951,4 +951,44 @@ public class LeetcodeBoard {
         return true;
     }
 
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        int length = sizeofList(head);
+        int distanceFromStart = length - n;
+
+        ListNode curr = head;
+
+        int i = 1;
+        while(i < distanceFromStart && curr != null) {
+            curr = curr.next;
+            i++;
+        }
+
+        if (distanceFromStart == 0 && curr != null) {
+            return curr.next;
+        }
+
+        if (curr == null || curr.next == null) {
+            return head;
+        }
+
+        ListNode temp = curr.next;
+        curr.next = curr.next.next;
+        temp.next = null;
+
+        return head;
+    }
+
+    private int sizeofList(ListNode head) {
+        ListNode p = head;
+        int length = 0;
+
+        while(p != null) {
+            length++;
+            p = p.next;
+
+        }
+
+        return length;
+    }
+
 }
