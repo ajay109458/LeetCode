@@ -681,4 +681,88 @@ public class LeetcodeBoard {
         arr[j] = temp;
     }
 
+    private class ListBox {
+        public int val;
+        public int listIndex;
+        public ListNode currPtr;
+
+        public ListBox(int val, int index, ListNode head) {
+            this.val = val;
+            this.listIndex = index;
+            this.currPtr = head;
+
+        }
+    }
+
+    public ListNode mergeKLists1(ListNode[] lists) {
+        PriorityQueue<ListBox> pq = new PriorityQueue<>(Comparator.comparingInt(box -> box.val));
+
+        int K = lists.length;
+        ListNode result = null;
+        ListNode p = null;
+
+        for(int i = 0; i < K; i++) {
+            if (lists[i] != null) {
+                pq.offer(new ListBox(lists[i].val, i, lists[i]));
+            }
+        }
+
+        while(!pq.isEmpty()) {
+            ListBox box = pq.poll();
+            box.currPtr = box.currPtr.next;
+
+            ListNode temp = new ListNode(box.val);
+            if (box.currPtr != null) {
+                pq.add(new ListBox(box.currPtr.val, box.listIndex, box.currPtr));
+            }
+
+            if (result == null) {
+                result = temp;
+                p = temp;
+            } else {
+                p.next = temp;
+                p = temp;
+            }
+        }
+
+        return result;
+    }
+
+    public int peakIndexInMountainArray(int[] A) {
+        int left = 0;
+        int right = A.length - 1;
+
+        while (left <= right) {
+
+            int mid = left + (right - left) / 2;
+
+            if ((mid != 0 && A[mid] > A[mid-1]) && (mid != A.length && A[mid] > A[mid+1])) {
+                return mid;
+            } else if (A[mid] < A[mid+1]){
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+
+        }
+
+        return -1;
+    }
+
+    public double myPow(double x, int n) {
+        if (n == 0) {
+            return 1;
+        }
+
+        if (n == 1) {
+            return x;
+        }
+
+        if (n < 0) {
+            return myPow(1/x, -n);
+        }
+
+        return myPow(x, n / 2) * myPow(x, n / 2) * ( (n %2 == 0) ? 1 : x);
+    }
+
 }
