@@ -991,4 +991,36 @@ public class LeetcodeBoard {
         return length;
     }
 
+    public boolean canPartition(int[] nums) {
+        int totalSum = Arrays.stream(nums).sum();
+
+        if (totalSum % 2 != 0) {
+            return false;
+        }
+
+        int halfSum = totalSum / 2;
+        int n = nums.length;
+
+        boolean[][] dp = new boolean[n + 1][halfSum + 1];
+
+        for(int i = 0; i <= n; i++) {
+            dp[i][0] = true;
+        }
+
+        for(int j = 1; j <= halfSum; j++) {
+            dp[0][j] = false;
+        }
+
+        for(int i = 1; i <= n; i++) {
+            for(int j = 1; j <= halfSum; j++) {
+                // Exclude and Include current element
+                if (dp[i - 1][j] || (j >= nums[i-1] && dp[i-1][j - nums[i-1]])) {
+                    dp[i][j] = true;
+                }
+            }
+        }
+
+        return dp[n][halfSum];
+    }
+
 }
