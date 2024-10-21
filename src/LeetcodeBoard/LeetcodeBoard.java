@@ -1023,4 +1023,66 @@ public class LeetcodeBoard {
         return dp[n][halfSum];
     }
 
+    public int findMaxLength(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        int sum = 0;
+        map.put(sum, -1);
+
+        int maxLength = 0;
+
+        for(int i = 0; i < nums.length; i++) {
+            sum += (nums[i] == 0)? -1 : 1;
+
+            if (map.containsKey(sum)) {
+                maxLength = Math.max(maxLength, i - map.get(sum));
+            }
+
+            map.putIfAbsent(sum, i);
+        }
+
+        return maxLength;
+    }
+
+    public int longestCommonPrefix(int[] arr1, int[] arr2) {
+        Set<Integer> set = new HashSet<>();
+
+        for (int i = 0; i < arr1.length; i++) {
+            int num = arr1[i];
+
+            while(num != 0) {
+                set.add(num);
+                num = num / 10;
+            }
+        }
+
+        int maxLength = 0;
+
+        for(int i = 0; i < arr2.length; i++) {
+            int num = arr2[i];
+
+            while(num != 0) {
+                if (set.contains(num)) {
+                    maxLength = Math.max(maxLength, sizeOfNum(num));
+                    break;
+                }
+
+                num = num / 10;
+            }
+        }
+
+        return maxLength;
+    }
+
+    private int sizeOfNum(int num) {
+        int count = 0;
+
+        while(num != 0) {
+            num = num / 10;
+            count++;
+        }
+
+        return count;
+    }
+
 }
