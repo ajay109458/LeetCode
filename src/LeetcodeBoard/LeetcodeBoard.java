@@ -1210,4 +1210,30 @@ public class LeetcodeBoard {
 
         return (imblance + 1)/2;
     }
+
+    public int maxWidthRamp(int[] nums) {
+        int n = nums.length;
+        int [] maxOnRight = new int[n];
+
+        maxOnRight[n - 1] = nums[n - 1];
+        for(int i = n - 2; i >= 0; i--) {
+            maxOnRight[i] = Math.max(maxOnRight[i+1], nums[i]);
+        }
+
+        int left = 0;
+        int right = 0;
+
+        int maxLength = 0;
+
+        while(right < n) {
+            if (nums[left] <= maxOnRight[right]) {
+                maxLength = Math.max(maxLength, right - left);
+                right++;
+            } else {
+                left++;
+            }
+        }
+
+        return maxLength;
+    }
 }
