@@ -1150,4 +1150,64 @@ public class LeetcodeBoard {
 
         return sb.toString();
     }
+
+    public int maxAreaOfIsland(int[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+
+        boolean[][] visited = new boolean[m][n];
+        int maxArea = 0;
+
+        for(int i = 0; i < m; i++) {
+            for(int j = 0; j < n; j++) {
+                if (grid[i][j] == 1) {
+                    int size = dfs(grid, visited, i, j);
+                    maxArea = Math.max(maxArea, size);
+                }
+            }
+        }
+
+        return maxArea;
+    }
+
+    public int dfs(int[][] grid, boolean[][] visited, int x, int y) {
+        if (x < 0 || x > grid.length - 1 || y < 0 || y > grid[0].length - 1) {
+            return 0;
+        }
+
+        if (grid[x][y] == 0) {
+            return 0;
+        }
+
+        if (visited[x][y]) {
+            return 0;
+        }
+
+        visited[x][y] = true;
+
+        return 1 + dfs(grid, visited, x, y + 1)
+                + dfs(grid, visited, x, y - 1)
+                + dfs(grid, visited, x + 1, y)
+                + dfs(grid, visited, x - 1, y);
+    }
+
+    public int minSwaps(String s) {
+        Stack<Character> stack = new Stack<>();
+
+        int imblance = 0;
+
+        for(char ch : s.toCharArray()) {
+            if (ch == '[') {
+                stack.push(ch);
+            } else if (ch == ']') {
+                if (stack.isEmpty()) {
+                    imblance++;
+                } else {
+                    stack.pop();
+                }
+            }
+        }
+
+        return (imblance + 1)/2;
+    }
 }
