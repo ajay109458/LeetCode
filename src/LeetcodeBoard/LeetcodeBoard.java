@@ -1236,4 +1236,138 @@ public class LeetcodeBoard {
 
         return maxLength;
     }
+
+    public int[] productExceptSelf(int[] nums) {
+        int n = nums.length;
+        int[] res = new int[n];
+
+        int[] left = new int[n];
+        int[] right = new int[n];
+
+        left[0] = 1;
+        for(int i = 1; i < n; i++) {
+            left[i] = left[i - 1] * nums[i - 1];
+        }
+
+        right[n - 1] = 1;
+        for(int i = n - 2; i >= 0; i--) {
+            right[i] = right[i + 1] * nums[i + 1];
+        }
+
+        for(int i = 0; i < n; i++) {
+            res[i] = left[i] * right[i];
+        }
+
+        return res;
+    }
+
+    class RandomNode {
+        int val;
+        RandomNode next;
+        RandomNode random;
+
+        public RandomNode(int val) {
+            this.val = val;
+            this.next = null;
+            this.random = null;
+        }
+    }
+
+
+    public RandomNode copyRandomList(RandomNode head) {
+        if (head == null) {
+            return null;
+        }
+
+        RandomNode p = head;
+        while (p != null) {
+            RandomNode temp = new RandomNode(p.val);
+            temp.next = p.next;
+            p.next = temp;
+
+            p = temp.next;
+        }
+
+        p = head;
+        while (p != null) {
+            if (p.random != null) {
+                p.next.random = p.random.next;
+            }
+            p = p.next.next;
+        }
+
+        RandomNode head2 = null;
+        RandomNode p1 = head;
+        RandomNode p2 = null;
+
+        while(p1 != null) {
+            if (head2 == null) {
+                head2 = p1.next;
+                p2 = p1.next;
+            } else {
+                p2 = p1.next;
+            }
+
+            p1 = p2.next;
+        }
+
+        return head2;
+    }
+
+    public static int minNumberOperations(int[] target) {
+        return numberOfOps(target, 0, target.length - 1);
+    }
+
+    private static int numberOfOps(int[] nums, int left, int right) {
+        if (left > right) {
+            return 0;
+        }
+
+        int min = nums[left];
+        for(int i = left + 1; i <= right; i++) {
+            min = Math.min(min, nums[i]);
+        }
+
+        for(int i = left; i <= right; i++) {
+            nums[i] = nums[i] - min;
+        }
+
+        int start = left;
+        int end = left;
+        int count = min;
+
+        boolean isPrevZero = true;
+
+        while(end <= right) {
+
+            if (nums[end] != 0) {
+                if (isPrevZero) {
+                    isPrevZero = false;
+                    start = end;
+                }
+            } else {
+                if (!isPrevZero) {
+                    isPrevZero = true;
+                    count += numberOfOps(nums, start, end - 1);
+                }
+            }
+
+            end++;
+        }
+
+        if (!isPrevZero) {
+            count+= numberOfOps(nums, start, right);
+        }
+
+        return count;
+
+    }
+
+    public static void printArray(int[] arr, int left, int right) {
+        for (int i = left; i <= right; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
 }
