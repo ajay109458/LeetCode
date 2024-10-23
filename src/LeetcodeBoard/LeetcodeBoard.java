@@ -1328,35 +1328,16 @@ public class LeetcodeBoard {
             min = Math.min(min, nums[i]);
         }
 
+        int count = min;
+
         for(int i = left; i <= right; i++) {
             nums[i] = nums[i] - min;
         }
 
-        int start = left;
-        int end = left;
-        int count = min;
-
-        boolean isPrevZero = true;
-
-        while(end <= right) {
-
-            if (nums[end] != 0) {
-                if (isPrevZero) {
-                    isPrevZero = false;
-                    start = end;
-                }
-            } else {
-                if (!isPrevZero) {
-                    isPrevZero = true;
-                    count += numberOfOps(nums, start, end - 1);
-                }
+        for(int i = left + 1; i <= right; i++) {
+            if (nums[i] > min) {
+                count += (nums[i] - nums[i-1]);
             }
-
-            end++;
-        }
-
-        if (!isPrevZero) {
-            count+= numberOfOps(nums, start, right);
         }
 
         return count;
