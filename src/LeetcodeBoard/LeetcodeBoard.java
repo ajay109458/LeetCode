@@ -1351,4 +1351,60 @@ public class LeetcodeBoard {
         System.out.println();
     }
 
+    public int uniquePaths(int m, int n) {
+        int[][] dp = new int[m][n];
+
+        for(int i = 0; i < m; i++) {
+            for(int j = 0; j < n; j++) {
+                if (i == 0 || j == 0) {
+                    dp[i][j] = 1;
+                } else {
+                    dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+                }
+            }
+        }
+
+        return dp[m - 1][n - 1];
+    }
+
+    public int jump(int[] nums) {
+        int n = nums.length;
+        int[] dp = new int[n];
+
+        // Number of steps to reach the first element
+        dp[0]  = 0;
+
+        for (int i = 1; i < n; i++) {
+            dp[i] = Integer.MAX_VALUE;
+            for(int j = 0; j < i; j++) {
+                if (dp[j] != Integer.MAX_VALUE && j + nums[j] <= i) {
+                    dp[i] = Math.min(dp[i], dp[j] + 1);
+                }
+            }
+        }
+
+        return dp[n - 1];
+    }
+
+    public int findMinDifference(List<String> timePoints) {
+        int[] minutes = new int[timePoints.size()];
+
+        for(int i = 0; i < timePoints.size(); i++) {
+            String time = timePoints.get(i);
+            String[] split = time.split(":");
+            minutes[i] = Integer.parseInt(split[0]) * 60 + Integer.parseInt(split[1]);
+        }
+
+        Arrays.sort(minutes);
+        int min = Integer.MAX_VALUE;
+
+        for(int i = 1; i < minutes.length; i++) {
+            min = Math.min(min, Math.abs(minutes[i] - minutes[i - 1]));
+        }
+
+        min = Math.min(min, 24*60 - minutes[minutes.length - 1] + minutes[0]);
+
+        return min;
+    }
+
 }
