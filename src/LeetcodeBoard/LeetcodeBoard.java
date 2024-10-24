@@ -1407,4 +1407,68 @@ public class LeetcodeBoard {
         return min;
     }
 
+    public int coinChange(int[] coins, int amount) {
+
+        int[] dp = new int[amount + 1];
+        Arrays.fill(dp, Integer.MAX_VALUE);
+        dp[0] = 0;
+
+        for(int s = 0; s <= amount; s++) {
+            for(int coin : coins) {
+                if (s >= coin && dp[s-coin] != Integer.MAX_VALUE) {
+                    dp[s] = Math.min(dp[s], dp[s-coin] + 1);
+                }
+            }
+        }
+
+        return dp[amount] == Integer.MAX_VALUE ? -1 : dp[amount];
+    }
+
+    public int change(int amount, int[] coins) {
+        int[] dp = new int[amount + 1];
+        dp[0] = 1;
+
+        for(int coin : coins) {
+            for(int amt = 1; amt <= amount; amt++) {
+                if (coin <= amt) {
+                    dp[amt] += dp[amt - coin];
+                }
+            }
+        }
+
+
+        return dp[amount];
+    }
+
+    public List<String> restoreIpAddresses(String s) {
+        List<String> res = new ArrayList<>();
+        restoreIPAddresses(s, 0, "", res);
+        return res;
+    }
+
+    public void restoreIPAddresses(String s, int dotIndex, String prefix, List<String> finalResult) {
+        if (dotIndex == 4 && s.isEmpty()) {
+            finalResult.add(prefix);
+        }
+
+        if (s.isEmpty()) {
+            return;
+        }
+
+        StringBuilder builder = new StringBuilder();
+        for(int i = 0; i < 3; i++) {
+            if (i < s.length()) {
+                builder.append(s.charAt(i));
+                String val = builder.toString();
+                if (val.startsWith("0") && !val.equals("0")){
+                    return;
+                }
+                if (Integer.parseInt(builder.toString()) < 256) {
+                    String newPrefix = prefix + builder.toString() + ((dotIndex < 3) ? "." : "");
+                    restoreIPAddresses(s.substring(i+1), dotIndex+1, newPrefix, finalResult);
+                }
+            }
+        }
+    }
+
 }
