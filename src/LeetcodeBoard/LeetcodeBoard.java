@@ -1471,4 +1471,41 @@ public class LeetcodeBoard {
         }
     }
 
+    public void rotate(int[][] matrix) {
+        int n = matrix.length;
+
+        for(int i = 0; i < n/2; i++) {
+            for (int j = i; j < n - i - 1; j++) {
+
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[j][n - 1 - i];
+                matrix[j][n - 1 - i] = matrix[n - 1 - i][n - 1 - j];
+                matrix[n - 1 - i][n - 1 - j] = matrix[n - 1 - j][i];
+                matrix[n - 1 - j][i] = temp;
+            }
+        }
+    }
+
+    public int[] dailyTemperatures(int[] temperatures) {
+        Stack<Integer> stack = new Stack<>();
+
+        int[] maxOnRightIndex = new int[temperatures.length];
+
+        for(int i = temperatures.length - 1; i >= 0; i--) {
+            while(!stack.isEmpty() && temperatures[stack.peek()] < temperatures[i]) {
+                stack.pop();
+            }
+
+            maxOnRightIndex[i] = stack.isEmpty() ? -1 : stack.peek();
+            stack.push(i);
+        }
+
+        for(int i = 0; i < temperatures.length; i++) {
+            System.out.println("Max on right for : " + temperatures[i] + " is " + ((maxOnRightIndex[i] == -1) ? 0 :temperatures[maxOnRightIndex[i]]));
+            maxOnRightIndex[i] = (maxOnRightIndex[i] == -1) ? 0 : maxOnRightIndex[i] - i;
+        }
+
+        return maxOnRightIndex;
+    }
+
 }
