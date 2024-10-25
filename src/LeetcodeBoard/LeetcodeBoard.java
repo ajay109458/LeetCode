@@ -1627,4 +1627,36 @@ public class LeetcodeBoard {
         }
     }
 
+    public int minAddToMakeValid(String s) {
+        Stack<Character> stack = new Stack<>();
+        int count = 0;
+        for(char ch : s.toCharArray()) {
+            if(ch == '(') {
+                stack.push(ch);
+            } else {
+                if (stack.isEmpty()) {
+                    count++;
+                } else {
+                    stack.pop();
+                }
+            }
+        }
+
+        return count;
+    }
+
+    public int kthFactor(int n, int k) {
+        int count = 0;
+        for(int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                count++;
+                if (count == k) {
+                    return i;
+                }
+            }
+        }
+
+        return -1;
+    }
+
 }
