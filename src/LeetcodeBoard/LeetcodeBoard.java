@@ -1508,4 +1508,123 @@ public class LeetcodeBoard {
         return maxOnRightIndex;
     }
 
+    public ListNode rotateRight(ListNode head, int k) {
+
+        if (head == null) {
+            return null;
+        }
+
+        int size = sizeofList(head);
+        k %= size;
+
+        if (k == 0) {
+            return head;
+        }
+
+        int i = 0;
+        ListNode p = head;
+        while(i < size - k - 1) {
+            p = p.next;
+            i++;
+        }
+
+        ListNode newHead = p.next;
+        p.next = null;
+
+        p = newHead;
+
+        while(p.next != null) {
+            p = p.next;
+        }
+
+        p.next = head;
+
+        return newHead;
+    }
+
+    public boolean searchMatrix(int[][] matrix, int target) {
+        int m = matrix.length;
+        int n = matrix[0].length;
+
+        int colIndex = n-1;
+        int rowIndex = 0;
+
+        while(rowIndex < m && colIndex >= 0) {
+            if (matrix[rowIndex][colIndex] == target) {
+                return true;
+            } else if (matrix[rowIndex][colIndex] > target) {
+                colIndex--;
+            } else {
+                rowIndex++;
+            }
+        }
+
+        return false;
+    }
+
+    public boolean isValidBST(TreeNode root) {
+        return isValidBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+
+    private boolean isValidBST(TreeNode root, int min, int max) {
+        if (root == null) {
+            return true;
+        }
+
+        if (root.val < min || root.val > max) {
+            return false;
+        }
+
+        return isValidBST(root.left, min, root.val) && isValidBST(root.right, root.val, max);
+    }
+
+    public List<TreeNode> delNodes(TreeNode root, int[] to_delete) {
+        List<TreeNode> res = new ArrayList<>();
+
+        root = populateRootsList(root, to_delete, res);
+
+        if (root != null) {
+            res.add(root);
+        }
+
+        return res;
+    }
+
+    public TreeNode populateRootsList(TreeNode root, int[] to_delete, List<TreeNode> res) {
+        if (root == null) {
+            return null;
+        }
+
+        boolean currentNodeDeleted = false;
+        for(int val : to_delete) {
+            if (val == root.val) {
+                currentNodeDeleted = true;
+                break;
+            }
+        }
+
+        if (currentNodeDeleted) {
+            if (root.left != null) {
+                TreeNode temp = populateRootsList(root.left, to_delete, res);
+                if (temp != null) {
+                    res.add(temp);
+                }
+            }
+
+            if (root.right != null) {
+                TreeNode temp = populateRootsList(root.right, to_delete, res);
+                if (temp != null) {
+                    res.add(temp);
+                }
+            }
+
+            return null;
+        } else {
+            root.left = populateRootsList(root.left, to_delete, res);
+            root.right = populateRootsList(root.right, to_delete, res);
+
+            return root;
+        }
+    }
+
 }
