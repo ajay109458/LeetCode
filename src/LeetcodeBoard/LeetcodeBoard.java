@@ -1659,4 +1659,119 @@ public class LeetcodeBoard {
         return -1;
     }
 
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        if (root == null) {
+            return null;
+        }
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        queue.add(null);
+
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> temp = new ArrayList<>();
+
+        while(!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+
+            if (node == null) {
+                if (!temp.isEmpty()) {
+                    res.add(temp);
+                    temp = new ArrayList<>();
+                }
+
+                if (queue.isEmpty()) {
+                    break;
+                }
+
+                queue.add(null);
+            } else {
+                System.out.println(node.val);
+                temp.add(node.val);
+
+                if (node.left != null) {
+                    queue.add(node.left);
+                }
+
+                if (node.right != null) {
+                    queue.add(node.right);
+                }
+            }
+        }
+
+        return res;
+    }
+
+
+    public int findKthLargest(int[] nums, int k) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        for(int num: nums) {
+            pq.add(num);
+            if (pq.size() > k) {
+                pq.poll();
+            }
+        }
+
+        return pq.peek();
+    }
+
+    public List<List<String>> solveNQueens(int n) {
+        List<List<String>> res = new ArrayList<>();
+
+
+
+        return res;
+    }
+
+    public boolean solveNQueens(int row, boolean[][] matrix) {
+        for(int col = 0; col < matrix.length; col++) {
+            if (isValid(row, col, matrix)) {
+                matrix[row][col] = true;
+                boolean isPossible = solveNQueens(row + 1, matrix);
+                if (isPossible) {
+                    return true;
+                }
+                matrix[row][col] = false;
+            }
+        }
+
+        return false;
+    }
+
+    public boolean isValid(int row, int col, boolean[][] matrix) {
+        for (int i = 0; i < row; i++) {
+            if (matrix[col][i]) {
+                return false;
+            }
+        }
+
+        for (int c = 0; c < col; c++) {
+            if (matrix[row][c]) {
+                return false;
+            }
+        }
+
+        int r = row-1;
+        int c = col-1;
+        while(r >= 0 && c >=0) {
+            if (matrix[r--][c--]) {
+                return false;
+            }
+        }
+
+        r = row-1;
+        c = col+1;
+
+        while (r >= 0 && c < col) {
+            if (matrix[r--][c++]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+
+
 }
