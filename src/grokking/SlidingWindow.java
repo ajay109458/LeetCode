@@ -3,134 +3,118 @@ package grokking;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class SlidingWindow {
 
-    public static int computeMaxSumOfWindow(int[] nums, int k) {
-
-        int sum = 0;
-
-        int s = 0;
-        int e = 0;
-
+    public static int maxSumOfWindow(int[] nums, int k) {
+        int n = nums.length;
+        int currSum = 0;
         int maxSum = 0;
 
-        while(e < nums.length) {
-            if (e-s+1 <= k) {
-                sum += nums[e++];
+        int start = 0;
+        int end = 0;
 
-                maxSum = Math.max(maxSum, sum);
-            } else {
-                sum -= nums[s++];
+        while(end < n) {
+            if (end - start + 1 > k) {
+                currSum -= nums[start++];
             }
+
+            currSum += nums[end++];
+            maxSum = Math.max(maxSum, currSum);
         }
 
         return maxSum;
     }
 
-    public static int smallestSubarray(int[] nums, int sum) {
-        int minLen = Integer.MAX_VALUE;
+    public static int findSmallestSubArray(int[] nums, int S) {
+        int n = nums.length;
 
-        int s = 0;
-        int e = 0;
+        int start = 0;
+        int end = 0;
 
         int currSum = 0;
+        int minLen = nums.length;
+        boolean isSolution = false;
 
-        while(e < nums.length) {
 
+        while(end < n) {
+            currSum += nums[end];
 
-            if (currSum < sum) {
-                currSum += nums[e++];
-            } else {
-                minLen = Math.min(minLen, e-s);
-                currSum -= nums[s++];
+            while(currSum >= S) {
+                isSolution = true;
+                minLen = Math.min(minLen, end - start + 1);
+                currSum -= nums[start++];
             }
 
+            end++;
         }
 
-        while(s < nums.length && currSum >= sum) {
-            minLen = Math.min(minLen, e-s);
-            currSum -= nums[s++];
-        }
-
-        return minLen;
+        return (isSolution) ? minLen : 0;
     }
 
-    public static int longestSubstringKDistinctChar(String input, int k) {
+    public static int getLongestSubStrKDistinct(String s, int k) {
+        Set<Character> set = new HashSet<>();
 
-        // Base cases
+        int start = 0;
+        int end = 0;
+        int maxLen =  0;
 
-        HashSet<Character> set = new HashSet<>();
+        while(end < s.length()) {
+            set.add(s.charAt(end));
 
-        int s = 0;
-        int e = 0;
-
-        int maxSize = 0;
-
-        while(e < input.length()) {
-
-            if (set.size() <= k) {
-                maxSize = Math.max(maxSize, e-s);
-                set.add(input.charAt(e++));
-            } else {
-                set.remove(input.charAt(s++));
+            while(set.size() > k) {
+                set.remove(s.charAt(start++));
             }
+
+            maxLen = Math.max(maxLen, end - start+1);
+            end++;
         }
 
-        if (set.size() <= k) {
-            maxSize = Math.max(maxSize, e-s);
-        }
-
-        return maxSize;
+        return maxLen;
     }
 
-    public static int numberOfFruitsInBasket(char[] fruits, int k) {
-
+    public static int maxFruitsInBasket(char[] fruits, int k) {
         int maxFruits = 0;
 
-        int e = 0;
-        int s = 0;
+        Set<Character> set = new HashSet<>();
 
-        HashSet<Character> currFruitsInBasket = new HashSet<>();
+        int start = 0;
+        int end = 0;
+        int maxLen =  0;
 
-        while (e < fruits.length) {
-            if (currFruitsInBasket.size() <= k) {
-                maxFruits = Math.max(maxFruits, e-s);
-                currFruitsInBasket.add(fruits[e++]);
-            } else {
-                currFruitsInBasket.remove(fruits[s++]);
+        while(end < fruits.length) {
+            set.add(fruits[end]);
+            while(set.size() > k) {
+                set.remove(fruits[start++]);
             }
+
+            maxLen = Math.max(maxLen, end - start+1);
+            end++;
         }
 
-        if (currFruitsInBasket.size() <= k) {
-            maxFruits = Math.max(maxFruits, e-s);
-        }
-
-        return maxFruits;
+        return maxLen;
     }
 
-    public static int getMaxLengthNoRepeatChar(String input) {
-
-        if (null == input || "".equals(input)) {
+    public static int maxLengthNoRepeat(String s) {
+        if (s == null || s.isEmpty()) {
             return 0;
         }
 
-        int e = 0;
-        int s = 0;
-
-        HashSet<Character> set = new HashSet<>();
-
+        int start = 0;
+        int end = 0;
         int maxLen = 0;
 
-        while(e < input.length()) {
+        Set<Character> set = new HashSet<>();
 
-            if (set.contains(input.charAt(e))) {
-                set.remove(input.charAt(s++));
-            } else {
-                maxLen = Math.max(maxLen, e - s + 1);
-                set.add(input.charAt(e++));
+        while (end < s.length()) {
+            while (set.contains(s.charAt(end))) {
+                set.remove(s.charAt(start++));
             }
 
+            set.add(s.charAt(end));
+            maxLen = Math.max(maxLen, end - start+1);
+            end++;
         }
 
         return maxLen;
@@ -159,6 +143,41 @@ public class SlidingWindow {
 
         return 0;
 
+    }
+
+    public int characterReplacement(String s, int k) {
+        if (null == s || s.isEmpty()) {
+            return 0;
+        }
+
+        int start = 0;
+        int end = 0;
+        int maxLen = 0;
+
+        // Storing character and it's frequency in window which starts at start and ends at end.
+        Map<Character, Integer> charFreqMap = new HashMap<>();
+
+        int maxCharCount = 0;
+
+        while(end < s.length()) {
+
+            char ch = s.charAt(end);
+
+            charFreqMap.put(ch, charFreqMap.getOrDefault(ch, 0) + 1);
+            maxCharCount = Math.max(maxCharCount, charFreqMap.get(ch));
+
+            int currLen = end - start + 1;
+
+            int remainingCharFreq = (currLen - maxCharCount);
+
+            while (remainingCharFreq > k) {
+                // remove the character
+            }
+
+            end++;
+        }
+
+        return maxLen;
     }
 
 }

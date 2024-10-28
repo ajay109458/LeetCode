@@ -16,7 +16,7 @@ public class SlidingWindowTests {
             int[] arr = {2, 1, 5, 1, 3, 2};
             int k = 3;
 
-            int sum = SlidingWindow.computeMaxSumOfWindow(arr, k);
+            int sum = SlidingWindow.maxSumOfWindow(arr, k);
             Assertions.assertEquals(9, sum);
         }
 
@@ -25,7 +25,7 @@ public class SlidingWindowTests {
             int[] arr = {2, 3, 4, 1, 5};
             int k = 2;
 
-            int sum = SlidingWindow.computeMaxSumOfWindow(arr, k);
+            int sum = SlidingWindow.maxSumOfWindow(arr, k);
             Assertions.assertEquals(7, sum);
         }
     }
@@ -39,7 +39,7 @@ public class SlidingWindowTests {
             int[] arr = {2, 1, 5, 2, 3, 2};
             int sum = 7;
 
-            int len = SlidingWindow.smallestSubarray(arr, sum);
+            int len = SlidingWindow.findSmallestSubArray(arr, sum);
             Assertions.assertEquals(2, len);
         }
 
@@ -48,7 +48,7 @@ public class SlidingWindowTests {
             int[] arr = {2, 1, 5, 2, 8};
             int sum = 7;
 
-            int len = SlidingWindow.smallestSubarray(arr, sum);
+            int len = SlidingWindow.findSmallestSubArray(arr, sum);
             Assertions.assertEquals(1, len);
         }
 
@@ -57,7 +57,7 @@ public class SlidingWindowTests {
             int[] arr = {3, 4, 1, 1, 6};
             int sum = 8;
 
-            int len = SlidingWindow.smallestSubarray(arr, sum);
+            int len = SlidingWindow.findSmallestSubArray(arr, sum);
             Assertions.assertEquals(3, len);
         }
 
@@ -69,19 +69,19 @@ public class SlidingWindowTests {
 
         @Test
         public void testInput1() {
-            int len = SlidingWindow.longestSubstringKDistinctChar("araaci", 2);
+            int len = SlidingWindow.getLongestSubStrKDistinct("araaci", 2);
             Assertions.assertEquals(4, len);
         }
 
         @Test
         public void testInput2() {
-            int len = SlidingWindow.longestSubstringKDistinctChar("araaci", 1);
+            int len = SlidingWindow.getLongestSubStrKDistinct("araaci", 1);
             Assertions.assertEquals(2, len);
         }
 
         @Test
         public void testInput3() {
-            int len = SlidingWindow.longestSubstringKDistinctChar("cbbebi", 3);
+            int len = SlidingWindow.getLongestSubStrKDistinct("cbbebi", 3);
             Assertions.assertEquals(5, len);
         }
     }
@@ -93,14 +93,14 @@ public class SlidingWindowTests {
         @Test
         public void testInput1() {
             char[] arr = {'A', 'B', 'C', 'A', 'C'};
-            int counts = SlidingWindow.numberOfFruitsInBasket(arr, 2);
+            int counts = SlidingWindow.maxFruitsInBasket(arr, 2);
             Assertions.assertEquals(3, counts);
         }
 
         @Test
         public void testInput2() {
             char[] arr = {'A', 'B', 'C', 'B', 'B', 'C'};
-            int counts = SlidingWindow.numberOfFruitsInBasket(arr, 2);
+            int counts = SlidingWindow.maxFruitsInBasket(arr, 2);
             Assertions.assertEquals(5, counts);
         }
     }
@@ -111,19 +111,19 @@ public class SlidingWindowTests {
 
         @Test
         public void testInput1() {
-            int len = SlidingWindow.getMaxLengthNoRepeatChar("aabccbb");
+            int len = SlidingWindow.maxLengthNoRepeat("aabccbb");
             Assertions.assertEquals(3, len);
         }
 
         @Test
         public void testInput2() {
-            int len = SlidingWindow.getMaxLengthNoRepeatChar("abbbb");
+            int len = SlidingWindow.maxLengthNoRepeat("abbbb");
             Assertions.assertEquals(2, len);
         }
 
         @Test
         public void testInput3() {
-            int len = SlidingWindow.getMaxLengthNoRepeatChar("abccde");
+            int len = SlidingWindow.maxLengthNoRepeat("abccde");
             Assertions.assertEquals(3, len);
         }
 
