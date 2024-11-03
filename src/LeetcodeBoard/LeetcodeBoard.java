@@ -1772,6 +1772,80 @@ public class LeetcodeBoard {
         return true;
     }
 
+    public int combinationSum4(int[] nums, int target) {
+        if (target == 0) {
+            return 1;
+        }
 
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+
+        return combinationSumInternal(nums, target);
+
+    }
+
+    private int combinationSumInternal(int[] nums, int target) {
+        if (target == 0) {
+            return 1;
+        }
+
+        if (target < 0 ) {
+            return 0;
+        }
+
+        int count = 0;
+        for(int i = 0; i < nums.length; i++) {
+            count += combinationSumInternal(nums, target - nums[i]);
+        }
+
+        return count;
+    }
+
+    private int combinationSumInternalDp(int[] nums, int target) {
+        int[] dp = new int[target + 1];
+
+        dp[0] = 1;
+
+        for (int i = 1; i <= target; i++) {
+            for(int num :  nums) {
+                if (i - num >= 0) {
+                    dp[i] += dp[i - num];
+                }
+            }
+        }
+
+        return dp[target];
+    }
+
+    public void setZeroes(int[][] matrix) {
+        int[] row = new int[matrix.length];
+        int[] col = new int[matrix[0].length];
+
+        for (int i = 0; i < matrix.length; i++) {
+            row[i] = 1;
+        }
+
+        for (int j = 0; j < matrix[0].length; j++) {
+            col[j] = 1;
+        }
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (matrix[i][j] == 0) {
+                    row[i] = 0;
+                    col[j] = 0;
+                }
+            }
+        }
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (col[j] == 0 || row[i] == 0) {
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+    }
 
 }

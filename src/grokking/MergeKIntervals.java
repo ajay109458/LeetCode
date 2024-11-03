@@ -4,7 +4,7 @@ import java.util.*;
 
 public class MergeKIntervals {
 
-    private static class Interval {
+    public static class Interval {
         int start;
         int end;
 
@@ -14,28 +14,55 @@ public class MergeKIntervals {
         }
     }
 
-    public static Interval[] mergeIntervals(Interval[] intervals) {
+    public static int[][] merge(int[][] inputIntervals) {
 
-        Arrays.sort(intervals, (a, b) -> Integer.compare(a.start, b.start));
+        Interval[] intervals = new Interval[inputIntervals.length];
+        for(int i = 0; i < inputIntervals.length; i++) {
+            intervals[i] = new Interval(inputIntervals[i][0], inputIntervals[i][1]);
+        }
+
+        Interval[] result = mergeIntervals(intervals);
+        int[][] res = new int[result.length][2];
+        for(int i = 0; i < result.length; i++) {
+            res[i][0] = result[i].start;
+            res[i][1] = result[i].end;
+        }
+
+        return res;
+    }
+
+    public static Interval[] mergeIntervals(Interval[] intervals) {
+        Arrays.sort(intervals, Comparator.comparingInt(a -> a.start));
 
         Stack<Interval> stack = new Stack<>();
 
-        for(Interval interval : intervals) {
-            if(!stack.isEmpty() && stack.peek().end > interval.start) {
-                stack.peek().end = Math.max(stack.peek().end, interval.end);
+        for (Interval interval : intervals) {
+            if (stack.isEmpty()) {
+                stack.push(interval);
             } else {
-                stack.add(interval);
+                if (stack.peek().end >= interval.start) {
+                    stack.peek().end = Math.max(stack.peek().end, interval.end);
+                } else {
+                    stack.push(interval);
+                }
             }
         }
 
-        int n = stack.size();
+        return stack.toArray(new Interval[0]);
+    }
 
-        Interval[] results = new Interval[n];
-        for(int i = n -1; i >= 0; i--) {
-            results[i] = stack.pop();
+    public static List<Interval> insertNewInterval(List<Interval> intervals, Interval newInterval) {
+        List<Interval> result = new ArrayList<>();
+
+        for(Interval interval : intervals) {
+            if (interval.start < newInterval.start) {
+                result.add(interval);
+            } else {
+
+            }
         }
 
-        return results;
+        return result;
     }
 
     public static List<Interval> insertAnInterval(Interval[] intervals, Interval newInterval) {
