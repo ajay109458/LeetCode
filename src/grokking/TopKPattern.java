@@ -283,6 +283,29 @@ public class TopKPattern {
         return result;
     }
 
+    public static int ropeConnectionCost(int[] ropes) {
+        if (ropes.length == 0)
+            return 0;
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        Arrays.stream(ropes).forEach(num -> pq.add(num));
+
+        int totalCost = 0;
+
+        while(pq.size() > 1) {
+            int rope1 = pq.poll();
+            int rope2 = pq.poll();
+
+            int currentCost = rope1 + rope2;
+
+            totalCost += currentCost;
+            pq.add(currentCost);
+        }
+
+        return totalCost;
+    }
+
     public static int ropeConnectingCost(int[] arr) {
 
         if (arr.length < 2)
