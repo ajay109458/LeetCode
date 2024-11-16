@@ -122,6 +122,30 @@ public class TopKPattern {
         return result;
     }
 
+    public static int findSmallestKthElement(int[] nums, int k)
+    {
+        if (nums.length == 0 || k == 0)
+            return -1;
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
+
+        Arrays.stream(nums).forEach(num -> {
+            if (pq.size() < k) {
+                pq.add(num);
+            } else {
+                if (pq.peek() > num) {
+                    pq.poll();
+                    pq.add(num);
+                }
+            }
+        });
+
+        if (pq.isEmpty())
+            return -1;
+
+        return pq.peek();
+    }
+
     public static int getKthSmallestElement(int[] arr, int k) {
         if (arr.length == 0 || k == 0 ) {
             return -1;
@@ -200,6 +224,34 @@ public class TopKPattern {
 
     private static double distanceFromOrigin(Bike bike) {
         return Math.sqrt(Math.pow(bike.x, 2) + Math.pow(bike.y, 2));
+    }
+
+    public static List<Bike> findKClosestBikesFromOrigin(List<Bike> bikes, int k) {
+        if (bikes.isEmpty() || k == 0)
+            return new ArrayList<>();
+
+        PriorityQueue<Bike> pq = new PriorityQueue<>(Comparator.comparingDouble(TopKPattern::distanceFromOrigin));
+
+        bikes.forEach(bike -> {
+            if (pq.size() < k) {
+                pq.add(bike);
+            } else {
+                if (distanceFromOrigin(bike) < distanceFromOrigin(pq.peek())) {
+                    pq.poll();
+                    pq.add(bike);
+                }
+            }
+        });
+
+        List<Bike> result = new ArrayList<>();
+
+        while (!pq.isEmpty()) {
+            Bike b = pq.poll();
+            result.add(b);
+        }
+
+        return result;
+
     }
 
     public static List<Bike> getKClosestBikesToOrigin(List<Bike> bikes, int K) {
