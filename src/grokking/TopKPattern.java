@@ -8,6 +8,63 @@ import java.util.*;
 
 public class TopKPattern {
 
+    public int[] topKFrequent(int[] nums, int k) {
+
+        if (nums.length == 0 || k == 0)
+            return new int[0];
+
+        Map<Integer, Integer> map = new HashMap<>();
+        Arrays.stream(nums).forEach(num -> map.put(num, map.getOrDefault(num, 0) + 1));
+
+        List<Integer> result = new ArrayList<>();
+        PriorityQueue<Pair> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a.y));
+
+        map.forEach((key, value) -> {
+            if (pq.size() < k) {
+                pq.add(new Pair(key, value));
+            } else {
+                if (pq.peek().y < value) {
+                    pq.poll();
+                    pq.add(new Pair(key, value));
+                }
+            }
+        });
+
+
+        while (!pq.isEmpty()) {
+            result.add(pq.poll().x);
+        }
+
+        return result.stream().mapToInt(i -> i).toArray();
+    }
+
+    public static List<Integer> findKLargestElements(int[] nums, int k) {
+        if (nums.length == 0 || k == 0)
+            return new ArrayList<>();
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        Arrays.stream(nums).forEach(num -> {
+            if (pq.size() < k) {
+                pq.add(num);
+            } else {
+                if (pq.peek() < num) {
+                    pq.poll();
+                } else {
+                    pq.add(num);
+                }
+            }
+        });
+
+        List<Integer> result = new ArrayList<>();
+
+        while(!pq.isEmpty()) {
+            result.add(pq.poll());
+        }
+
+        return result;
+    }
+
     public static List<Integer> findKLargest(int[] arr, int k) {
         List<Integer> result = new ArrayList<>();
 
