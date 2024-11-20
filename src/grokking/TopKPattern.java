@@ -394,6 +394,29 @@ public class TopKPattern {
         return result;
     }
 
+    public static String sortByFrequency(String input) {
+        Map<Character, Integer> frequencyMap = new HashMap<>();
+
+        for(char ch : input.toCharArray()) {
+            frequencyMap.put(ch, frequencyMap.getOrDefault(ch, 0) + 1);
+        }
+
+        PriorityQueue<Map.Entry<Character, Integer>> pq = new PriorityQueue<>((a, b) -> Integer.compare(b.getValue(), a.getValue()));
+        pq.addAll(frequencyMap.entrySet());
+
+        StringBuilder sb = new StringBuilder();
+        while(!pq.isEmpty()) {
+            Map.Entry<Character, Integer> entry = pq.poll();
+            int count = entry.getValue();
+            while(count-- > 0) {
+                sb.append(entry.getKey());
+            }
+
+        }
+
+        return sb.toString();
+    }
+
     public static String sortByFreq(String input) {
         Map<Character, Integer> freqMap = new HashMap<>();
 
@@ -446,6 +469,33 @@ public class TopKPattern {
         }
     }
 
+    public static List<Integer> findKClosestNumbers(int[] arr, int K, int X) {
+        List<Integer> result = new ArrayList<>();
+
+        if (arr.length == 0 || K == 0)
+            return result;
+
+        // Max priority queue - because you have to remove larger elements
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> Integer.compare(Math.abs(b-X), Math.abs(a-X)));
+
+        Arrays.stream(arr).forEach(num -> {
+            if (pq.size() < K) {
+                pq.add(num);
+            } else {
+                if (pq.peek() > num) {
+                    pq.remove();
+                    pq.add(num);
+                }
+            }
+        });
+
+        while(!pq.isEmpty()) {
+            result.add(0, pq.remove());
+        }
+
+        return result;
+    }
+
     public static List<Integer> getKClosestNumbers(int[] arr, int K, int X) {
 
         PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> Integer.compare(Math.abs(b-X), Math.abs(a-X)));
@@ -468,6 +518,27 @@ public class TopKPattern {
         }
 
         return result;
+    }
+
+    public int findLeastNumOfUniqueInts(int[] arr, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        Arrays.stream(arr).forEach(num -> {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        });
+
+        PriorityQueue<Pair> pairs = new PriorityQueue<>((a,b) -> Integer.compare(a.y, b.y));
+
+        for(Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            pairs.add(new Pair(entry.getKey(), entry.getValue()));
+        }
+
+        while (!pairs.isEmpty() && pairs.peek().y <= k) {
+            k--;
+        }
+
+        return pairs.size();
+
     }
 
     public static int findMaxDistinctElements(int[] nums, int k) {
@@ -502,6 +573,26 @@ public class TopKPattern {
         }
 
         return count;
+    }
+
+
+    public static int computeSumOfElements(int[] nums, int k1, int k2) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        Arrays.stream(nums).forEach(pq::add);
+
+        int count = k1;
+        while(count-- > 0) {
+            pq.remove();
+        }
+
+        int sum = 0;
+        count = k2 - k1;
+        while(!pq.isEmpty() && count-- > 0) {
+            sum += pq.remove();
+        }
+
+        return sum;
     }
 
     public static int findSumOfElements(int[] nums, int k1, int k2) {

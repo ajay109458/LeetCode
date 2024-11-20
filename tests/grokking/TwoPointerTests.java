@@ -18,7 +18,7 @@ public class TwoPointerTests {
             int[] arr = {1, 2, 3, 4, 6};
             int target = 6;
 
-            int[] result = TwoPointer.search(arr, target);
+            int[] result = TwoPointer.searchInArray(arr, target);
 
             Assertions.assertArrayEquals(new int[]{1, 3}, result);
         }
@@ -28,7 +28,7 @@ public class TwoPointerTests {
             int[] arr = {2, 5, 9, 11};
             int target = 11;
 
-            int[] result = TwoPointer.search(arr, target);
+            int[] result = TwoPointer.searchInArray(arr, target);
 
             Assertions.assertArrayEquals(new int[]{0, 2}, result);
         }
@@ -41,14 +41,14 @@ public class TwoPointerTests {
         @Test
         public void test1() {
             int[] arr = {2, 3, 3, 3, 6, 9, 9};
-            int count = TwoPointer.countUniqueElements(arr);
+            int count = TwoPointer.moveElements(arr);
             Assertions.assertEquals(4, count);
         }
 
         @Test
         public void test2() {
             int[] arr = {2, 2, 2, 11};
-            int count = TwoPointer.countUniqueElements(arr);
+            int count = TwoPointer.moveElements(arr);
             Assertions.assertEquals(2, count);
         }
 
@@ -62,7 +62,7 @@ public class TwoPointerTests {
             int[] arr = {-2, -1, 0, 2, 3};
             int[] expected = {0, 1, 4, 4, 9};
 
-            int[] result = TwoPointer.makeSquares(arr);
+            int[] result = TwoPointer.makeSquaresArray(arr);
 
             System.out.println(Arrays.toString(result));
 
@@ -75,7 +75,7 @@ public class TwoPointerTests {
             int[] arr = {-3, -1, 0, 1, 2};
             int[] expected = {0, 1, 1 ,4, 9};
 
-            int[] result = TwoPointer.makeSquares(arr);
+            int[] result = TwoPointer.makeSquaresArray(arr);
 
             System.out.println(Arrays.toString(result));
 
@@ -107,14 +107,14 @@ public class TwoPointerTests {
         @Test
         public void test1() {
             int[] arr = {-2, 0, 1, 2};
-            int result = TwoPointer.searchTripletsClosestSum(arr, 2);
+            int result = TwoPointer.searchClosestTriplet(arr, 2);
             Assertions.assertEquals(1, result);
         }
 
         @Test
         public void test2() {
             int[] arr = {-3, -1, 1, 2};
-            int result = TwoPointer.searchTripletsClosestSum(arr, 1);
+            int result = TwoPointer.searchClosestTriplet(arr, 1);
             Assertions.assertEquals(0, result);
         }
     }
